@@ -136,20 +136,17 @@
                         </div>                                       
                                         
 
-                            @foreach ($subjectlist as $sc) 
-
-                            @php
-                            if($sc->image!="bookcover.jpg"){
-                                $image = $sc->subjectid.'/'.$sc->image;
-                            }else{
-                                $image = "bookcover.jpg";
-                            }
-                            @endphp
+                            @foreach ($subjectlist as $sc)                            
 
                                 <article class="entry">
-                                    <div class="featured-post" style="@media screen and (min-width: 800px) { width: 50% !important; overflow: hidden;} ">
-                                        <a href="/sc/{{$sc->subjectid}}"><img src="/images/course/{{$image}}" alt="image"></a>
-                                    </div>
+                                    @php
+                                    if($sc->image!="bookcover.jpg"){
+                                        $image = $sc->subjectid.'/'.$sc->image;
+                                        <div class="featured-post" style="@media screen and (min-width: 800px) { width: 50% !important; overflow: hidden;} ">
+                                            <a href="/sc/{{$sc->subjectid}}"><img src="/images/course/{{$image}}" alt="image"></a>
+                                        </div>
+                                    }
+                                    @endphp
                                     <div class="entry-post">
                                         <div class="entry-categories">
                                             <span><a href="#">{{$sc->coursecategory}}</a></span>
