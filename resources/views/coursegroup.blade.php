@@ -142,9 +142,11 @@
                                     @php
                                     if($sc->image!="bookcover.jpg"){
                                         $image = $sc->subjectid.'/'.$sc->image;
+                                    @endphp    
                                         <div class="featured-post" style="@media screen and (min-width: 800px) { width: 50% !important; overflow: hidden;} ">
                                             <a href="/sc/{{$sc->subjectid}}"><img src="/images/course/{{$image}}" alt="image"></a>
                                         </div>
+                                    @php
                                     }
                                     @endphp
                                     <div class="entry-post">
