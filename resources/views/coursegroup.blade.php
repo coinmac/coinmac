@@ -167,7 +167,7 @@
                                                 TOTAL COURSES:<span class="count"> 100</span>
                                             </div>
                                             <div class="entry-price color-green">
-                                                PRICE:<span class="green">{{$sc->amount}}</span>
+                                                COURSE FEE :<span class="green">{{$sc->amount}}</span>
                                             </div>
                                             <div class="wrap-btn" style="float: right">
                                                 <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 

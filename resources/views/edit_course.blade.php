@@ -76,11 +76,12 @@
                       <small id="amounthelp" class="form-text text-muted">Please enter only numbers in Naira</small>
                     </div>
                 </div>
+            
 
                 <div class="col-md-3">
                     <div class="form-group">
                       <label for="amounti">Amount (International):</label>
-                      <input type="text" class="form-control" name="amounti" id="amounti" aria-describedby="amounthelpi" placeholder="Amount/Foreign" value="{{$course->amounti}}">
+                      <input type="text" class="form-control" name="amounti" id="amounti" aria-describedby="amounthelpi" placeholder="Foreign" value="{{$course->amounti}}">
                       <small id="amounthelpi" class="form-text text-muted">Please enter only numbers</small>
                     </div>
                 </div>
@@ -240,7 +241,7 @@
                         </select>
                     </div>  
                 </div>
-            </div>
+            
 
                 <div class="col-sm-6">
                     <div class="form-group">
