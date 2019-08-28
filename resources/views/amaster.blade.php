@@ -89,8 +89,8 @@
                         <div class="col-md-4">
                             <div class="wrap-flat">
                                 <ul class="flat-login-register">
-                                    <li><a href="">Sign</a></li>
-                                    <li><a href="">Register</a></li>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/register">Register</a></li>
                                 </ul>
                                 <ul class="flat-socials">
                                     <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -189,7 +189,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 info-left">
                             <div class="logo-footer">
-                                <a href="index.html"><img src="images/logo.png" alt="image"></a>
+                                <a href="index.html"><img src="images/footer-logo.png" alt="image"></a>
                             </div><!-- logo-footer -->
                             <ul class="flat-socials">
                                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -200,65 +200,65 @@
                         </div><!-- col-md-6 -->
                         <div class="col-md-6 col-sm-6 info-right">
                             <ul class="flat-information">
-                            <li><span>P:</span><a href=""> 1-800-456-7890</a></li>
-                            <li><span>E:</span><a href="">  info.contact@gmail.com</a></li>
-                            <li><span>A:</span><a href=""> 40 Baria Sreet 133/2 NewYork City, US</a></li>
+                            <li><span>P:</span><a href=""> 234-802-326-2908</a></li>
+                            <li><span>E:</span><a href="">  info@coinmac.org</a></li>
+                            <li><span>A:</span><a href=""> 2nd Floor, Bayelsa Guest House, Maitama, Abuja</a></li>
                         </ul>
                         </div><!-- col-md-6 -->
                     </div><!-- row -->
                 </div><!-- footer-information -->
                 <div class="footer-widget">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget widget-our-services">
-                                     <h3 class="widget-title">OUR SERVICES</h3>
-                                     <ul>
-                                         <li><a href="">Courses</a></li>
-                                         <li><a href="">Events</a></li>
-                                         <li><a href="">Instructors</a></li>
-                                         <li><a href="/events">Blog</a></li>
-                                         <li><a href="">Awards</a></li>
-                                     </ul>
-                                 </div><!-- /.wiget-categories -->
-                            </div><!-- col-md-3 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget widget-our-services">
-                                     <h3 class="widget-title">MY ACCOUNT</h3>
-                                     <ul>
-                                         <li><a href="/myaccount">My Account</a></li>
-                                         <li><a href="/">Membership</a></li>
-                                         <li><a href="">FAQs</a></li>
-                                         <li><a href="/newsletter">Newletter</a></li>
-                                         <li><a href="">Specials</a></li>
-                                     </ul>
-                                 </div><!-- /.wiget-categories -->
-                            </div><!-- col-md-3 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget widget-our-services">
-                                     <h3 class="widget-title">OUR SUPPORT</h3>
-                                     <ul>
-                                         <li><a href="/contact_us">Contact Us</a></li>
-                                         <li><a href="/social_media">Social Media</a></li>
-                                         <li><a href="livechat">Live Chat</a></li>
-                                         <li><a href="/sitemap">Site Map</a></li>
-                                         <li><a href="/contact_us">Map Location</a></li>
-                                     </ul>
-                                 </div><!-- /.wiget-categories -->
-                            </div><!-- col-md-3 -->
-                            <div class="col-md-3 col-sm-6">
-                                <div class="widget widget-our-services">
-                                     <h3 class="widget-title">IMFORMATION</h3>
-                                     <ul>
-                                         <li><a href="/about">About Us</a></li>
-                                         <li><a href="/management">Management</a></li>
-                                         <li><a href="/profile">Profile</a></li>
-                                         <li><a href="/brochure_nat">National Brochure</a></li>
-                                         <li><a href="/brochure_inter">International Brochure</a></li>
-                                     </ul>
-                                 </div><!-- /.wiget-categories -->
-                            </div><!-- col-md-3 -->
-                        </div><!-- row -->
-                 </div><!-- footer-widget --> 
+                       <div class="row">
+                           <div class="col-md-3 col-sm-6">
+                               <div class="widget widget-our-services">
+                                    <h3 class="widget-title">OUR SERVICES</h3>
+                                    <ul>
+                                        <li><a href="">Courses</a></li>
+                                        <li><a href="">Events</a></li>
+                                        <li><a href="">Instructors</a></li>
+                                        <li><a href="/events">Blog</a></li>
+                                        <li><a href="">Awards</a></li>
+                                    </ul>
+                                </div><!-- /.wiget-categories -->
+                           </div><!-- col-md-3 -->
+                           <div class="col-md-3 col-sm-6">
+                               <div class="widget widget-our-services">
+                                    <h3 class="widget-title">MY ACCOUNT</h3>
+                                    <ul>
+                                        <li><a href="/myaccount">My Account</a></li>
+                                        <li><a href="/">Membership</a></li>
+                                        <li><a href="">FAQs</a></li>
+                                        <li><a href="/newsletter">Newletter</a></li>
+                                        <li><a href="">Specials</a></li>
+                                    </ul>
+                                </div><!-- /.wiget-categories -->
+                           </div><!-- col-md-3 -->
+                           <div class="col-md-3 col-sm-6">
+                               <div class="widget widget-our-services">
+                                    <h3 class="widget-title">OUR SUPPORT</h3>
+                                    <ul>
+                                        <li><a href="/contact_us">Contact Us</a></li>
+                                        <li><a href="/social_media">Social Media</a></li>
+                                        <li><a href="livechat">Live Chat</a></li>
+                                        <li><a href="/sitemap">Site Map</a></li>
+                                        <li><a href="/contact_us">Map Location</a></li>
+                                    </ul>
+                                </div><!-- /.wiget-categories -->
+                           </div><!-- col-md-3 -->
+                           <div class="col-md-3 col-sm-6">
+                               <div class="widget widget-our-services">
+                                    <h3 class="widget-title">IMFORMATION</h3>
+                                    <ul>
+                                        <li><a href="/about">About Us</a></li>
+                                        <li><a href="/management">Management</a></li>
+                                        <li><a href="/profile">Profile</a></li>
+                                        <li><a href="/brochure_nat">National Brochure</a></li>
+                                        <li><a href="/brochure_inter">International Brochure</a></li>
+                                    </ul>
+                                </div><!-- /.wiget-categories -->
+                           </div><!-- col-md-3 -->
+                       </div><!-- row -->
+                </div><!-- footer-widget --> 
             </div><!-- container -->  
         </footer><!-- footer -->
 

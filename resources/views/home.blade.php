@@ -39,7 +39,7 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-
+                                    <hr>
                                     <div class="col-md-12">
                                         <h3>International Courses</h3>
                                         <ul  class="c2">
@@ -52,7 +52,7 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-
+                                    <hr>
                                     <div class="col-md-12">
                                         <h3>Diploma Courses</h3>
                                         <ul  class="c2">
@@ -65,7 +65,7 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-
+                                    <hr>
                                     <div class="col-md-12">
                                         <h3>Certificate Courses</h3>
                                         <ul  class="c2">

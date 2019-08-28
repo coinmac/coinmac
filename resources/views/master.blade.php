@@ -114,8 +114,8 @@
                         <div class="col-md-4">
                             <div class="wrap-flat">
                                 <ul class="flat-login-register">
-                                    <li><a href="">Sign</a></li>
-                                    <li><a href="">Register</a></li>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/register">Register</a></li>
                                 </ul>
                                 <ul class="flat-socials">
                                     <li><a href=""><i class="fa fa-facebook"></i></a></li>
