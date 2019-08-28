@@ -382,7 +382,7 @@
                                         <small>{{ucwords(strtolower($cc->category))}}</small>
                                     </div>
                                     <div class="box-title">
-                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}">{{ucwords(strtolower($cc->coursename))}}</a>
+                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -458,15 +458,19 @@
                     @if ($sc->category=="Featured")
                         <div class="item {{$sc->coursecatid}} ">
                             <article class="entry ">
-                                <div class="featured-post">
+                                
                                     @php
                                     if ($sc->image!="bookcover.jpg"){
                                         $image = $sc->subjectid."/".$sc->image;
-                                    }else{
-                                        $image = $sc->image; }  
                                     @endphp
-                                    <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
-                                </div>
+
+                                    <div class="featured-post">
+                                        <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
+                                    </div>
+                                    @php
+                                    }  
+                                    @endphp
+                                    
                                 <div class="entry-post">
                                     <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
                                     <div class="entry-author">
