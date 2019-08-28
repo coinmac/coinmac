@@ -5,16 +5,13 @@
     <div class="row justify-content-center">
         <div class="col-md-6 col-md-offset-3">
             <div class="card">
-                <div class="card-header center h1">Admin {{ __('Login') }}</div>
+                <div class="card-header center h1">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Enter Email Address" autofocus>
 
                                 @error('email')
@@ -26,9 +23,6 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Enter Password" required autocomplete="current-password">
 
                                 @error('password')
@@ -67,7 +61,7 @@
 
                     </form>
 
-                    <p class="h4">Don't have an account? <a href="/register">Register</a></p>
+                    <p class="h4">Don't have an account? <a href="/register" class="label label-success">Register</a></p>
                 </div>
             </div>
         </div>
