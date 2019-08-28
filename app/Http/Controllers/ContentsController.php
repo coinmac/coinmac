@@ -10,6 +10,11 @@ use File;
 
 class ContentsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index','post','gpost','contact_us']);
+    }
     /**
      * Display a listing of the resource.
      *
