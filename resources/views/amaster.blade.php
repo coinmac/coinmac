@@ -136,6 +136,7 @@
                                                     <li><a href="/edit_courses">Add / Edit Courses</a></li>                                                
                                                     <li><a href="/edit_ccategories">Add / Edit Course Categories</a></li>
                                                     <li><a href="/contents">Publish / Edit Site Contents</a></li>
+                                                    <li><a href="/logout">Logout</a></li>
                                                 </ul>
                                             </li>
                                         @endif
