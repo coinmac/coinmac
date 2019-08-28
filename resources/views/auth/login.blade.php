@@ -64,7 +64,10 @@
                                 @endif
                             </div>
                         </div>
+
                     </form>
+
+                    <p class="h4">Don't have an account? <a href="/register">Register</a></p>
                 </div>
             </div>
         </div>

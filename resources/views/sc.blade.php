@@ -154,7 +154,7 @@
                 </div>
             </div><!-- col-md-9 -->
             <div class="col-md-3 col-sm-4 wrap-overflow">
-                <div class="sidebar">
+                <div class="sidebar" style="font-size: 0.8 em !important;">
                     <div class="widget widget-button">
                         <p class="button-free"> {{$course->amount}} (National) </p>
                         <p class="button-free"> {{$course->amounti}} (International) </p>
@@ -164,14 +164,14 @@
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
                         <div class="wrap-btn">
-                            <a class="flat-btn" href="/login">JOIN NOW</a>
+                            <a class="flat-btn" href="/login/{{$course->subjectid}}">REGISTER FOR THIS COURSE</a>
                         </div>
                     </div>
                     <div class="widget widget-teacher">
                         <h3 class="widget-title">ABOUT TEACHER</h3>
                         <div class="flat-teammember">
                             <div class="team-image">
-                                <img alt="image" src="images/team/4.jpg">
+                                <img alt="image" src="/images/team/4.jpg">
                             </div>
                             <div class="profile">
                                 <h6 class="name"><a href="#">{{$course->author}}</a></h6>

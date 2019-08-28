@@ -344,4 +344,8 @@ class CoursecatrgoriesController extends Controller
 
         return view('social_media',['coursecategories'=>$coursecategories]);
     }
+
+    public function registerlogin($subjectid){
+        
+    }
 }

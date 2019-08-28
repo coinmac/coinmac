@@ -547,7 +547,7 @@
             <div class="wrap-register-right wrap-box pdtopleft">
                 <div class="wrap-register-title">
                     <div class="title-top">
-                       GET ACCESS 100S OF ONLINE COURSES AND RESOURCES FOR FREE
+                       GET ACCESS 100s OF ONLINE COURSES AND RESOURCES FOR FREE
                     </div>
                     <div class="title-register">
                        REGISTER NOW
