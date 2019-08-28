@@ -65,4 +65,8 @@ Route::get('/contact_us','ContentsController@contact_us')->name('contact_us');
 Route::get('/social_media','CoursecatrgoriesController@social_media')->name('social_media');
 
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');    
+});
+
 Auth::routes(['verify' => true]);
