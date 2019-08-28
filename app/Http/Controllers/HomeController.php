@@ -13,6 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        
         $this->middleware(['auth', 'verified']);
     }
 
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid')->get();
+        return view('home',['coursecategories'=>$coursecategories]);
     }
 
     

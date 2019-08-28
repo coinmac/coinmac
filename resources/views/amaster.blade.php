@@ -123,16 +123,23 @@
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
                                         <li class="active"><a href="/admin_area" title="">HOME</a></li>
-                                        
-                                        <li><a href="our-teacher.html" title="">TASKS</a>
-                                            <ul class="submenu">
-                                                <li><a href="/syllabus">Add / Edit Course Contents</a></li>
-                                                <li><a href="/edit_courses">Add / Edit Courses</a></li>                                                
-                                                <li><a href="/edit_ccategories">Add / Edit Course Categories</a></li>
-                                                <li><a href="/contents">Publish / Edit Site Contents</a></li>
-                                            </ul>
-                                        </li>
-                                        
+                                        @auth
+                                        @if (auth()->user()->email!="coinmacsms@gmail.com")
+                                            <li><a href="/mycourses">My Courses</a></li>
+                                            <li><a href="/mypayments">Payments</a></li>
+                                            <li><a href="/messages">Messages</a></li>
+                                            <li><a href="/logout">Logout</a></li>
+                                        @else
+                                            <li><a href="our-teacher.html" title="">TASKS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="/syllabus">Add / Edit Course Contents</a></li>
+                                                    <li><a href="/edit_courses">Add / Edit Courses</a></li>                                                
+                                                    <li><a href="/edit_ccategories">Add / Edit Course Categories</a></li>
+                                                    <li><a href="/contents">Publish / Edit Site Contents</a></li>
+                                                </ul>
+                                            </li>
+                                        @endif
+                                        @endauth
                                     
                                     </ul>
                                 </nav>
