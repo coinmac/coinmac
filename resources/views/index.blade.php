@@ -438,7 +438,7 @@
 
                         @if ($cc->remarks=="Popular")
 
-                        <li><a data-filter=".{{$cc->courseid}}" href="#">{{$cc->coursename}}</a></li>                            
+                        <li><a data-filter=".{{$cc->coursename}}" href="#">{{$cc->coursename}}</a></li>                            
                            
                         @endif
                         
@@ -456,7 +456,7 @@
                 @foreach ($subjectlist as $sc) 
 
                     @if ($sc->category=="Featured")
-                        <div class="item {{$sc->coursecatid}} ">
+                        <div class="item {{$sc->coursecategory}} ">
                             <article class="entry ">
                                 
                                     @php
