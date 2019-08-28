@@ -45,7 +45,7 @@ Route::get('/coursegroup/{courseid}/{type}/{coursename}','CoursecatrgoriesContro
 
 Route::get('/sc/{subjectid}','CoursecatrgoriesController@course');
 
-Route::get('/login/{subjectid}','CoursecatrgoriesController@registerlogin');
+Route::get('/courseregister/{subjectid}/{coursename}','CoursecatrgoriesController@courseregister');
 
 Route::get('/lesson/{id}','CoursecatrgoriesController@lesson');
 Route::get('/management','CoursecatrgoriesController@management')->name('management');

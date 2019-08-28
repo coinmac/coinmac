@@ -15,6 +15,12 @@ class CreateCourseregsTable extends Migration
     {
         Schema::create('courseregs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('coursename')->nullable();
+            $table->string('courseid')->nullable();
+            $table->string('payment')->nullable();
+            $table->string('payment')->nullable();
             $table->timestamps();
         });
     }
