@@ -69,6 +69,9 @@ Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');    
 });
 
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/logout', function(){
+    Auth::logout();
+    return Redirect::to('login');
+});
 
 Auth::routes(['verify' => true]);
