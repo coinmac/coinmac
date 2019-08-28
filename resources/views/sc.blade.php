@@ -54,15 +54,15 @@
                                         </div>
                                         <div class="entry-number">
                                             <div class="entry-count">
-                                                TOTAL COURSES:<span class="count"> 100</span>
+                                                COURSE FEE
                                             </div>
                                             <div class="entry-price color-green">
                                                             
-                                                Fee (National):<span class="price"> {{$course->amount}}</span>
+                                                (National):<span class="price"> {{$course->amount}}</span>
                                             </div>
 
                                             <div class="entry-price color-green">                                                
-                                            Fee (International):<span class="price"> {{$course->amounti}}</span>
+                                            (International):<span class="price"> {{$course->amounti}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@
                             <li>Level: <span>{{$course->level}}</span></li>
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
-                        <div class="wrap-btn">
+                        <div class="wrap-btn" style="font-size: 0.8em !important;">
                             <a class="flat-btn" href="/login/{{$course->subjectid}}">REGISTER FOR THIS COURSE</a>
                         </div>
                     </div>
