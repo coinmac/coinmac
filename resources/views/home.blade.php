@@ -21,14 +21,16 @@
                         </div>
                         <div class="col-md-9">
                             @if (auth()->user()->email!="coinmacsms@gmail.com")
-                                <div class="btn-group" role="group" aria-label="Button group">
-                                    <a class="btn btn-primary" href="/allcourses">Register a New Course</a>
-                                    <a class="btn btn-success" href="/mycourses">Manage My Courses</a>
+                                <div style="text-align: center;">
+                                    <a class="btn btn-success" href="/mycourses">Manage My Courses</a><br>
+                                    <h1>Select Course to Register</h1>
                                 </div>
+                                
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h3>National Courses</h3>
+                                        <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
 
@@ -42,6 +44,7 @@
                                     <hr>
                                     <div class="col-md-12">
                                         <h3>International Courses</h3>
+                                        <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
 
@@ -55,6 +58,7 @@
                                     <hr>
                                     <div class="col-md-12">
                                         <h3>Diploma Courses</h3>
+                                        <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
 
@@ -68,6 +72,7 @@
                                     <hr>
                                     <div class="col-md-12">
                                         <h3>Certificate Courses</h3>
+                                        <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
 
