@@ -144,18 +144,7 @@
                             @endforeach
                             
                         </div>
-                        <div class="row">
-                            <div class="dividers h79">   
-                            </div><!-- dividers flat30 -->
-                        </div>
-
-                        <div class="row">
-                            <div class="blog-pagination">
-                                <ul class="flat-pagination">
-                                        {{ $subjectlist->links() }}
-                                </ul>
-                            </div><!-- /.blog-pagination -->
-                        </div>
+                       
                     </div><!-- portfolio -->
                 </div>
             </div>
