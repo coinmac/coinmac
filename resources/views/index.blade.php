@@ -242,10 +242,9 @@
                             <p class="search-form-select">
                                 <select class="select-field" >
                                     <option value="All">ALL CATEGORIES</option>                                        
-                                    <option value="National">NATIONAL</option>
-                                    <option value="International">INTERNATIONAL</option>
-                                    <option value="Certification">CERTIFICATION</option>
-                                    <option value="Diploma">DIPLOMA</option>
+                                    @foreach (array_unique($coursecategories) as $cats)
+                                        <option value="{{$cat->coursename}}">{{$cat->coursename}}</option>
+                                    @endforeach
                             </select>
                             </p>
                         </li>
