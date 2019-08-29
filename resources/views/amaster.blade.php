@@ -122,7 +122,7 @@
                             <div class="wrap-nav">
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
-                                        <li class="active"><a href="/admin_area" title="">HOME</a></li>
+                                        <li class="active"><a href="/" title="">HOME</a></li>
                                         @auth
                                         @if (auth()->user()->email!="coinmacsms@gmail.com")
                                             <li><a href="/mycourses">My Courses</a></li>
