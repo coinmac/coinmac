@@ -49,15 +49,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-4 sidebar-reponsive flat-course-sidebar">
                         <div class="sidebar">
-                            <div class="widget widget-categories">
-                                <h3 class="widget-title">SEARCH RESULT</h3>
-                                <ul>
-                                    @foreach ($subjectlist as $scc) 
-                                        <li><a href="/sc/{{$scc->subjectid}}" >&#10004; {{$scc->subjectname}}</a></li>
-                                    @endforeach
-                                    
-                                </ul>
-                            </div>
+                           
                             <div class="widget widget-latest">
                                 <h3 class="widget-title">COMING UP THIS MONTH</h3>
                                 <ul>
