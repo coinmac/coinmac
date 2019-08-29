@@ -314,9 +314,9 @@
             metadata: {
                 custom_fields: [
                     {
-                        display_name: "COINMAC INTERNATIONAL INC",
-                        variable_name: "COINMAC",
-                        value: "+2348023262908"
+                        display_name: "Payment for "+$("#displayname").val(),
+                        variable_name: "payment_for",
+                        value: $("#paidby").val()
                     }
                 ]
             },

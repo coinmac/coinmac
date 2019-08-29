@@ -111,6 +111,8 @@
                                         <div class="form-group">
                                           <label for="amountopay">Enter Amount to Pay in Naira</label>
                                           <input type="text" class="form-control" name="amountopay" id="amountopay" value="{{preg_replace("/[^0-9]/","",$amount)}}" placeholder="Amount in Naira">
+                                          <input type="hidden" id="payment_for" name="payment_for" value="{{$subject->coursename}}">
+                                          <input type="hidden" id="paidby" name="paidby" value="{{$subject->email}}">
                                           
                                         </div>
                                         <script src="https://js.paystack.co/v1/inline.js"></script>
