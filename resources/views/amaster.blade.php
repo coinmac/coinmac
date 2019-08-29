@@ -306,7 +306,7 @@
     <script>
         function payWithPaystack(fee){
             var handler = PaystackPop.setup({
-            key: 'sk_live_544fccffe42b11e9913f15ac8002c78e479e49ad',
+            key: 'pk_live_41a33b11ee52220def94d902a207e6dacade7016',
             email: 'coinmacsms@gmail.com',
             amount: fee,
             currency: "NGN",
