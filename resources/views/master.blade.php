@@ -249,6 +249,7 @@
                                         </li>
                                         <li><a href="blog-list01.html" title="">RESOURCES</a>
                                             <ul class="submenu">
+                                                <li><a href="https://drive.google.com/file/d/1lK2c116HiKVpicyloDCNCXO8t51oE_qt/view?usp=sharing">COINMAC Profile</a></li>
                                                 <li><a href="/events">Programmes/Events</a></li>
                                                 <li><a href="/gallery">Gallery</a></li>
                                                 <li><a href="/brochure_nat">{{date("Y")}} National Brochure</a></li>
