@@ -269,10 +269,10 @@
                                 </nav>
                                 
                                 <div class="top-search">                        
-                                    <form action="/search" id="searchform-all" method="get">
+                                    <form action="{{route('searchcourses')}}"  id="searchform-all" method="get">
                                         <div>
-                                            <input type="hidden" name="ccategory" value="All">
-                                            <input type="text" id="s" name="keyword" class="sss" placeholder="Search...">
+                                            <input type="hidden" name="coursecategory" value="All">
+                                            <input type="text" id="s" name="keyword" class="sss" placeholder="Search courses...">
                                             <input type="submit" value="search" id="searchsubmit">
                                         </div>
                                     </form>
