@@ -347,19 +347,23 @@ class CoursecatrgoriesController extends Controller
         return view('social_media',['coursecategories'=>$coursecategories]);
     }
 
-    public function registercourse($subjectid,$amount){
+    public function registercourse(){
+        $subjectid = $request->subjectid;
+        $amount = $request->amount;
         $subject = subjectlists::where('subjectid','=',$subjectid)->first(); 
         $user = Auth::user();
         courseregs::create([
             'name'=>$user->name,
             'email'=>$user->email,
-            'coursename'=>$subject->name,
+            'coursename'=>$subject->subjectname,
             'courseid'=>$subjectid,
-            'amount'=>$amount,
-            'payment'=>"Upaid",
+            'amount'=>$request->amount,
+            'coursedates'=>$request->dates,
+            'venue'=>$request->venue,
+            'payment'=>"Unpaid",
             'approval'=>"Unapproved"            
         ]);        
-        if($subject->amount!="Free"){
+        if($subject->amount=="Free"){
             session()->flash('message','Your registration was successful! This course is Free');
             return redirect()->back();
         }else{

@@ -20,6 +20,8 @@ class CreateCourseregsTable extends Migration
             $table->string('coursename')->nullable();
             $table->string('courseid')->nullable();
             $table->string('amount')->nullable();
+            $table->string('dates')->nullable();
+            $table->string('venue')->nullable();
             $table->string('payment')->nullable();
             $table->string('approval')->nullable();
             $table->timestamps();

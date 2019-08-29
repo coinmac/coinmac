@@ -163,13 +163,63 @@
                             <li>Level: <span>{{$course->level}}</span></li>
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
-                        <div class="wrap-btn" style="font-size: 0.8em !important;">
-                            <a class="flat-btn" href="/registercourse/{{$course->subjectid}}/{{$course->amount}}">REGISTER (National)</a>
-                        </div>
+                        <form action="{{route('registercourse')}}">
+                            @csrf
+                            <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
+                            <input type="hidden" name="amount" value="{{$course->amount}}">
+                            <div class="form-group">                                
+                                    <select class="form-control" name="dates">
+                                        <option value="Not Selected" selected>Select Date</option>
+                                        <option value="{{$course->date1}}">{{$course->date1}}</option>
+                                        <option value="{{$course->date2}}">{{$course->date2}}</option>
+                                        <option value="{{$course->date3}}">{{$course->date3}}</option>
+                                        <option value="{{$course->date4}}">{{$course->date4}}</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">                                
+                                    <select class="form-control" name="venue">
+                                        <option value="Not Selected" selected>Select Venue</option>
+                                        <option value="Abuja">Abuja</option>
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Ibadan">Ibadan</option>
+                                        <option value="Port Harcourt">Port Harcourt</option>
+                                        <option value="Bauchi">Bauchi</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                            <div class="wrap-btn" style="font-size: 0.8em !important;">
+                                <button class="flat-btn" type="submit">REGISTER (National)</button>
+                            </div>
+                        </form>
                         <hr>
-                        <div class="wrap-btn" style="font-size: 0.8em !important;">
-                            <a class="flat-btn" href="/registercourse/{{$course->subjectid}}/{{$course->amounti}}">REGISTER (International)</a>
-                        </div>
+                        <form action="{{route('registercourse')}}" style="background-color: lightgrey;">
+                            @csrf
+                            <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
+                            <input type="hidden" name="amount" value="{{$course->amounti}}">
+                            <div class="form-group">                                
+                                <select class="form-control" name="dates">
+                                    <option value="Not Selected" selected>Select Date</option>
+                                    <option value="{{$course->date1i}}">{{$course->date1i}}</option>
+                                    <option value="{{$course->date2i}}">{{$course->date2i}}</option>
+                                    <option value="{{$course->date3i}}">{{$course->date3i}}</option>
+                                    <option value="{{$course->date4i}}">{{$course->date4i}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">                                
+                                <select class="form-control" name="venue">
+                                    <option value="Not Selected" selected>Select Date</option>
+                                    <option value="USA">USA</option>
+                                    <option value="DUBAI (U.A.E)">DUBAI (U.A.E)</option>
+                                    <option value="INDIA">INDIA</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="wrap-btn" style="font-size: 0.8em !important;">
+                                <button class="flat-btn" type="submit">REGISTER (International)</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="widget widget-teacher">
                         <h3 class="widget-title">ABOUT TEACHER</h3>
