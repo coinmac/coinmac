@@ -244,7 +244,7 @@
                                 <select name="coursecategory" class="select-field" >
                                     <option value="All">ALL CATEGORIES</option>                                        
                                     @foreach (array_unique($coursecategories) as $cats)
-                                        <option value="{{$cat->coursename}}">{{$cat->coursename}}</option>
+                                        <option value="{{$cats->coursename}}">{{$cats->coursename}}</option>
                                     @endforeach
                             </select>
                             </p>
