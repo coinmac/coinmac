@@ -30,7 +30,7 @@
 
                                 <div class="form-group">
                                     <label for="amount">Amount</label>
-                                    <input type="text" class="form-control" name="amount" value="{{$amount->amount}}" id="amount" placeholder="Amount">
+                                    <input type="text" class="form-control" name="amount" value="{{$amount}}" id="amount" placeholder="Amount">
                                 </div>
 
                                 <div class="form-group">
