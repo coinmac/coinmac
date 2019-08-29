@@ -14,9 +14,11 @@
                             <h4>PAYMENT</h4>
                             <hr>
                             <ul class="list-group">
-                                <li class="list-group-item active">My Courses</li>
-                                <li class="list-group-item">Times table</li>
-                                <li class="list-group-item disabled">Notifications</li>
+                                <li class="list-group-item active"><a href="/mycourses">My Courses</a></li>
+                                <li class="list-group-item"><a href="#">Times table</a></li>
+                                <li class="list-group-item"><a href="#">My Payments</a></li>
+                                <li class="list-group-item"><a href="/home">Register New Course</a></li>
+                                <li class="list-group-item disabled"><a href="#">Notifications</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">

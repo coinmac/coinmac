@@ -14,30 +14,37 @@
                             <h4>USER MENU</h4>
                             <hr>
                             <ul class="list-group">
-                                <li class="list-group-item active">My Courses</li>
-                                <li class="list-group-item">Times table</li>
-                                <li class="list-group-item disabled">Notifications</li>
+                                <li class="list-group-item active"><a href="/mycourses">My Courses</a></li>
+                                <li class="list-group-item"><a href="#">Times table</a></li>
+                                <li class="list-group-item"><a href="#">My Payments</a></li>
+                                <li class="list-group-item"><a href="/home">Register New Course</a></li>
+                                <li class="list-group-item disabled"><a href="#">Notifications</a></li>
                             </ul>
                         </div>
                         <div class="col-md-9">
                             @foreach ($mycourses as $course)
                                 <div class="col-md-6">
-                                    <div class="panel panel-default">
+                                    <div class="panel panel-primary">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                        {{$course->payment}}
+                                                    @if ($course->payment=="Unpaid")
+                                                        <span style="color: red">Unpaid</span>
+                                                    @else
+                                                        <span style="color: red">Payment Saved</span>
+                                                    @endif
                                                 </div>
                                             
                                                 <div class="col-sm-6">
-                                                        Status: {{$course->approval}}
+                                                        <b>Status:</b> {{$course->approval}}
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="panel-body">
-                                            <h5 class="panel-title">{{$course->coursename}}</h5>
-                                            <p class="panel-text">Date: {{$course->dates}}</p>
-                                            <p class="panel-text">Venue: {{$course->venue}}</p>
+                                            <h5 class="panel-title" style="color: blue; font-size: 1.5em;">{{$course->coursename}}</h5>
+                                            <hr>
+                                            <p class="panel-text"><b>Date:</b> {{$course->dates}}</p>
+                                            <p class="panel-text"><b>Venue:</b> {{$course->venue}}</p>
                                         </div>
                                         <div class="panel-footer">
                                                 <div class="row">
