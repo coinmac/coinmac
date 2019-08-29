@@ -166,6 +166,7 @@
                         <hr>
                         <br>
                         <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgreen;">
+                            <h5 style="text-align: center; color: red">Register for National</h5>
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amount}}">
@@ -190,11 +191,12 @@
                                     </select>
                                 </div>
                             <div style="text-align: center">
-                                <button class="btn btn-primary btn-sm" type="submit">REGISTER (National)</button>
+                                <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
                         <hr><br>
-                        <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey;">
+                        <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey; padding: 5px;">
+                                <h5 style="text-align: center; color: red">Register for International</h5>
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amounti}}">
@@ -219,7 +221,7 @@
                                 </select>
                             </div>
                             <div style="text-align: center">
-                                <button class="btn btn-primary btn-sm" type="submit">REGISTER (International)</button>
+                                <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
                     </div>
