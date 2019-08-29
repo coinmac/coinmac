@@ -33,28 +33,12 @@
             <div class="container">
                 <div class="select-category">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-12">
                             <div class="showing">
-                                <p>Showing 1-10 of {{count($subjectlist)}} Courses</p>
+                                <p>Showing {{count($subjectlist)}} search results</p>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="select-sort">
-                                <div class="wrap-select">
-                                    <select class="select-field all-select portfolio-filter" >
-                                        <option value="" data-filter=".all" class="active">Select Category</option>
-                                        <option value="" data-filter=".bussiness">Bussiness</option>
-                                        <option value="" data-filter=".engin">Engineering</option>
-                                        <option value="" data-filter=".life">Life Sciences</option>
-                                        <option value="" data-filter=".manage">Managenment</option>
-                                        <option value="" data-filter=".other">Other</option>
-                                        <option value="" data-filter=".tech">Technology</option>
-                                    </select>
-                                </div>
-                                <a href="#" class="sort-col active"></a>
-                                <a href="#" class="sort-row"></a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -81,9 +65,7 @@
                                     @if (strpos($upc->date1, date("M, Y")) !== false || strpos($upc->date2, date("M, Y")) !== false || strpos($upc->date3, date("M, Y")) !== false || strpos($upc->date4, date("M, Y")) !== false)
                                     
                                         <li>
-                                            <div class="thumb">
-                                                <img src="images/course/{{$upc->image}}" alt="image">
-                                            </div>
+                                            
                                             <div class="text">
                                                 <h6><a href="/sc/{{$upc->subjectid}}">{{$upc->subjectname}}</a></h6>
                                                 <p>Date: 
@@ -123,26 +105,14 @@
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-8 portfolio-reponsive portfolio-reponsive2">         
-                        <div class="portfolio style4">               
-                                        
-                        <div class="testimonial-content" style="background-color: white; padding: 20px;">
-                            <h2>General Overview:</h2>
-                            <hr>
-                            <i class="fa fa-quote-left"></i>
-                            
-                            <p>{!!$catimage->first()->description!!}</p>
-                            <hr>
-                            <p><strong>Status: </strong> {{$catimage->first()->remarks}}</p>
-                        </div>                                       
-                                        
-
+                        <div class="portfolio style4">   
                             @foreach ($subjectlist as $sc)                            
-
-                                <article class="entry">                                    
-                                    <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>                                                                      
-                                </article>
-                            @endforeach
-                            
+                                <a href="/sc/{{$sc->subjectid}}">
+                                    <article class="entry">                                    
+                                        <h3 class="entry-title">{{$sc->subjectname}}</h3>                                                                      
+                                    </article>
+                                </a>
+                            @endforeach                            
                         </div>
                        
                     </div><!-- portfolio -->
