@@ -6,6 +6,8 @@ use App\coursecatrgories;
 use App\subjectlists;
 use App\Contents;
 use App\Syllabus;
+use App\courseregs;
+use Auth;
 use Illuminate\Http\Request;
 use File;
 
@@ -345,5 +347,36 @@ class CoursecatrgoriesController extends Controller
         return view('social_media',['coursecategories'=>$coursecategories]);
     }
 
-    
+    public function courseregister($subjectid,$amount){
+        $subject = subjectlists::where('subjectid','=',$subjectid)->first(); 
+        $user = Auth::user();
+        courseregs::create([
+            'name'=>$user->name,
+            'email'=>$user->email,
+            'coursename'=>$subject->name,
+            'courseid'=>$subjectid,
+            'amount'=>$amount,
+            'payment'=>"Upaid",
+            'approval'=>"Unapproved"            
+        ]);        
+        if($subject->amount!="Free"){
+            session()->flash('message','Your registration was successful! This course is Free');
+            return redirect()->back();
+        }else{
+            session()->flash('message','Your registration was successful, Please proceed to payment');
+            return view('payment',['user'=>$user,'subject'=>$subject,'amount'=>$amount]);
+        }
+        
+    }
+
+    public function paycourse($id){
+        $coursetable = courseregs::findOrFail($id);
+        $coursetable->payment=$request->amount."/".$request->payername."/".$request->paymentmethod."/".$request->payparticulars."/".$request->bank."/".$request->datedpaid;
+        $coursetable->save();
+                
+        
+            session()->flash('message','Your payment details have been received by our accounts department, we will confirm it soon and send you the status soon by email. Thank you for your interest in this course!');
+            return redirect(route('/home'));
+          
+    }
 }

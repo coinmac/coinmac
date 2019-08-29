@@ -47,6 +47,8 @@ Route::get('/sc/{subjectid}','CoursecatrgoriesController@course');
 
 Route::get('/courseregister/{subjectid}/{coursename}','CoursecatrgoriesController@courseregister');
 
+Route::put('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
+
 Route::get('/lesson/{id}','CoursecatrgoriesController@lesson');
 Route::get('/management','CoursecatrgoriesController@management')->name('management');
 Route::get('/about','CoursecatrgoriesController@about')->name('about');
@@ -67,6 +69,10 @@ Route::get('/social_media','CoursecatrgoriesController@social_media')->name('soc
 
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');    
+});
+
+Route::get('/migration', function() {
+    $exitCode = Artisan::call('migrate');    
 });
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

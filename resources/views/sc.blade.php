@@ -164,7 +164,11 @@
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
                         <div class="wrap-btn" style="font-size: 0.8em !important;">
-                            <a class="flat-btn" href="/registercourse/{{$course->subjectid}}/{{$course->subjectname}}">REGISTER FOR THIS COURSE</a>
+                            <a class="flat-btn" href="/registercourse/{{$course->subjectid}}/{{$course->amount}}">REGISTER (National)</a>
+                        </div>
+                        <hr>
+                        <div class="wrap-btn" style="font-size: 0.8em !important;">
+                            <a class="flat-btn" href="/registercourse/{{$course->subjectid}}/{{$course->amounti}}">REGISTER (International)</a>
                         </div>
                     </div>
                     <div class="widget widget-teacher">

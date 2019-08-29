@@ -291,7 +291,7 @@
                     </div><!-- col.md-8 -->
                     <div class="col-md-4 right-contact">
                         <div class="wrap-btn">
-                            <a class="flat-btn bg-color" href="/signup">ENROLL NOW</a> 
+                            <a class="flat-btn bg-color" href="/login">ENROLL NOW</a> 
                         </div>
                     </div><!-- col.md-4 -->
                 </div><!-- row -->
