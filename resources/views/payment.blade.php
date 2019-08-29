@@ -19,7 +19,7 @@
                                 <li class="list-group-item disabled">Notifications</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <form action="{{route('paycourse', $subject->id)}}" method="post">
                                 @csrf
                                 @method('put')
@@ -35,8 +35,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="payername">Payers Name</label>
-                                    <input type="text" class="form-control" name="payername" id="payername" placeholder="Course Title">
+                                    <label for="payername">Payer's Name</label>
+                                    <input type="text" class="form-control" name="payername" id="payername" placeholder="Who made the payment">
                                 </div>
 
                                 <div class="form-group">
@@ -59,7 +59,7 @@
                                 
                                 <div class="form-group">
                                     <label for="payparticulars">Payment Ref</label>
-                                    <input type="text" class="form-control" name="payparticulars" id="payparticulars" placeholder="Payment Refs">
+                                    <input type="text" class="form-control" name="payparticulars" id="payparticulars" placeholder="Transfer Ref/Teller/Check No">
                                 </div>
 
                                 <div class="form-group">
@@ -75,7 +75,7 @@
                             </form>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h4>Payment Instructions</h4>
                             <hr>
                             <p>Please proceed to make through online payment, bank deposit, or mobile transfer.</p>
