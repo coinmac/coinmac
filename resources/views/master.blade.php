@@ -270,6 +270,7 @@
                                 
                                 <div class="top-search">                        
                                     <form action="{{route('searchcourses')}}"  id="searchform-all" method="post">
+                                        @csrf
                                         <div>
                                             <input type="hidden" name="coursecategory" value="All">
                                             <input type="text" id="s" name="keyword" class="sss" placeholder="Search courses...">
