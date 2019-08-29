@@ -138,42 +138,8 @@
 
                             @foreach ($subjectlist as $sc)                            
 
-                                <article class="entry">
-                                    @php
-                                    if($sc->image!="bookcover.jpg"){
-                                        $image = $sc->subjectid.'/'.$sc->image;
-                                    @endphp    
-                                        <div class="featured-post" style="@media screen and (min-width: 800px) { width: 50% !important; overflow: hidden;} ">
-                                            <a href="/sc/{{$sc->subjectid}}"><img src="/images/course/{{$image}}" alt="image"></a>
-                                        </div>
-                                    @php
-                                    }
-                                    @endphp
-                                    <div class="entry-post">
-                                        <div class="entry-categories">
-                                            <span><a href="#">{{$sc->coursecategory}}</a></span>
-                                        </div>
-                                        <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
-                                        <div class="entry-author">
-                                            <span>Dates: <br>
-                                                <a href="#">{{$sc->date1}}</a><br>
-                                                <a href="#">{{$sc->date2}}</a><br>
-                                                <a href="#">{{$sc->date3}}</a><br>
-                                                <a href="#">{{$sc->date4}}</a>
-                                            </span>
-                                        </div>
-                                        <div class="entry-number">
-                                            <div class="entry-count">
-                                                TOTAL COURSES:<span class="count"> 100</span>
-                                            </div>
-                                            <div class="entry-price color-green">
-                                                COURSE FEE :<span class="green">{{$sc->amount}}</span>
-                                            </div>
-                                            <div class="wrap-btn" style="float: right">
-                                                <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
-                                            </div>
-                                        </div>
-                                    </div><!-- entry-post -->
+                                <article class="entry">                                    
+                                    <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>                                                                      
                                 </article>
                             @endforeach
                             

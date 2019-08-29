@@ -409,7 +409,7 @@ class CoursecatrgoriesController extends Controller
 
         $coursecategories = coursecatrgories::select('id','coursename','category','description','image','remarks','courseid')->get();
         // $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('coursecatid','=',$courseid)->paginate(10); 
-        $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('subjectname', 'LIKE', '%'.$keyword.'%')->orWhere('coursecategory', 'LIKE', '%'.$coursecategory.'%')->paginate(10); 
+        $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('subjectname', 'LIKE', '%'.$keyword.'%')->orWhere('coursecategory', 'LIKE', '%'.$coursecategory.'%')->get(); 
         $catimage = collect($coursecategories)->where('coursename', $coursecategory); 
 
         return view('searchcourses',['coursecategories'=>$coursecategories, 'subjectlist'=>$subjectlist,'catimage'=>$catimage]);
