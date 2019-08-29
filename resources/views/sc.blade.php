@@ -163,7 +163,9 @@
                             <li>Level: <span>{{$course->level}}</span></li>
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
-                        <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgrey;">
+                        <hr>
+                        <br>
+                        <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgreen;">
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amount}}">
@@ -187,11 +189,11 @@
                                         <option value="Others">Others</option>
                                     </select>
                                 </div>
-                            <div class="wrap-btn" style="font-size: 0.8em !important;">
-                                <button class="flat-btn" type="submit">REGISTER (National)</button>
+                            <div style="text-align: center">
+                                <button class="btn btn-primary btn-sm" type="submit">REGISTER (National)</button>
                             </div>
                         </form>
-                        <hr>
+                        <hr><br>
                         <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey;">
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
@@ -216,8 +218,8 @@
                                     <option value="Others">Others</option>
                                 </select>
                             </div>
-                            <div class="wrap-btn" style="font-size: 0.8em !important;">
-                                <button class="flat-btn" type="submit">REGISTER (International)</button>
+                            <div style="text-align: center">
+                                <button class="btn btn-primary btn-sm" type="submit">REGISTER (International)</button>
                             </div>
                         </form>
                     </div>
