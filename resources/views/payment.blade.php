@@ -109,7 +109,7 @@
                                 <p>
                                     <form >
                                         <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <button type="button" onclick="payWithPaystack({{$amount}})">Pay</button> 
+                                        <button type="button" onclick="payWithPaystack({{preg_replace("/[^0-9]/","",$amount)}})">Pay</button> 
                                     </form>
                                                
                                 </p>
