@@ -243,7 +243,7 @@
                             <p class="search-form-select">
                                 <select name="coursecategory" class="select-field" >
                                     <option value="All">ALL CATEGORIES</option>                                        
-                                    @foreach (array_unique($coursecategories) as $cats)
+                                    @foreach ($coursecategories->unique('coursename') as $cats)
                                         <option value="{{$cats->coursename}}">{{$cats->coursename}}</option>
                                     @endforeach
                             </select>
