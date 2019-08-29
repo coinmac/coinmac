@@ -386,7 +386,7 @@ class CoursecatrgoriesController extends Controller
 
     public function makepayment($id,$amount){
 
-        $subject = subjectlists::where('subjectid','=',$id)->first(); 
+        $subject = subjectlists::where('id','=',$id)->first(); 
         
         return view('payment',['subject'=>$subject,'amount'=>$amount]);
     }
