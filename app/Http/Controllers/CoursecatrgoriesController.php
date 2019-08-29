@@ -347,7 +347,7 @@ class CoursecatrgoriesController extends Controller
         return view('social_media',['coursecategories'=>$coursecategories]);
     }
 
-    public function registercourse(){
+    public function registercourse(Request $request){
         $subjectid = $request->subjectid;
         $amount = $request->amount;
         $subject = subjectlists::where('subjectid','=',$subjectid)->first(); 
