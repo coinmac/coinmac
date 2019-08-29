@@ -163,7 +163,7 @@
                             <li>Level: <span>{{$course->level}}</span></li>
                             <li>Courses Category:<span>{{$course->coursecategory}}</span></li>
                         </ul>
-                        <form action="{{route('registercourse')}}">
+                        <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgrey;">
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amount}}">
@@ -192,7 +192,7 @@
                             </div>
                         </form>
                         <hr>
-                        <form action="{{route('registercourse')}}" style="background-color: lightgrey;">
+                        <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey;">
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amounti}}">
