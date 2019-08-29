@@ -236,11 +236,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="f-select">
-                <form action="#" method="post" id="formsearch-flatcourse" class="formsearch">
+                <form action="{{route('searchcourses')}}" method="post" id="formsearch-flatcourse" class="formsearch">
+                    @csrf
                     <ul class="form-wrap">
                         <li class="col-md-4 form-select">
                             <p class="search-form-select">
-                                <select class="select-field" >
+                                <select name="coursecategory" class="select-field" >
                                     <option value="All">ALL CATEGORIES</option>                                        
                                     @foreach (array_unique($coursecategories) as $cats)
                                         <option value="{{$cat->coursename}}">{{$cat->coursename}}</option>
@@ -250,13 +251,13 @@
                         </li>
                         <li class="col-md-5 form-key">
                             <p class="search-form-keyword">
-                                <input type="text" id="keyword" name="keyword" value="" required="required" placeholder="COURE KEYWORD">
+                                <input type="text" id="keyword" name="keyword" value="" required="required" placeholder="COURSE KEYWORD">
                             </p>
                         </li>
                         <li class="col-md-3 form-btn">
                             <div class="search-form-btn">
                                 <div class="wrap-btn">
-                                    <a class="flat-btn bg-color style3" href="#">SEARCH COURSE</a> 
+                                    <button class="flat-btn bg-color style3">SEARCH COURSE</button> 
                                 </div>
                             </div>
                         </li>

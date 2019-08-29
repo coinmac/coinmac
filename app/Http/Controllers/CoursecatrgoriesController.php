@@ -15,7 +15,7 @@ class CoursecatrgoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media']);
+        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media','searchcourses']);
     }
     /**
      * Display a listing of the resource.
@@ -401,5 +401,17 @@ class CoursecatrgoriesController extends Controller
         $del=courseregs::where('id',$id)->delete();
             session()->flash('message','The selected course has been deleted successfully!');
         return redirect()->back();
+    }
+
+    public function searchcourse(Request $request){
+        $coursecategory = $request->coursecategory;
+        $keyword = $request->keyword;
+
+        $coursecategories = coursecatrgories::select('id','coursename','category','description','image','remarks','courseid')->get();
+        // $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('coursecatid','=',$courseid)->paginate(10); 
+        $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('subjectname', 'LIKE', '%'.$keyword.'%')->paginate(10); 
+        $catimage = collect($coursecategories)->where('coursename', $coursecategory); 
+
+        return view('coursegroup',['coursecategories'=>$coursecategories, 'subjectlist'=>$subjectlist,'type'=>$type, 'catimage'=>$catimage]);
     }
 }
