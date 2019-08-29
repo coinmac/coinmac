@@ -51,7 +51,7 @@
                                                 <div class="row">
                                                     <div class="col-sm-8">
                                                             <div class="btn-group" role="group" aria-label="Button group">
-                                                                <a href="/deletecourse/{{$course->id}}" class="btn-group btn-xs btn-danger">Delete</a>
+                                                                <a href="/deletecourse/{{$course->id}}" class="btn-group btn-xs btn-danger" onclick="return confirm('Are you sure you want to delete this course from your account?')">Delete</a>
                                                                 <a href="/makepayment/{{$course->id}}/{{$course->amount}}" class="btn-group btn-xs btn-success">Make Payment</a>
                                                                 <a href="/sc/{{$course->courseid}}" class="btn-group btn-xs btn-primary">Open Course</a>
                                                             </div>

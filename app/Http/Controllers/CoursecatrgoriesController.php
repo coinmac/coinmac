@@ -392,8 +392,8 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function mycourses(){
-        $mycourses = courseregs::where('email','=',Auth::user()->email);
-
+        $mycourses = courseregs::where('email','=',Auth::user()->email)->get();
+        session()->flash('message','My Registered Courses!');
         return view('mycourses',['mycourses'=>$mycourses]);
     }
 
