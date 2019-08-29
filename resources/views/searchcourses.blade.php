@@ -9,12 +9,12 @@
                         
                             
                         
-                        <h1 style="text-shadow: 2px 2px #000000;">{{$subjectlist->first()->coursecategory}}</h1>
+                        <h1 style="text-shadow: 2px 2px #000000;">{{$coursecategory}}</h1>
                         <div class="breadcrumbs">
                             <ul  style="text-shadow: 2px 2px #000000;">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#">Search</a></li>
-                                <li>{{$subjectlist->first()->coursecategory}}</li>
+                                <li>{{$keyword}}</li>
                             </ul>
                         </div><!-- breadcrumb -->                     
                             
@@ -100,8 +100,9 @@
                         <div class="portfolio style4">   
                             @foreach ($subjectlist as $sc)                            
                                 <a href="/sc/{{$sc->subjectid}}">
-                                    <article class="entry">                                    
-                                        <h3 class="entry-title">{{$sc->subjectname}}</h3>                                                                      
+                                    <article class="entry" style="margin-bottom: 2px;">                                    
+                                        <h3 class="entry-title">{{$sc->subjectname}}</h3> 
+                                        <small style="color: red">{{$sc->coursecategory}}</small>                                                                     
                                     </article>
                                 </a>
                             @endforeach                            
