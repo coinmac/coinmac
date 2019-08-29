@@ -358,7 +358,7 @@ class CoursecatrgoriesController extends Controller
             'coursename'=>$subject->subjectname,
             'courseid'=>$subjectid,
             'amount'=>$request->amount,
-            'coursedates'=>$request->dates,
+            'dates'=>$request->dates,
             'venue'=>$request->venue,
             'payment'=>"Unpaid",
             'approval'=>"Unapproved"            
