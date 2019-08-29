@@ -14,7 +14,8 @@
                             <h4>USER MENU</h4>
                             <hr>
                             <ul class="list-group">
-                                <li class="list-group-item active"><a href="/mycourses">My Courses</a></li>
+                                <li class="list-group-item active"><a href="/home">Register A New Course</a></li>
+                                <li class="list-group-item "><a href="/mycourses">My Courses</a></li>
                                 <li class="list-group-item"><a href="#">Times table</a></li>
                                 <li class="list-group-item"><a href="#">My Payments</a></li>
                                 <li class="list-group-item"><a href="/home">Register New Course</a></li>
