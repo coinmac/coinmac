@@ -21,8 +21,10 @@
                         </div>
                         <div class="col-md-9">
                             @foreach ($mycourses as $course)
+                            
+                            
                                 <div class="col-md-6">
-                                    <div class="card">
+                                    <div class="card bg-info">
                                         <div class="card-header">
                                             <div class="row">
                                                 <div class="col-sm-6">
