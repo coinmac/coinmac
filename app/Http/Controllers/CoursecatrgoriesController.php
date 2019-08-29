@@ -412,6 +412,6 @@ class CoursecatrgoriesController extends Controller
         $subjectlist = subjectlists::select('id','subjectname', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('subjectname', 'LIKE', '%'.$keyword.'%')->orWhere('coursecategory', 'LIKE', '%'.$coursecategory.'%')->paginate(10); 
         $catimage = collect($coursecategories)->where('coursename', $coursecategory); 
 
-        return view('coursegroup',['coursecategories'=>$coursecategories, 'subjectlist'=>$subjectlist,'catimage'=>$catimage]);
+        return view('searchcourses',['coursecategories'=>$coursecategories, 'subjectlist'=>$subjectlist,'catimage'=>$catimage]);
     }
 }
