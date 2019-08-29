@@ -1,7 +1,7 @@
 @extends('amaster')
 
 @section('content')
-
+<hr>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -23,7 +23,7 @@
                             @if (auth()->user()->email!="coinmacsms@gmail.com")
                                 <div style="text-align: center;">
                                     <a class="btn btn-success" href="/mycourses">Manage My Courses</a><br>
-                                    <h1>Select Course to Register</h1>
+                                    
                                 </div>
                                 
                                 <hr>

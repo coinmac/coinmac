@@ -88,15 +88,22 @@
                         </div><!-- col-md-8 -->
                         <div class="col-md-4">
                             <div class="wrap-flat">
-                                <ul class="flat-login-register">
-                                    <li><a href="/login">Login</a></li>
-                                    <li><a href="/register">Register</a></li>
-                                </ul>
+                                    @auth
+                                    <ul class="flat-login-register">
+                                        <li><a href="#">Hello {{auth()->user()->name}}</a></li>
+                                        <li><a href="/home">My Account</a></li>
+                                        <li><a href="/logout" class="label label-danger">Logout</a></li>
+                                    </ul>
+                                @endauth
+                                @guest
+                                    <ul class="flat-login-register">
+                                        <li><a href="/login">Login</a></li>
+                                        <li><a href="/register">Register</a></li>
+                                    </ul>
+                                @endguest
                                 <ul class="flat-socials">
                                     <li><a href=""><i class="fa fa-facebook"></i></a></li>
                                     <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
                                 </ul>
                             </div><!-- wrap-flat -->
                         </div><!-- col-md-4 -->
