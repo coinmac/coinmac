@@ -115,7 +115,7 @@
                             <div class="wrap-flat">
                                 @auth
                                     <ul class="flat-login-register">
-                                        <li><a href="#">Hello {{auth()->user->()->name}}</a></li>
+                                        <li><a href="#">Hello {{auth()->user()->name}}</a></li>
                                         <li><a href="/home">My Account</a></li>
                                         <li><a href="/logout" class="label label-danger">Logout</a></li>
                                     </ul>
