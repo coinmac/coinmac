@@ -22,6 +22,7 @@
                         <div class="col-md-6">
                             <form action="{{route('paycourse', $subject->id)}}" method="post">
                                 @csrf
+                                @method('put')
                                 <input type="hidden" name="subjectid" value="{{$subject->subjectid}}">
                                 <div class="form-group">
                                   <label for="coursename">Course Title</label>
