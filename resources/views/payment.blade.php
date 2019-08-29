@@ -38,7 +38,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="payername">Payer's Name</label>
+                                    <label for="payername">Payers Name</label>
                                     <input type="text" class="form-control" name="payername" id="payername" placeholder="Who made the payment">
                                 </div>
 
@@ -102,7 +102,17 @@
                                 
                                 Account Name:COINMAC INTERNATIONAL LIMITED.</p>
                                 <p>Online Payment</p>
+                                <hr>
+                                ONLINE PAYMENT
+                                <hr>
                                 <p>Information for Online payment will be published here soon</p>
+                                <p>
+                                    <form >
+                                        <script src="https://js.paystack.co/v1/inline.js"></script>
+                                        <button type="button" onclick="payWithPaystack({{$amount}})">Pay</button> 
+                                    </form>
+                                               
+                                </p>
                         </div>
                     </div>
 

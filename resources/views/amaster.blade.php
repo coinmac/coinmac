@@ -302,6 +302,34 @@
          });  
     
     </script>  
+
+    <script>
+        function payWithPaystack(fee){
+            var handler = PaystackPop.setup({
+            key: 'sk_live_544fccffe42b11e9913f15ac8002c78e479e49ad',
+            email: 'coinmacsms@gmail.com',
+            amount: fee,
+            currency: "NGN",
+            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            metadata: {
+                custom_fields: [
+                    {
+                        display_name: "COINMAC INTERNATIONAL INC",
+                        variable_name: "COINMAC",
+                        value: "+2348023262908"
+                    }
+                ]
+            },
+            callback: function(response){
+                alert('success. transaction ref is ' + response.reference);
+            },
+            onClose: function(){
+                alert('window closed');
+            }
+            });
+            handler.openIframe();
+        }
+        </script>
     <!-- Revolution Slider -->
     <script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js"></script>
