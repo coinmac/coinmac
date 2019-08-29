@@ -398,7 +398,7 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function deletecourse($id){
-        $del=courseegs::where('id',$id)->delete();
+        $del=courseregs::where('id',$id)->delete();
             session()->flash('message','The selected course has been deleted successfully!');
         return redirect()->back();
     }
