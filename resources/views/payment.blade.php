@@ -108,8 +108,13 @@
                                 <p>Information for Online payment will be published here soon</p>
                                 <p>
                                     <form >
+                                        <div class="form-group">
+                                          <label for="amountopay">Enter Amount to Pay in Naira</label>
+                                          <input type="text" class="form-control" name="amountopay" id="amountopay" value="{{preg_replace("/[^0-9]/","",$amount)}}" placeholder="Amount in Naira">
+                                          
+                                        </div>
                                         <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <button type="button" onclick="payWithPaystack({{preg_replace("/[^0-9]/","",$amount)}})">Pay Online</button> 
+                                        <button type="button" onclick="payWithPaystack()">Pay Online</button> 
                                     </form>
                                                
                                 </p>

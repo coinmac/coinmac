@@ -304,11 +304,11 @@
     </script>  
 
     <script>
-        function payWithPaystack(fee){
+        function payWithPaystack(){
             var handler = PaystackPop.setup({
             key: 'pk_live_41a33b11ee52220def94d902a207e6dacade7016',
             email: 'coinmacsms@gmail.com',
-            amount: fee,
+            amount: $("#amountopay").val()+"00",
             currency: "NGN",
             ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
             metadata: {
