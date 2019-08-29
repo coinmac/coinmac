@@ -29,7 +29,7 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h3>National Courses</h3>
+                                        <h2>National Courses</h2>
                                         <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
@@ -41,9 +41,10 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-                                    <hr>
+                                   
                                     <div class="col-md-12">
-                                        <h3>International Courses</h3>
+                                        <hr>
+                                        <h2>International Courses</h2>
                                         <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
@@ -55,9 +56,10 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-                                    <hr>
+                                    
                                     <div class="col-md-12">
-                                        <h3>Diploma Courses</h3>
+                                        <hr>
+                                        <h2>Diploma Courses</h2>
                                         <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
@@ -69,9 +71,10 @@
                                             @endforeach                                                                
                                         </ul>
                                     </div>
-                                    <hr>
+                                    
                                     <div class="col-md-12">
-                                        <h3>Certificate Courses</h3>
+                                        <hr>
+                                        <h2>Certificate Courses</h2>
                                         <hr>
                                         <ul  class="c2">
                                             @foreach ($coursecategories as $cc) 
