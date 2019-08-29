@@ -380,7 +380,7 @@ class CoursecatrgoriesController extends Controller
                 
         
             session()->flash('message','Your payment details have been received by our accounts department, we will confirm it soon and send you the status soon by email. Thank you for your interest in this course!');
-            return redirect(route('/home'));
+            return redirect('/home');
           
     }
 
