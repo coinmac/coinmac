@@ -373,7 +373,7 @@ class CoursecatrgoriesController extends Controller
         
     }
 
-    public function paycourse($id){
+    public function paycourse(Request $request, $id){
         $coursetable = courseregs::findOrFail($id);
         $coursetable->payment=$request->amount."/".$request->payername."/".$request->paymentmethod."/".$request->payparticulars."/".$request->bank."/".$request->datedpaid;
         $coursetable->save();
