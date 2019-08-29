@@ -104,14 +104,14 @@
             <div class="top top-style3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <ul class="flat-information">
                                 <li>Mon - Fri: 8.00 - 18:00</li>
                                 <li><span>P:</span><a href=""> 234-802-326-2908</a></li>
                                 <li><span>E:</span><a href="">  info[@]coinmac.org</a></li>
                             </ul>
                         </div><!-- col-md-8 -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="wrap-flat">
                                 @auth
                                     <ul class="flat-login-register">
@@ -130,8 +130,6 @@
                                 <ul class="flat-socials">
                                     <li><a href=""><i class="fa fa-facebook"></i></a></li>
                                     <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
                                 </ul>
                             </div><!-- wrap-flat -->
                         </div><!-- col-md-4 -->
