@@ -9,7 +9,7 @@
                         
                             
                         
-                        <h1 style="text-shadow: 2px 2px #000000;">{{$subjectlist->first()->coursecategory}} <br> <small style="color: yellow">({{$type}})</small></h1>
+                        <h1 style="text-shadow: 2px 2px #000000;">{{$subjectlist->first()->coursecategory}}</h1>
                         <div class="breadcrumbs">
                             <ul  style="text-shadow: 2px 2px #000000;">
                                 <li><a href="/">Home</a></li>
