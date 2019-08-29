@@ -47,7 +47,7 @@ Route::get('/sc/{subjectid}','CoursecatrgoriesController@course');
 
 Route::post('registercourse','CoursecatrgoriesController@registercourse')->name('registercourse');
 
-Route::get('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
+Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
 Route::get('/deletecourse/{id}', 'CoursecatrgoriesController@deletecourse');
 Route::get('/makepayment/{id}/{amount}', 'CoursecatrgoriesController@makepayment');
 Route::get('/mycourses', 'CoursecatrgoriesController@mycourses');
