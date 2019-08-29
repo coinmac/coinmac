@@ -383,4 +383,23 @@ class CoursecatrgoriesController extends Controller
             return redirect(route('/home'));
           
     }
+
+    public function makepayment($subjectid,$amount){
+
+        $subject = subjectlists::where('subjectid','=',$subjectid)->first(); 
+        
+        return view('payment',['subject'=>$subject,'amount'=>$amount]);
+    }
+
+    public function mycourses(){
+        $mycourses = courseregs::where('email','=',Auth::user()->email);
+
+        return view('mycourses',['mycourses'=>$mycourses]);
+    }
+
+    public function deletecourse($id){
+        $del=courseegs::where('id',$id)->delete();
+            session()->flash('message','The selected course has been deleted successfully!');
+        return redirect()->back();
+    }
 }
