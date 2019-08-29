@@ -45,7 +45,7 @@ Route::get('/coursegroup/{courseid}/{type}/{coursename}','CoursecatrgoriesContro
 
 Route::get('/sc/{subjectid}','CoursecatrgoriesController@course');
 
-Route::post('/registercourse','CoursecatrgoriesController@registercourse');
+Route::any('/registercourse','CoursecatrgoriesController@registercourse');
 
 Route::put('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
 
