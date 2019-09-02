@@ -68,6 +68,7 @@ Route::get('/post/{id}','ContentsController@post')->name('post');
 Route::get('/gpost/{id}','ContentsController@post')->name('gpost');
 Route::get('/contact_us','ContentsController@contact_us')->name('contact_us');
 Route::get('/social_media','CoursecatrgoriesController@social_media')->name('social_media');
+
 Route::post('searchcourses','CoursecatrgoriesController@searchcourses')->name('searchcourses');
 
 Route::get('/clear-cache', function() {
