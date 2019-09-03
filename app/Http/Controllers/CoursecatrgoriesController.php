@@ -420,6 +420,7 @@ class CoursecatrgoriesController extends Controller
         }else{
             $regdata = courseregs::where('id',$id)->first();
             $regdata->approval="Confirmed";        
+            $regdata->save();
             session()->flash('message','The course payment has been confirmed and approved!');
         }
         return redirect()->back();
