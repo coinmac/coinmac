@@ -23,9 +23,9 @@
                             </ul>
                         </div>
                         <div class="col-md-9">
-                            <table class="table table-light">
+                            <table class="table table-light table-striped">
                                 <thead class="thead-light">
-                                    <tr>
+                                    <tr class="h2">
                                         <th>Course Name</th>
                                         <th>Course Fee</th>
                                         <th>Payment Information</th>
@@ -36,7 +36,7 @@
                                     @foreach ($payments as $pay)
                                         <tr>
                                             <td>{{$pay->coursename}}</td>
-                                            <td>{{$pay->coursefee}}</td>
+                                            <td>{{$pay->amount}}</td>
                                             <td>{{$pay->payment}}</td>
                                             <td>{{$pay->approval}}</td>
                                         </tr>
