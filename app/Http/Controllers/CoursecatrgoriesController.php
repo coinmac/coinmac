@@ -12,6 +12,8 @@ use App\User;
 use Auth;
 use Illuminate\Http\Request;
 use File;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\notificationMail;
 
 class CoursecatrgoriesController extends Controller
 {
