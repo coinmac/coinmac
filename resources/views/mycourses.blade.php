@@ -19,7 +19,7 @@
                                 <li class="list-group-item"><a href="#" onclick="return alert('Times table coming soon!')">Times table</a></li>
                                 <li class="list-group-item"><a href="/mypayments">My Payments</a></li>
                                 <li class="list-group-item"><a href="/home">Register New Course</a></li>
-                                <li class="list-group-item disabled"><a href="#">Notifications</a></li>
+                                <li class="list-group-item"><a href="/notifications">Notifications</a></li>
                             </ul>
                         </div>
                         <div class="col-md-9">
