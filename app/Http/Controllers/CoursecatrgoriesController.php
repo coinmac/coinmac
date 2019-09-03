@@ -405,9 +405,9 @@ class CoursecatrgoriesController extends Controller
 
     public function mypayments(){
         if(Auth::user()->email!='coinmacsms@gmail.com'){
-            $payments = courseregs::where('email','=',Auth::user()->email)->get();
+            $payments = courseregs::where('email','=',Auth::user()->email)->orderBy('created_at', 'desc')->get();
         }else{
-            $payments = courseregs::all();
+            $payments = courseregs::orderBy('created_at', 'desc')->get();
         }
         
         return view('mypayments',['payments'=>$payments]);
