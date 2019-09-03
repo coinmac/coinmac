@@ -51,6 +51,7 @@ Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('pa
 Route::get('/deletecourse/{id}', 'CoursecatrgoriesController@deletecourse');
 Route::get('/makepayment/{id}/{amount}', 'CoursecatrgoriesController@makepayment');
 Route::get('/mycourses', 'CoursecatrgoriesController@mycourses');
+Route::get('/mypayments', 'CoursecatrgoriesController@mypayments');
 
 Route::get('/lesson/{id}','CoursecatrgoriesController@lesson');
 Route::get('/management','CoursecatrgoriesController@management')->name('management');

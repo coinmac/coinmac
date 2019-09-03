@@ -403,6 +403,18 @@ class CoursecatrgoriesController extends Controller
         return redirect()->back();
     }
 
+    public function mypayments(){
+        if(Auth::user()->email!='coinmacsms@gmail.com'){
+            $payments = courseregs::where('email','=',Auth::user()->email)->get();
+        }else{
+            $payments = courseregs::all();
+        }
+        
+        $subject = subjectlists::where('id','=',$id)->first(); 
+        
+        return view('mypayments',['payments'=>$payments]);
+    }
+
     public function searchcourses(Request $request){
         $coursecategory = $request->coursecategory;
         $keyword = $request->keyword;
