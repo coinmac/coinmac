@@ -391,6 +391,28 @@ class CoursecatrgoriesController extends Controller
         return view('payment',['subject'=>$subject,'amount'=>$amount]);
     }
 
+    public function sendnotice($email){
+
+        $receiver = Auth::where('email','=',$email)->first(); 
+        
+        return view('sendnotice',['receiver'=>$receiver]);
+    }
+
+    public function savenotice(Request $request){
+
+        notifications::create([
+            'to'=>$request->to,            
+            'ntitle'=>$request->ntitle,
+            'body'=>$request->body,
+            'sender'=>Auth::user()->email,
+            'status'=>"New"                        
+        ]);
+
+        session()->flash('message','The Message was sent successfully');
+        
+        return redirect()->back();
+    }
+
     public function mycourses(){
         $mycourses = courseregs::where('email','=',Auth::user()->email)->get();
         session()->flash('message','My Registered Courses!');
@@ -411,6 +433,16 @@ class CoursecatrgoriesController extends Controller
         }
         
         return view('mypayments',['payments'=>$payments]);
+    }
+
+    public function notifications(){
+        if(Auth::user()->email!='coinmacsms@gmail.com'){
+            $notices = notifications::where('to','=',Auth::user()->email)->orWhere('sender','=',Auth::user()->email)->orderBy('created_at', 'desc')->get();
+        }else{
+            $notices = notifications::orderBy('created_at', 'desc')->get();
+        }
+        
+        return view('notifications',['notices'=>$notices]);
     }
 
     public function approvereg($id){

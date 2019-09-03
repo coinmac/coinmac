@@ -47,6 +47,12 @@ Route::get('/sc/{subjectid}','CoursecatrgoriesController@course');
 
 Route::post('registercourse','CoursecatrgoriesController@registercourse')->name('registercourse');
 
+Route::get('/sendnotice/{email}','CoursecatrgoriesController@sendnotice')->name('sendnotice');
+
+Route::post('savenotice','CoursecatrgoriesController@savenotice')->name('savenotice');
+
+Route::get('/notifications','CoursecatrgoriesController@notifications')->name('notifications');
+
 Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
 Route::get('/deletecourse/{id}', 'CoursecatrgoriesController@deletecourse');
 Route::get('/makepayment/{id}/{amount}', 'CoursecatrgoriesController@makepayment');

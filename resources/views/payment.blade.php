@@ -21,7 +21,7 @@
                                 <li class="list-group-item disabled"><a href="#">Notifications</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <h2>PAYMENT FORM</h2>
                             <hr>
                             <form action="{{route('paycourse', $subject->id)}}" method="post">

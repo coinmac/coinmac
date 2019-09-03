@@ -23,37 +23,38 @@
                             </ul>
                         </div>
                         <div class="col-md-9">
-                            <h3>Payments</h3><hr>
+                            <h3>Messages / Notifications </h3>
+                            <hr>
                             <table class="table table-light table-striped">
                                 <thead class="thead-light">
                                     <tr class="h3">
                                         @if (auth()->user()->email=="coinmacsms@gmail.com")
-                                            <th>Student</th>
+                                            <th>Reciever</th>
                                         @endif
-                                        <th>Course Name</th>
-                                        <th>Course Fee</th>
-                                        <th>Payment Information</th>
-                                        <th>Payment Status</th>
+                                        <th>Title</th>
+                                        <th>Body</th>
+                                        <th>Date</th>
+                                        
                                         @if (auth()->user()->email=="coinmacsms@gmail.com")
                                             <th>Action</th>
                                         @endif
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($payments as $pay)
+                                    @foreach ($notices as $n)
                                         <tr>
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
-                                                <td>{{$pay->name}}</td>
+                                                <td>{{$n->to}}</td>
                                             @endif
-                                            <td>{{$pay->coursename}}</td>
-                                            <td>{{$pay->amount}}</td>
-                                            <td>{{$pay->payment}}</td>
-                                            <td>{{$pay->approval}}</td>
+                                            <td>{{$n->ntitle}}</td>
+                                            <td>{{$n->body}}</td>
+                                            <td>{{$n->created_at}}</td>
+                                            
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Button group">
-                                                            <a href="/approvereg/{{$pay->id}}" class="btn btn-sm btn-success btn-group">Approve</a>
-                                                            <a href="/sendnotice/{{$pay->email}}" class="btn btn-sm btn-primary btn-group">Contact</a>
+                                                            <a href="#" class="btn btn-sm btn-success btn-group">Delete</a>
+                                                            <a href="#" class="btn btn-sm btn-primary btn-group">Read</a>
                                                     </div>
                                                     
                                                 </td>
@@ -63,14 +64,14 @@
                                     
                                 </tbody>
                                 <tfoot class="h3">
-                                        <tr>
+                                        <tr class="h3">
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
-                                                <th>Student</th>
+                                                <th>Reciever</th>
                                             @endif
-                                            <th>Course Name</th>
-                                            <th>Course Fee</th>
-                                            <th>Payment Information</th>
-                                            <th>Payment Status</th>
+                                            <th>Title</th>
+                                            <th>Body</th>
+                                            <th>Date</th>
+                                            
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
                                                 <th>Action</th>
                                             @endif
