@@ -16,10 +16,12 @@ class notificationMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
-    }
+    public $request;
+
+     public function __construct(Request $request)
+  {
+       $this->request = $request;
+  }
 
     /**
      * Build the message.
@@ -29,6 +31,6 @@ class notificationMail extends Mailable
     public function build()
     {
         return $this->from('info@coinmac.org')
-                ->view('nmail');
+                ->view('nmail',['request'=> $this->request]);
     }
 }

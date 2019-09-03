@@ -412,7 +412,8 @@ class CoursecatrgoriesController extends Controller
             'sender'=>Auth::user()->email,
             'status'=>"New"                        
         ]);
-
+        
+        
         Mail::to($request->to)->send(new notificationMail($request));
 
         session()->flash('message','The Message was sent successfully!');
