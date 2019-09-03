@@ -7,6 +7,7 @@ use App\subjectlists;
 use App\Contents;
 use App\Syllabus;
 use App\courseregs;
+use App\notifications;
 use Auth;
 use Illuminate\Http\Request;
 use File;
