@@ -410,7 +410,9 @@ class CoursecatrgoriesController extends Controller
             'status'=>"New"                        
         ]);
 
-        session()->flash('message','The Message was sent successfully');
+        Mail::to($request->to)->send(new notificationMail($request));
+
+        session()->flash('message','The Message was sent successfully!');
         
         return redirect()->back();
     }

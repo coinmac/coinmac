@@ -22,7 +22,7 @@
                             </ul>
                         </div>
                         <div class="col-md-9">
-                            <h2>SEND NOTIFICATION</h2>
+                            <h2>SEND MESSAGE / NOTIFICATION</h2>
                             <hr>
                             <form action="{{route('savenotice')}}" method="post">
                                 @csrf
@@ -33,8 +33,8 @@
                                 </div>
                                     
                                 <div class="form-group">
-                                  <label for="ntitle">Notiifcation Title</label>
-                                  <input type="text" class="form-control" name="ntitle" id="ntitle" placeholder="Notification Title" readonly>
+                                  <label for="ntitle">Title</label>
+                                  <input type="text" class="form-control" name="ntitle" id="ntitle" placeholder="Title">
                                 </div>
 
                                 <div class="form-group">
@@ -59,4 +59,8 @@
         </div>
     
 </div>
+
+<script src="https://cdn.tiny.cloud/1/suid78wbd07chz8u503n1gejbv02axgyrzq9ztzlzd3ncgho/tinymce/5/tinymce.min.js"></script>
+<script>tinymce.init({selector:'#body'});</script>
+
 @endsection
