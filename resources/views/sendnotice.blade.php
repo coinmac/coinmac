@@ -28,8 +28,8 @@
                                 @csrf
                                 <input type="hidden" name="to" value="{{$receiver->email}}">
                                 <div class="form-group">
-                                    <label for="to">To</label>
-                                    <input type="text" class="form-control" name="to" value="{{$receiver->name}}" id="to" placeholder="Receiver" readonly>
+                                    <label for="name">To</label>
+                                    <input type="text" class="form-control" name="name" value="{{$receiver->name}}" id="name" placeholder="Receiver" readonly>
                                 </div>
                                     
                                 <div class="form-group">

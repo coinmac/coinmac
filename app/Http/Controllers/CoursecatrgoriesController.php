@@ -405,7 +405,8 @@ class CoursecatrgoriesController extends Controller
     public function savenotice(Request $request){
 
         notifications::create([
-            'to'=>$request->to,            
+            'to'=>$request->to,     
+            'name'=>$request->name,       
             'ntitle'=>$request->ntitle,
             'body'=>$request->body,
             'sender'=>Auth::user()->email,
