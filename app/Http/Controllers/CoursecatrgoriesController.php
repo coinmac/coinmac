@@ -410,8 +410,6 @@ class CoursecatrgoriesController extends Controller
             $payments = courseregs::all();
         }
         
-        $subject = subjectlists::where('id','=',$id)->first(); 
-        
         return view('mypayments',['payments'=>$payments]);
     }
 
