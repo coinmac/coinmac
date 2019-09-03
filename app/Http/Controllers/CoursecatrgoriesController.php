@@ -8,6 +8,7 @@ use App\Contents;
 use App\Syllabus;
 use App\courseregs;
 use App\notifications;
+use App\User;
 use Auth;
 use Illuminate\Http\Request;
 use File;
@@ -394,7 +395,7 @@ class CoursecatrgoriesController extends Controller
 
     public function sendnotice($email){
 
-        $receiver = Auth::where('email','=',$email)->first(); 
+        $receiver = User::where('email','=',$email)->first(); 
         
         return view('sendnotice',['receiver'=>$receiver]);
     }
