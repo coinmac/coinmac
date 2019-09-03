@@ -25,30 +25,48 @@
                         <div class="col-md-9">
                             <table class="table table-light table-striped">
                                 <thead class="thead-light">
-                                    <tr class="h2">
+                                    <tr class="h3">
+                                        @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                            <th>Student</th>
+                                        @endif
                                         <th>Course Name</th>
                                         <th>Course Fee</th>
                                         <th>Payment Information</th>
                                         <th>Payment Status</th>
+                                        @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                            <th>Approve</th>
+                                        @endif
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($payments as $pay)
                                         <tr>
+                                            @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                                <td>{{$pay->name}}</td>
+                                            @endif
                                             <td>{{$pay->coursename}}</td>
                                             <td>{{$pay->amount}}</td>
                                             <td>{{$pay->payment}}</td>
                                             <td>{{$pay->approval}}</td>
+                                            @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                                <td><a href="/approvereg/{{$pay->id}}" class="btn btn-sm btn-success">Approve</a></td>
+                                            @endif
                                         </tr>
                                     @endforeach
                                     
                                 </tbody>
-                                <tfoot>
+                                <tfoot class="h3">
                                         <tr>
+                                            @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                                <th>Student</th>
+                                            @endif
                                             <th>Course Name</th>
                                             <th>Course Fee</th>
                                             <th>Payment Information</th>
                                             <th>Payment Status</th>
+                                            @if (auth()->user()->email=="coinmacsms@gmail.com")
+                                                <th>Approve</th>
+                                            @endif
                                         </tr>
                                 </tfoot>
                             </table>

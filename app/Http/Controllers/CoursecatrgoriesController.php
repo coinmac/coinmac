@@ -413,6 +413,18 @@ class CoursecatrgoriesController extends Controller
         return view('mypayments',['payments'=>$payments]);
     }
 
+    public function approvereg($id){
+        
+        if(Auth::user()->email!='coinmacsms@gmail.com'){
+            session()->flash('message','You dont have the permission to perform this action!');
+        }else{
+            $regdata = courseregs::where('id',$id)->first();
+            $regdata->approval="Confirmed";        
+            session()->flash('message','The course payment has been confirmed and approved!');
+        }
+        return redirect()->back();
+    }
+
     public function searchcourses(Request $request){
         $coursecategory = $request->coursecategory;
         $keyword = $request->keyword;
