@@ -47,7 +47,7 @@
                                                 <td>{{$n->to}}</td>
                                             @endif
                                             <td>{{$n->ntitle}}</td>
-                                            <td>{!$n->body!}</td>
+                                            <td>{!!$n->body!!}</td>
                                             <td>{{$n->created_at}}</td>
                                             
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
