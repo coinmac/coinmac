@@ -31,6 +31,7 @@
                                         @if (auth()->user()->email=="coinmacsms@gmail.com")
                                             <th>Reciever</th>
                                         @endif
+                                        <th>Sender</th>
                                         <th>Title</th>
                                         <th>Body</th>
                                         <th>Date</th>
@@ -46,6 +47,7 @@
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
                                                 <td>{{$n->to}}</td>
                                             @endif
+                                            <td>{{$n->sender}}</td>
                                             <td>{{$n->ntitle}}</td>
                                             <td>{!!$n->body!!}</td>
                                             <td>{{$n->created_at}}</td>
@@ -68,6 +70,7 @@
                                             @if (auth()->user()->email=="coinmacsms@gmail.com")
                                                 <th>Reciever</th>
                                             @endif
+                                            <th>Sender</th>
                                             <th>Title</th>
                                             <th>Body</th>
                                             <th>Date</th>
