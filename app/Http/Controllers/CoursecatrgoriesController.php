@@ -14,6 +14,8 @@ use Illuminate\Http\Request;
 use File;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\notificationMail;
+use App\Mail\courseContentMail;
+use App\Mail\courseContentMail;
 
 class CoursecatrgoriesController extends Controller
 {
