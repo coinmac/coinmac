@@ -427,9 +427,11 @@ class CoursecatrgoriesController extends Controller
         $clist = subjectlists::where('coursecatid','=',$request->id)->get();
 
         if (strpos($request->recipients, ',') !== false) {
+            $emails = array();
             $recipient = explode(',',$request->recipients);
+            array_push($emails, $recipient);
 
-            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseListMail($clist));
+            Mail::to('coinmacltd@gmail.com')->cc($emails)->send(new courseListMail($clist));
         }else{
             Mail::to($request->recipients)->send(new courseListMail($clist));
         }        
