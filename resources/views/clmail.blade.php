@@ -27,7 +27,7 @@
                     $i = 0;
                     foreach ($clist as $c){     
                         if($i % 2 == 0){
-                            $bg =  "background-color: light-blue;";
+                            $bg =  "style='background-color: light-blue;''";
                         } else{
                             $bg = "";
                         }
