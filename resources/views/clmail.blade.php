@@ -14,7 +14,7 @@
                     <div class="row">
                        
                         <div class="col-md-10 col-md-offset-1">
-                            <h3>{{$clist->first()->coursename}}</h3>
+                            <h3>{{$clist[0]->coursename}}</h3>
                             <hr>
 
                             <table class="table table-dark">
