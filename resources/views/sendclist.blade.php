@@ -36,8 +36,8 @@
                                 </div>                                
 
                                 <div class="form-group">
-                                    <label for="recipients">Enter Recipients</label>
-                                    <input type="text" class="form-control" name="recipients" id="recipients" placeholder="Enter Recipient's E-mail(s)">
+                                    <label for="recipients">Enter Recipient(s)</label>
+                                    <input type="text" class="form-control" name="recipients" id="recipients" placeholder="Multiple emails seperated by comma">
                                 </div>
 
                                 
