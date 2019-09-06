@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="box-title" style="margin-top:-15px;">
                                                 <a href="/edit_coursecategory/{{$cc->courseid}}">{{ucwords(strtolower($cc->coursename))}}</a>
-                                                <small><a href="/sendclist/{{$cc->id}}/{{$cc->coursename}}" class="btn btn-xs btn-primary">Send</a></small>
+                                                <small><a href="/sendclist/{{$cc->courseid}}/{{$cc->coursename}}" class="btn btn-xs btn-primary">Send</a></small>
                                         </div>
                                     </div>
                                 </div>
