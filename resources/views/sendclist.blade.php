@@ -48,50 +48,7 @@
 
                             </form>
                         </div>
-
-                        <div class="col-md-4">
-                            <h2>Payment Instructions</h2>
-                            <hr>
-                            <p>Please proceed to make through online payment, bank deposit, or mobile transfer.</p>
-                            <hr>
-                            
-                            <p><h2>PAYMENT/BANKING DETAILS</h2>
-
-                                Pay into any of these accounts<br>
-                                
-                                Bank Name: FIRST CITY MONUMENT BANK PLC<br>
-                                
-                                Account Number: 0136506015<br>
-                                
-                                Account Name: COINMAC INT’L. LTD.<br><br>
-                                
-                                OR
-                                <br><br>
-                                Bank Name:ZENITH BANK PLC, OLUYOLE BRANCH, IBADAN<br>
-                                
-                                Account Number:1012790202<br>
-                                
-                                Account Name:COINMAC INTERNATIONAL LIMITED.</p>
-                                <p>Online Payment</p>
-                                <hr>
-                                ONLINE PAYMENT
-                                <hr>
-                                <p>Information for Online payment will be published here soon</p>
-                                <p>
-                                    <form >
-                                        <div class="form-group">
-                                          <label for="amountopay">Enter Amount to Pay in Naira</label>
-                                          <input type="text" class="form-control" name="amountopay" id="amountopay" value="{{preg_replace("/[^0-9]/","",$amount)}}" placeholder="Amount in Naira">
-                                          <input type="hidden" id="payment_for" name="payment_for" value="{{$subject->coursename}}">
-                                          <input type="hidden" id="paidby" name="paidby" value="{{$subject->email}}">
-                                          
-                                        </div>
-                                        <script src="https://js.paystack.co/v1/inline.js"></script>
-                                        <button type="button" onclick="payWithPaystack()">Pay Online</button> 
-                                    </form>
-                                               
-                                </p>
-                        </div>
+                       
                     </div>
 
                     
