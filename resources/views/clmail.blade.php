@@ -9,7 +9,7 @@
                     <h3 style="text-align: center;">{{$clist[0]->coursecategory}}</h3>
             </div>
             
-            <p>This are course list for {{$clist[0]->coursecategory}}.</p>
+            <p>These are course list for {{$clist[0]->coursecategory}}.</p>
             <hr>
 
             <table class="table" style="width: 100% !important;">
