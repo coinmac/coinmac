@@ -441,11 +441,11 @@ class CoursecatrgoriesController extends Controller
         return redirect()->back();
     }
 
-    public funtion sendlurl($id,$name){
+    public function sendlurl($id,$name){
         return view('sendclist',['id'=>$id,'coursename'=>$name]);
     }
 
-    public funtion sendcurl($id,$name){
+    public function sendcurl($id,$name){
         return view('sendcc',['id'=>$id,'subjectname'=>$name]);
     }
 
