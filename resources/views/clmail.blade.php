@@ -40,7 +40,7 @@
                         <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" class="button-primary">View Course</a></td>
                     </tr>
                     @php
-                    $i++}
+                    $i++;}
                     @endphp
                 </tbody>
                 <tfoot>
