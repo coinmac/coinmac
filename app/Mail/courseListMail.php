@@ -16,6 +16,8 @@ class courseListMail extends Mailable
      *
      * @return void
      */
+
+    public $clist;
     
     public function __construct($clist)
     {
