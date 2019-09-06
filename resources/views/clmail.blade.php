@@ -18,7 +18,6 @@
                         <th>Course Name</th>
                         <th>Course Fee</th>
                         <th>Dates</th>
-                        <th>Duration</th>
                         <th>Contents</th>
                     </tr>
                 </thead>
@@ -33,10 +32,10 @@
                         }
                     @endphp                                  
                     <tr {{$bg}}>
-                        <td><a href="https://coinmac.org/sc/{{$c->subjectid}}"><h2>{{$c->subjectname}}</h2></a></td>
+                        <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" style="text-decoration: none;"><h3>{{$c->subjectname}}</h3></a></td>
                         <td>{{$c->amount}}</td>
                         <td><small>{{$c->date1}}<br>{{$c->date2}}<br>{{$c->date3}}<br>{{$c->date4}}</small></td>
-                        <td>{{$c->duration}}</td>
+                        
                         <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" class="button-primary">View Course</a></td>
                     </tr>
                     @php
@@ -49,7 +48,6 @@
                                 <th>Course Name</th>
                                 <th>Course Fee</th>
                                 <th>Dates</th>
-                                <th>Duration</th>
                                 <th>Contents</th>
                             </tr>
                         </thead>

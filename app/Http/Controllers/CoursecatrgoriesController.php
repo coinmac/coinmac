@@ -428,11 +428,10 @@ class CoursecatrgoriesController extends Controller
 
         if (strpos($request->recipients, ',') !== false) {
             $recipient = explode(',',$request->recipients);
+            Mail::to($recipient[0])->cc($recipient)->send(new courseListMail($clist));
         }else{
-            $recipient = $request->recipients;
-        }
-
-        Mail::to($recipient)->send(new courseListMail($clist));
+            Mail::to($request->recipients)->send(new courseListMail($clist));
+        }        
 
         session()->flash('message','The Course List has been sent successfully!');
         
