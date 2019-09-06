@@ -1,16 +1,18 @@
 @extends('mmaster')
 
 @section('content')
-
-            <div style="text-align: center;">
-                <a href="https://coinmac.org"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
+            <div class="header">
+                    <div style="text-align: center;">
+                        <a href="https://coinmac.org"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
+                    </div>
+                    
+                    <h3>{{$clist[0]->subjectname}}</h3>
             </div>
             
-            <h3>{{$clist[0]->subjectname}}</h3>
             <p>This are course list for {{$clist[0]->subjectname}}.</p>
             <hr>
 
-            <table class="table table-dark">
+            <table class="table">
                 <thead class="thead-dark">
                     <tr>
                         <th>Course Name</th>
@@ -25,7 +27,7 @@
                     <tr>
                         <td>{{$c->subjectname}}</td>
                         <td>{{$c->amount}}</td>
-                        <td>{{$c->date1}}<br>{{$c->date2}}<br>{{$c->date3}}<br>{{$c->date4}}</td>
+                        <td><small>{{$c->date1}}<br>{{$c->date2}}<br>{{$c->date3}}<br>{{$c->date4}}</small></td>
                         <td>{{$c->duration}}</td>
                         <td><a href="/sc/{{$c->subjectid}}">View Contents</a></td>
                     </tr>
