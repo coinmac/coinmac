@@ -41,11 +41,12 @@
                                                 <span>Dates (National): <a href="#">{{$course->author}}</a></span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1}}</a> <a href="#" class="label label-success">{{$course->date2}}</a> <a href="#" class="label label-warning">{{$course->date3}}</a> <a href="#" class="label label-danger">{{$course->date4}}</a></span>
                                             </div>
-
+                                            <!--
                                             <div class="entry-author">
                                                 <span>Dates (International):</span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1i}}</a> <a href="#" class="label label-success">{{$course->date2i}}</a> <a href="#" class="label label-warning">{{$course->date3i}}</a> <a href="#" class="label label-danger">{{$course->date4i}}</a></span>
                                             </div>
+                                            -->
                                         </div><!-- wrap-entry -->
                                     </div>
                                     <div class="col-md-3">
@@ -60,10 +61,11 @@
                                                             
                                                 (National):<span class="price"> {{$course->amount}}</span>
                                             </div>
-
+                                            <!--
                                             <div class="entry-price color-green">                                                
                                             (International):<span class="price"> {{$course->amounti}}</span>
                                             </div>
+                                            -->
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +159,9 @@
                 <div class="sidebar" style="font-size: 0.8 em !important;">
                     <div class="widget widget-button">
                         <p class="button-free"> {{$course->amount}} (National) </p>
+                        <!--
                         <p class="button-free"> {{$course->amounti}} (International) </p>
+                        -->
                         <ul class="infomation-free">
                             <li>Length: <span>{{count($syllabus)}}</span></li>
                             <li>Level: <span>{{$course->level}}</span></li>
@@ -194,6 +198,7 @@
                                 <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
+                        <!--
                         <hr><br>
                         <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey; padding: 5px;">
                                 <h5 style="text-align: center; color: red">Register for International</h5>
@@ -224,6 +229,7 @@
                                 <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
+                        -->
                     </div>
                     <div class="widget widget-teacher">
                         <h3 class="widget-title">ABOUT TEACHER</h3>
