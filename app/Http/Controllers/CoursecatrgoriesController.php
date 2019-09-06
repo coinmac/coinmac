@@ -432,7 +432,6 @@ class CoursecatrgoriesController extends Controller
         }else{
             Mail::to($request->recipients)->send(new courseListMail($clist));
         }        
-
         session()->flash('message','The Course List has been sent successfully!');
         
         return redirect()->back();
