@@ -53,10 +53,10 @@ Route::post('savenotice','CoursecatrgoriesController@savenotice')->name('savenot
 
 Route::get('/notifications','CoursecatrgoriesController@notifications')->name('notifications');
 
-Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendclist')->name('sendclist');
+Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendlurl');
 Route::post('/sendclist','CoursecatrgoriesController@sendclist')->name('sendclist');
 
-Route::get('/sendcc/{id}/{subjectname}','CoursecatrgoriesController@sendcc')->name('sendcc');
+Route::get('/sendcc/{id}/{subjectname}','CoursecatrgoriesController@sendcurl');
 Route::post('/sendcc','CoursecatrgoriesController@sendcc')->name('sendcc');
 
 Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
