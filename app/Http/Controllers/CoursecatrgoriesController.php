@@ -429,7 +429,10 @@ class CoursecatrgoriesController extends Controller
         if (strpos($request->recipients, ',') !== false) {
             $emails = array();
             $recipient = explode(',',$request->recipients);
-            array_push($emails, $recipient);
+            
+            foreach($recipient as $email){
+                array_push($emails, $email);
+            }
 
             Mail::to('coinmacltd@gmail.com')->cc($emails)->send(new courseListMail($clist));
         }else{
