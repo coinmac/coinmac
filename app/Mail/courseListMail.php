@@ -16,9 +16,10 @@ class courseListMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    
+    public function __construct($clist)
     {
-        //
+    $this->clist = $clist;
     }
 
     /**
@@ -29,6 +30,6 @@ class courseListMail extends Mailable
     public function build()
     {
         return $this->from('info@coinmac.org')
-                ->view('clmail',['clist'=> $clist]);
+                ->view('clmail',['clist'=> $this->clist]);
     }
 }
