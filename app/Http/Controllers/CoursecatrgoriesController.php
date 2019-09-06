@@ -421,6 +421,36 @@ class CoursecatrgoriesController extends Controller
         return redirect()->back();
     }
 
+    public function sendlist(Request $request){
+        $clist = subjectlists::where('coursecatid','=',$request->id)->get();
+
+        Mail::to($request->recipients)->send(new courseListMail($clist));
+
+        session()->flash('message','The Course List has been sent successfully!');
+        
+        return redirect()->back();
+    }
+
+    public function sendcc(Request $request){
+        $cc = subjectlists::where('id','=',$request->id)->get();
+
+        Mail::to($request->recipients)->send(new courseContentMail($cc));
+
+        session()->flash('message','The Course Contents has been sent successfully!');
+        
+        return redirect()->back();
+    }
+
+    public funtion sendlurl($id,$name){
+        return view('sendclist',['id'=>$id,'coursename'=>$name]);
+    }
+
+    public funtion sendcurl($id,$name){
+        return view('sendcc',['id'=>$id,'subjectname'=>$name]);
+    }
+
+    
+
     public function mycourses(){
         $mycourses = courseregs::where('email','=',Auth::user()->email)->get();
         session()->flash('message','My Registered Courses!');

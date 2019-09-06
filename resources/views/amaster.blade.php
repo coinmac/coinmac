@@ -143,6 +143,7 @@
                                                     <li><a href="/edit_courses">Add / Edit Courses</a></li>                                                
                                                     <li><a href="/edit_ccategories">Add / Edit Course Categories</a></li>
                                                     <li><a href="/contents">Publish / Edit Site Contents</a></li>
+                                                    
                                                     <li><a href="/logout">Logout</a></li>
                                                 </ul>
                                             </li>
@@ -188,6 +189,9 @@
         @endif
 
         @yield('content')
+
+        <script src="https://cdn.tiny.cloud/1/suid78wbd07chz8u503n1gejbv02axgyrzq9ztzlzd3ncgho/tinymce/5/tinymce.min.js"></script>
+        <script>tinymce.init({selector:'textarea'});</script>
 
         <!-- Footer -->
         <footer id="footer" class="footer style2">

@@ -43,6 +43,7 @@
                                     <div class="entry-author">
                                         <div class="btn-group" role="group" aria-label="Button group">
                                             <a class="btn btn-xs btn-primary" href="/edit_course/{{$sc->id}}">Edit</a>
+                                            <a class="btn btn-xs btn-warning" href="/sendcc/{{$sc->id}}/{{$sc->subjectname}}">Send</a>
                                             <a class="btn btn-xs btn-success" href="/new_coursecontent/{{$sc->id}}">Add Course Content</a>
                                         </div>
                                         

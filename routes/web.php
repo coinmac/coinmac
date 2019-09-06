@@ -53,6 +53,12 @@ Route::post('savenotice','CoursecatrgoriesController@savenotice')->name('savenot
 
 Route::get('/notifications','CoursecatrgoriesController@notifications')->name('notifications');
 
+Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendclist')->name('sendclist');
+Route::post('/sendclist','CoursecatrgoriesController@sendclist')->name('sendclist');
+
+Route::get('/sendcc/{id}/{subjectname}','CoursecatrgoriesController@sendcc')->name('sendcc');
+Route::post('/sendcc','CoursecatrgoriesController@sendcc')->name('sendcc');
+
 Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
 Route::get('/deletecourse/{id}', 'CoursecatrgoriesController@deletecourse');
 Route::get('/makepayment/{id}/{amount}', 'CoursecatrgoriesController@makepayment');
