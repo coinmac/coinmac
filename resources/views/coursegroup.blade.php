@@ -126,7 +126,7 @@
 
                             @foreach ($subjectlist as $sc)                            
 
-                                <div class="col-dm-4">
+                                <div class="col-md-4" style="background-color: white !important">
                                     @php
                                     if($sc->image!="bookcover.jpg"){
                                         $image = $sc->subjectid.'/'.$sc->image;
@@ -151,7 +151,7 @@
 
                                         <div class="btn-group" role="group" aria-label="Button group">      
                                                 <a href="#" class="btn-group btn-sm btn-danger">{{$sc->amount}}</a>
-                                                <a class="btn btn-sm bg-blue btn-group" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
+                                                <a class="btn btn-sm bg-primary btn-group" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
                                         </div>
                                     </div>
                                 </div>
