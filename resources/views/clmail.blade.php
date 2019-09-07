@@ -12,7 +12,7 @@
             <p>These are course list for {{$clist[0]->coursecategory}}.</p>
             <hr>
 
-            <table class="table" style="width: 100% !important;" cell-spacing="3" border="1">
+            <table class="table" style="width: 100% !important;" cellspacing="0" border="1" bordercolor="#AEB6BF">
                 <thead class="thead-dark">
                     <tr>
                         <th>Course Name</th>
@@ -48,6 +48,8 @@
                             </tr>
                         </thead>
                 </tfoot>
-            </table>                                                        
+            </table>    
+            <hr>
+            <p style="color: red;">For more information, please call: <b>2348023262908, 09060008932</b> or <a href="mailto:info@coinmac.org">Click Here To Email Me</a></p>                                                    
                             
 @endsection
