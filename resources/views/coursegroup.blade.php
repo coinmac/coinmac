@@ -129,20 +129,19 @@
                                     <div class="col-md-8">
                                         <a href="/sc/{{$sc->subjectid}}">
                                                                             
-                                                <h3 class="entry-title">{{$sc->subjectname}}</h3> 
-                                                @if($type=="National")
-                                                    <a href="#" class="label label-primary">{{$sc->date1}}</a>
-                                                    <a href="#" class="label label-danger">{{$sc->date2}}</a>
-                                                    <a href="#" class="label label-success">{{$sc->date3}}</a>
-                                                    <a href="#" class="label label-warning">{{$sc->date4}}</a>
-                                                @endif                                                                   
-                                            
+                                                <h2 class="entry-title" style="color: darkblue;">{{$sc->subjectname}}</h2>                                           
                                         </a>
+                                        @if($type=="National")
+                                            <a href="#" class="label label-primary">{{$sc->date1}}</a>
+                                            <a href="#" class="label label-danger">{{$sc->date2}}</a>
+                                            <a href="#" class="label label-success">{{$sc->date3}}</a>
+                                            <a href="#" class="label label-warning">{{$sc->date4}}</a>
+                                        @endif
                                     </div>
                                     <div class="col-md-4">
                                             @if($type=="National")
                                             <div class="entry-price color-green col-md-6">
-                                                <span class="green">{{$sc->amount}}</span>
+                                                <span class="green" style="color: green; font-weight: bold;">{{$sc->amount}}</span>
                                             </div>
                                             @else
                                             <div class="entry-price color-green col-md-6">
