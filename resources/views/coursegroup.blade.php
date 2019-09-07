@@ -24,8 +24,8 @@
             </div><!-- container -->
         </div><!-- wrap-slider -->
         @else
-            <div class="container page-container">
-                <p>The course information for this selected course will soon be published on this page. For further enquiries, please call: <b>2348023262908, 09060008932</b> or send us email to: <b>info@coinmac.org.</p>
+            <div class="flat-row bg-theme pd-top-100">
+                <p style="color: green;">The course(s) information for this selected category will soon be published on this page. For further enquiries, please call: <b>2348023262908, 09060008932</b> or send us email to: <b>info@coinmac.org.</p>
             </div>
     
         @endif
