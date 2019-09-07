@@ -431,8 +431,8 @@ class CoursecatrgoriesController extends Controller
            
             $recipient = explode(',',$request->recipients);
  
-            Mail::to($recipient)->send(new courseListMail($clist));
-            // Mail::to('coinmacltd@gmail.com')->cc($emails)->send(new courseListMail($clist));
+            // Mail::to($recipient)->send(new courseListMail($clist));
+            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseListMail($clist));
         }else{
             Mail::to($request->recipients)->send(new courseListMail($clist));
         }        
