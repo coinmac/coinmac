@@ -41,23 +41,7 @@
                                 <p>Showing 1-10 of {{count($subjectlist)}} Courses</p>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="select-sort">
-                                <div class="wrap-select">
-                                    <select class="select-field all-select portfolio-filter" >
-                                        <option value="" data-filter=".all" class="active">Select Category</option>
-                                        <option value="" data-filter=".bussiness">Bussiness</option>
-                                        <option value="" data-filter=".engin">Engineering</option>
-                                        <option value="" data-filter=".life">Life Sciences</option>
-                                        <option value="" data-filter=".manage">Managenment</option>
-                                        <option value="" data-filter=".other">Other</option>
-                                        <option value="" data-filter=".tech">Technology</option>
-                                    </select>
-                                </div>
-                                <a href="#" class="sort-col active"></a>
-                                <a href="#" class="sort-row"></a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -127,7 +111,7 @@
                     </div>
                     <div class="col-md-9 col-sm-8 portfolio-reponsive portfolio-reponsive2">         
                         <div class="portfolio style4">               
-                                        
+                        <!--                
                         <div class="testimonial-content" style="background-color: white; padding: 20px;">
                             <h2>General Overview:</h2>
                             <hr>
@@ -136,12 +120,13 @@
                             <p>{!!$catimage->first()->description!!}</p>
                             <hr>
                             <p><strong>Status: </strong> {{$catimage->first()->remarks}}</p>
-                        </div>                                       
+                        </div>     
+                        -->                                  
                                         
 
                             @foreach ($subjectlist as $sc)                            
 
-                                <article class="entry">
+                                <div class="col-dm-4">
                                     @php
                                     if($sc->image!="bookcover.jpg"){
                                         $image = $sc->subjectid.'/'.$sc->image;
@@ -152,38 +137,30 @@
                                     @php
                                     }
                                     @endphp
-                                    <div class="entry-post">
-                                        <div class="entry-categories">
-                                            <span><a href="#">{{$sc->coursecategory}}</a></span>
-                                        </div>
+                                    <div class="row">
+                                        
                                         <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
                                         <div class="entry-author">
                                             <span>Dates: <br>
-                                                <a href="#">{{$sc->date1}}</a><br>
-                                                <a href="#">{{$sc->date2}}</a><br>
-                                                <a href="#">{{$sc->date3}}</a><br>
-                                                <a href="#">{{$sc->date4}}</a>
+                                                <a href="#" class="label label-primary">{{$sc->date1}}</a><br>
+                                                <a href="#" class="label label-danger">{{$sc->date2}}</a><br>
+                                                <a href="#" class="label label-success">{{$sc->date3}}</a><br>
+                                                <a href="#" class="label label-warning">{{$sc->date4}}</a>
                                             </span>
                                         </div>
-                                        <div class="entry-number">
-                                            <div class="entry-count">
-                                                TOTAL COURSES:<span class="count"> 100</span>
-                                            </div>
-                                            <div class="entry-price color-green">
-                                                COURSE FEE :<span class="green">{{$sc->amount}}</span>
-                                            </div>
-                                            <div class="wrap-btn" style="float: right">
-                                                <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
-                                            </div>
+
+                                        <div class="btn-group" role="group" aria-label="Button group">      
+                                                <a href="#" class="btn-group btn-sm btn-danger">{{$sc->amount}}</a>
+                                                <a class="btn btn-sm bg-blue btn-group" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
                                         </div>
-                                    </div><!-- entry-post -->
-                                </article>
+                                    </div>
+                                </div>
                             @endforeach
                             
                         </div>
                         <div class="row">
                             <div class="dividers h79">   
-                            </div><!-- dividers flat30 -->
+                            </div>
                         </div>
 
                         <div class="row">
