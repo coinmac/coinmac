@@ -32,7 +32,7 @@
         @endif
 
         <!-- Iconbox -->
-        <section class="flat-row bg-theme pd-top-100 ">
+        <section class="flat-row bg-theme" style="margin-top: 15px;">
             <div class="container">
                 <div class="select-category">
                     <div class="row">
@@ -45,8 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dividers h30">   
-            </div><!-- dividers h30 -->            
+              
 
             <div class="container">
                 <div class="row">
