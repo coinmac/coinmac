@@ -126,7 +126,7 @@
 
                             @foreach ($subjectlist as $sc)                            
 
-                                <div class="col-md-4" style="background-color: white !important">
+                                <div class="col-md-4" style="background-color: white !important; padding: 10px;">
                                     @php
                                     if($sc->image!="bookcover.jpg"){
                                         $image = $sc->subjectid.'/'.$sc->image;
@@ -139,18 +139,18 @@
                                     @endphp
                                     <div class="row">
                                         
-                                        <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
+                                        <h2 class="entry-title" style="color: blue; font-weight: bold;"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h2>
                                         <div class="entry-author">
                                             <span>Dates: <br>
-                                                <a href="#" class="label label-primary">{{$sc->date1}}</a><br>
+                                                <a href="#" class="label label-primary">{{$sc->date1}}</a>
                                                 <a href="#" class="label label-danger">{{$sc->date2}}</a><br>
-                                                <a href="#" class="label label-success">{{$sc->date3}}</a><br>
+                                                <a href="#" class="label label-success">{{$sc->date3}}</a>
                                                 <a href="#" class="label label-warning">{{$sc->date4}}</a>
                                             </span>
                                         </div>
 
                                         <div class="btn-group" role="group" aria-label="Button group">      
-                                                <a href="#" class="btn-group btn-sm btn-danger">{{$sc->amount}}</a>
+                                                <a href="#" class="btn btn-group btn-sm btn-danger">{{$sc->amount}}</a>
                                                 <a class="btn btn-sm bg-primary btn-group" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
                                         </div>
                                     </div>
