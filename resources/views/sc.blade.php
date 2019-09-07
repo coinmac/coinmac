@@ -38,12 +38,12 @@
                                             </div>
                                             <h3 class="entry-title"><a href="#">{{$course->subjectname}}</a></h3>
                                             <div class="entry-author">
-                                                <span>Dates (National): <a href="#">{{$course->author}}</a></span>
+                                                <span>Dates: <a href="#">{{$course->author}}</a></span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1}}</a> <a href="#" class="label label-success">{{$course->date2}}</a> <a href="#" class="label label-warning">{{$course->date3}}</a> <a href="#" class="label label-danger">{{$course->date4}}</a></span>
                                             </div>
                                             <!--
                                             <div class="entry-author">
-                                                <span>Dates (International):</span>
+                                                <span>Dates:</span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1i}}</a> <a href="#" class="label label-success">{{$course->date2i}}</a> <a href="#" class="label label-warning">{{$course->date3i}}</a> <a href="#" class="label label-danger">{{$course->date4i}}</a></span>
                                             </div>
                                             -->
@@ -59,11 +59,11 @@
                                             </div>
                                             <div class="entry-price color-green">
                                                             
-                                                (National):<span class="price"> {{$course->amount}}</span>
+                                                <span class="price"> {{$course->amount}}</span>
                                             </div>
                                             <!--
                                             <div class="entry-price color-green">                                                
-                                            (International):<span class="price"> {{$course->amounti}}</span>
+                                            <span class="price"> {{$course->amounti}}</span>
                                             </div>
                                             -->
                                         </div>
@@ -91,8 +91,14 @@
                         <h3 class="course-title-text">
                             <a href="#">COURSE INFORMATION</a>
                         </h3>
+                        @if ($course->description=="")
+                        <p>
+                        The course information for the selected course will soon be published on this page. For further enquiries, please call: 2348023262908, 09060008932 or send us email to: info@coinmac.org.</p>
+                        @else
                         {!!$course->description!!}
+                        @endif
                     </div>
+                    <!--
                     <div class="course-testimonials">
                         <div class="testimonial">
                             <div class="testimonial-content">
@@ -117,6 +123,7 @@
                         <p>{!!$course->prerequisite!!}</p>
                         
                     </div>
+                    -->
                 </div>
                 <!--
                 <div class="wrap-course-syliabus">
@@ -160,9 +167,9 @@
             <div class="col-md-3 col-sm-4 wrap-overflow">
                 <div class="sidebar" style="font-size: 0.8 em !important;">
                     <div class="widget widget-button">
-                        <p class="button-free"> {{$course->amount}} (National) </p>
+                        <p class="button-free"> {{$course->amount}}</p>
                         <!--
-                        <p class="button-free"> {{$course->amounti}} (International) </p>
+                        <p class="button-free"> {{$course->amounti}}</p>
                         -->
                         <ul class="infomation-free">
                             <li>Length: <span>{{count($syllabus)}}</span></li>
@@ -172,7 +179,7 @@
                         <hr>
                         <br>
                         <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgreen;">
-                            <h5 style="text-align: center; color: red">Register for National</h5>
+                            
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amount}}">
@@ -203,7 +210,7 @@
                         <!--
                         <hr><br>
                         <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey; padding: 5px;">
-                                <h5 style="text-align: center; color: red">Register for International</h5>
+                                
                             @csrf
                             <input type="hidden" name="subjectid" value="{{$course->subjectid}}">
                             <input type="hidden" name="amount" value="{{$course->amounti}}">
@@ -233,6 +240,7 @@
                         </form>
                         -->
                     </div>
+                    <!--
                     <div class="widget widget-teacher">
                         <h3 class="widget-title">ABOUT TEACHER</h3>
                         <div class="flat-teammember">
@@ -259,6 +267,7 @@
                             
                         </ul>
                     </div>
+                    -->
                    
                 </div>
             </div>

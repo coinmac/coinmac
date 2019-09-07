@@ -225,6 +225,7 @@ class CoursecatrgoriesController extends Controller
         
         $course = subjectlists::select('id','subjectname', 'description', 'coursecategory', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid', 'date1', 'date2', 'date3', 'date4')->where('subjectid','=',$subjectid)->first();
         $syllabus = Syllabus::where('subjectid','=',$subjectid)->get(); 
+        
         $ccat = collect($coursecategories)->where('courseid', $course->first()->coursecatid); 
         return view('sc',['coursecategories'=>$coursecategories, 'course'=>$course,'ccat'=>$ccat,'syllabus'=>$syllabus]);
     }
@@ -451,7 +452,9 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function sendlurl($id,$name){
-        return view('sendclist',['id'=>$id,'coursename'=>$name]);
+        $countlist = subjectlists::where('id','=',$id)->get();
+        $countr = $countlist->count();
+        return view('sendclist',['id'=>$id,'coursename'=>$name, 'counted'=>$countr]);
     }
 
     public function sendcurl($id,$name){

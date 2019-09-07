@@ -210,7 +210,7 @@
                                                                 @foreach ($coursecategories as $cc) 
 
                                                                     @if ($cc->category=="Certificate")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
                                                                     @endif
                                                                     
                                                                 @endforeach
@@ -230,7 +230,7 @@
                                                                 @foreach ($coursecategories as $cc) 
 
                                                                     @if ($cc->category=="Diploma")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}//{{$cc->category}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
                                                                     @endif
                                                                     
                                                                 @endforeach
