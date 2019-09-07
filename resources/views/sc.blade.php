@@ -93,12 +93,12 @@
                         </h3>
                         @if ($course->description=="")
                         <p>
-                        The course information for the selected course will soon be published on this page. For further enquiries, please call: 2348023262908, 09060008932 or send us email to: info@coinmac.org.</p>
+                        The course information for this selected course will soon be published on this page. For further enquiries, please call: <b>2348023262908, 09060008932</b> or send us email to: <b>info@coinmac.org</b>.</p>
                         @else
                         {!!$course->description!!}
                         @endif
                     </div>
-                    <!--
+                    
                     <div class="course-testimonials">
                         <div class="testimonial">
                             <div class="testimonial-content">
@@ -123,9 +123,9 @@
                         <p>{!!$course->prerequisite!!}</p>
                         
                     </div>
-                    -->
+                    
                 </div>
-                <!--
+                
                 <div class="wrap-course-syliabus">
                     <h3 class="course-title-text title-sylia">
                         <a href="#">COURSES SYLLABUS</a>
@@ -162,8 +162,9 @@
                     </div>
                     
                 </div>
-                -->
+                
             </div><!-- col-md-9 -->
+
             <div class="col-md-3 col-sm-4 wrap-overflow">
                 <div class="sidebar" style="font-size: 0.8 em !important;">
                     <div class="widget widget-button">
@@ -271,6 +272,7 @@
                    
                 </div>
             </div>
+
         </div>
     </div>
 </section>
