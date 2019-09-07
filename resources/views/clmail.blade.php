@@ -50,6 +50,6 @@
                 </tfoot>
             </table>    
             <hr>
-            <p style="color: red;">For more information, please call: <b>2348023262908, 09060008932</b> or <a href="mailto:info@coinmac.org">Click Here To Email Me</a></p>                                                    
+            <p style="color: red;">For more information, please call: <b>2348023262908, 09060008932</b> or <a href="mailto:info@coinmac.org">Click Here To Send us Email</a></p>                                                    
                             
 @endsection

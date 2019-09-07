@@ -24,7 +24,7 @@
                         <div class="col-md-9">
                             <h2>Send Course Content</h2>
                             <hr>
-                            <form action="{{route('sendlist')}}" method="post">
+                            <form action="{{route('sendcc')}}" method="post">
                                 @csrf
                                 
                                 <input type="hidden" name="id" value="{{$id}}">
@@ -32,7 +32,17 @@
                                 <div class="form-group">
                                     <label for="subjectname">Course Title</label>
                                     <input type="text" class="form-control" name="subjectname" id="subjectname" value="{{$subjectname}}" readonly>
-                                </div>                                
+                                </div>    
+                                
+                                <div class="form-group">
+                                    <label for="type">Category</label>
+                                    <select id="type" class="form-control" name="type">
+                                        <option value="National" selected>National</option>
+                                        <option value="International">International</option>
+                                        <option value="Diploma">Diploma</option>
+                                        <option value="Certificate">Certificate</option>
+                                    </select>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="recipients">Enter Recipients</label>
