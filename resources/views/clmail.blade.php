@@ -12,7 +12,7 @@
             <p>These are course list for {{$clist[0]->coursecategory}}.</p>
             <hr>
 
-            <table class="table" style="width: 100% !important;" cell-spacing="3">
+            <table class="table" style="width: 100% !important;" cell-spacing="3" border="1">
                 <thead class="thead-dark">
                     <tr>
                         <th>Course Name</th>
@@ -22,25 +22,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @php
-                    $i = 0;
-                    foreach ($clist as $c){     
-                        if($i % 2 == 0){
-                            $bg =  "style='background-color: light-blue;'";
-                        } else{
-                            $bg = "style='border-bottom: 1px  black groove;'";
-                        }
-                    @endphp                                  
-                    <tr {{$bg}}>
+                   
+                    @foreach ($clist as $key => $c)  
+                    <tr 
+                    @if($key % 2 != 0)                    
+                    style='background-color: #D5D8DC;'
+                    @endif
+                    >
                         <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" style="text-decoration: none;"><h3>{{$c->subjectname}}</h3></a></td>
                         <td>{{$c->amount}}</td>
                         <td><small>{{$c->date1}}<br>{{$c->date2}}<br>{{$c->date3}}<br>{{$c->date4}}</small></td>
                         
                         <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" class="button-primary">View Course</a></td>
                     </tr>
-                    @php
-                    $i++;}
-                    @endphp
+                    @endforeach
+                    
                 </tbody>
                 <tfoot>
                         <thead class="thead-dark">
