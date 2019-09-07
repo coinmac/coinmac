@@ -121,18 +121,39 @@
                             <hr>
                             <p><strong>Status: </strong> {{$catimage->first()->remarks}}</p>
                         </div>     
-                        -->                                  
+                        -->    
+                        
+                        @foreach ($subjectlist as $sc) 
+                            <article class="entry" style="margin-bottom: 2px;">   
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <a href="/sc/{{$sc->subjectid}}">
+                                                                            
+                                                <h3 class="entry-title">{{$sc->subjectname}}</h3> 
+                                                if($type=="National"){
+                                                    <a href="#" class="label label-primary">{{$sc->date1}}</a>
+                                                    <a href="#" class="label label-danger">{{$sc->date2}}</a>
+                                                    <a href="#" class="label label-success">{{$sc->date3}}</a>
+                                                    <a href="#" class="label label-warning">{{$sc->date4}}</a>
+                                                }                                                                   
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                            <div class="entry-price color-green col-md-6">
+                                                COURSE FEE :<span class="green"></span>
+                                            </div>
+                                            <div class="wrap-btn col-md-6" style="float: right">
+                                                <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                        @endforeach
                                         
 
-                        @foreach ($subjectlist as $sc)                            
-                        <a href="/sc/{{$sc->subjectid}}">
-                            <article class="entry" style="margin-bottom: 2px;">                                    
-                                <h3 class="entry-title">{{$sc->subjectname}}</h3> 
-                                <small style="color: red">{{$sc->coursecategory}}</small>                                                                     
-                            </article>
-                        </a>
-                        @endforeach
-                            
+                          
                         </div>
                         <div class="row">
                             <div class="dividers h79">   
