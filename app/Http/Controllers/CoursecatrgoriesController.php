@@ -423,8 +423,8 @@ class CoursecatrgoriesController extends Controller
         
         return redirect()->back();
     }
-    
-    public function sendcc(Request $request){
+
+    public function sendcco(Request $request){
         $cc = subjectlists::where('id','=',$request->id)->get();
         
         //$type = $request->type;

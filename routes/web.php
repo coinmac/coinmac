@@ -57,7 +57,8 @@ Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendlurl')
 Route::post('/sendlist','CoursecatrgoriesController@sendlist')->name('sendlist');
 
 Route::get('/sendcc/{id}/{subjectname}','CoursecatrgoriesController@sendcurl');
-Route::post('/sendcc','CoursecatrgoriesController@sendcc')->name('sendcc');
+// Route::post('/sendcc','CoursecatrgoriesController@sendcc')->name('sendcc');
+Route::post('/sendcco','CoursecatrgoriesController@sendcco')->name('sendcco');
 
 Route::post('/paycourse/{id}', 'CoursecatrgoriesController@paycourse')->name('paycourse');
 Route::get('/deletecourse/{id}', 'CoursecatrgoriesController@deletecourse');

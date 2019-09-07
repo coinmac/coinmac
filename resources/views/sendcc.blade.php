@@ -24,7 +24,7 @@
                         <div class="col-md-9">
                             <h2>Send Course Content</h2>
                             <hr>
-                            <form action="{{route('sendcc')}}" method="post">
+                            <form action="{{route('sendcco')}}" method="post">
                                 @csrf
                                 
                                 <input type="hidden" name="id" value="{{$id}}">
