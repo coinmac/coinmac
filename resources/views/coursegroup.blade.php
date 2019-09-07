@@ -24,10 +24,11 @@
             </div><!-- container -->
         </div><!-- wrap-slider -->
         @else
-            <div class="flat-row bg-theme pd-top-100">
+        <div class="row">
+            <div class="container page-container col-md-6 col-md-offset-3">
                 <p style="color: green;">The course(s) information for this selected category will soon be published on this page. For further enquiries, please call: <b>2348023262908, 09060008932</b> or send us email to: <b>info@coinmac.org.</p>
             </div>
-    
+        </div>
         @endif
 
         <!-- Iconbox -->
