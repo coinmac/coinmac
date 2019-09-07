@@ -444,7 +444,7 @@ class CoursecatrgoriesController extends Controller
     public function sendcc(Request $request){
         $cc = subjectlists::where('id','=',$request->id)->first();
         //$type = $request->type;
-        if (strpos($request->recipients, ',') !== false) {
+        /*if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients);
  
@@ -453,6 +453,7 @@ class CoursecatrgoriesController extends Controller
         }else{
             Mail::to($request->recipients)->send(new courseContentMail($cc,$type));
         }   
+        */
 
         session()->flash('message','The Course Contents has been sent successfully!');
         
