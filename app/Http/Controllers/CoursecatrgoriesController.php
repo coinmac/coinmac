@@ -430,7 +430,6 @@ class CoursecatrgoriesController extends Controller
         if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients); 
-            // Mail::to($recipient)->send(new courseListMail($clist));
             Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseListMail($clist));
         }else{
             Mail::to($request->recipients)->send(new courseListMail($clist));
@@ -442,14 +441,12 @@ class CoursecatrgoriesController extends Controller
 
     public function sendcc(Request $request){
         $cc = subjectlists::where('id','=',$request->id)->get();
-        error_log($cc);
+        
         //$type = $request->type;
         if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients);
- 
-            // Mail::to($recipient)->send(new courseListMail($clist));
-            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseContentMail($cc));
+            Mail::to($recipient)->send(new courseContentMail($cc));
         }else{
             Mail::to($request->recipients)->send(new courseContentMail($cc));
         }   
