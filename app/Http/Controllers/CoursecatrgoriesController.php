@@ -15,7 +15,7 @@ use File;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\notificationMail;
 use App\Mail\courseListMail;
-use App\Mail\courseContentMail;
+use App\Mail\ccontentMail;
 
 class CoursecatrgoriesController extends Controller
 {
@@ -423,6 +423,25 @@ class CoursecatrgoriesController extends Controller
         
         return redirect()->back();
     }
+    
+    public function sendcc(Request $request){
+        $cc = subjectlists::where('id','=',$request->id)->get();
+        
+        //$type = $request->type;
+        
+        if (strpos($request->recipients, ',') !== false) {
+           
+            $recipient = explode(',',$request->recipients);
+            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new ccontentMail($cc));
+        }else{
+            Mail::to($request->recipients)->send(new ccontentMail($cc));
+        }   
+        
+
+        session()->flash('message','The Course Contents has been sent successfully!');
+        
+        return redirect()->back();
+    }
 
     public function sendlist(Request $request){
         $clist = subjectlists::where('coursecatid','=',$request->id)->get();
@@ -435,25 +454,6 @@ class CoursecatrgoriesController extends Controller
             Mail::to($request->recipients)->send(new courseListMail($clist));
         }        
         session()->flash('message','The Course List has been sent successfully!');
-        
-        return redirect()->back();
-    }
-
-    public function sendcc(Request $request){
-        $cc = subjectlists::where('id','=',$request->id)->get();
-        
-        //$type = $request->type;
-        
-        if (strpos($request->recipients, ',') !== false) {
-           
-            $recipient = explode(',',$request->recipients);
-            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseContentMail($cc));
-        }else{
-            Mail::to($request->recipients)->send(new courseContentMail($cc));
-        }   
-        
-
-        session()->flash('message','The Course Contents has been sent successfully!');
         
         return redirect()->back();
     }
