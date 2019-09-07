@@ -16,6 +16,7 @@ class courseContentMail extends Mailable
      *
      * @return void
      */
+    
     public $cc;
     
     public function __construct($cc)
