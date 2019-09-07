@@ -2,7 +2,7 @@
 @section('content')
     @if (count($subjectlist)>0)
     
-        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover; backgroun-color: blue;">
+        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover; background-color: blue;">
             <div class="container page-container">
                 <div class="page-content">
                     <div class="page-title">
@@ -130,21 +130,27 @@
                                         <a href="/sc/{{$sc->subjectid}}">
                                                                             
                                                 <h3 class="entry-title">{{$sc->subjectname}}</h3> 
-                                                if($type=="National"){
+                                                @if($type=="National")
                                                     <a href="#" class="label label-primary">{{$sc->date1}}</a>
                                                     <a href="#" class="label label-danger">{{$sc->date2}}</a>
                                                     <a href="#" class="label label-success">{{$sc->date3}}</a>
                                                     <a href="#" class="label label-warning">{{$sc->date4}}</a>
-                                                }                                                                   
+                                                @endif                                                                   
                                             
                                         </a>
                                     </div>
                                     <div class="col-md-4">
+                                            @if($type=="National")
                                             <div class="entry-price color-green col-md-6">
-                                                COURSE FEE :<span class="green"></span>
+                                                COURSE FEE: <span class="green">{{$sc->amount}}</span>
                                             </div>
+                                            @else
+                                            <div class="entry-price color-green col-md-6">
+                                                COURSE FEE: <span class="green">{{$sc->amounti}}</span>
+                                            </div>
+                                            @endif
                                             <div class="wrap-btn col-md-6" style="float: right">
-                                                <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
+                                                <a class="flat-btn bg-color" href="/sc/{{$sc->subjectid}}">View</a> 
                                             </div>
                                     </div>
                                 </div>
