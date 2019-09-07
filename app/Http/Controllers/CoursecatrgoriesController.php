@@ -452,7 +452,7 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function sendlurl($id,$name){
-        $countlist = subjectlists::where('id','=',$id)->get();
+        $countlist = subjectlists::where('coursecatid','=',$id)->get();
         $countr = $countlist->count();
         return view('sendclist',['id'=>$id,'coursename'=>$name, 'counted'=>$countr]);
     }
