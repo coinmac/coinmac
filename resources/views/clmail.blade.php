@@ -12,7 +12,7 @@
             <p>These are course list for {{$clist[0]->coursecategory}}.</p>
             <hr>
 
-            <table class="table" style="width: 100% !important;">
+            <table class="table" style="width: 100% !important;" cell-spacing="3">
                 <thead class="thead-dark">
                     <tr>
                         <th>Course Name</th>
@@ -26,9 +26,9 @@
                     $i = 0;
                     foreach ($clist as $c){     
                         if($i % 2 == 0){
-                            $bg =  "style='background-color: light-blue;''";
+                            $bg =  "style='background-color: light-blue;'";
                         } else{
-                            $bg = "";
+                            $bg = "style='border-bottom: 1px  black groove;'";
                         }
                     @endphp                                  
                     <tr {{$bg}}>

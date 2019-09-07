@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-md-9">
                             <h2>Send Course List</h2>
-                            <small>Course Count: {{$counted}}</small>
+                            <small style="color: red;">Course Count: {{$counted}}</small>
                             <hr>
                             <form action="{{route('sendlist')}}" method="post">
                                 @csrf
