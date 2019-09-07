@@ -46,7 +46,7 @@
 
                                 <div class="form-group">
                                     <label for="recipients">Enter Recipients</label>
-                                    <input type="text" class="form-control" name="recipients" id="recipients" placeholder="Enter Recipient's E-mail(s)">
+                                    <input type="text" class="form-control" name="receiver" id="recipients" placeholder="Enter Recipient's E-mail(s)">
                                 </div>
                                 
                                 <div class="form-group float-right">

@@ -429,12 +429,12 @@ class CoursecatrgoriesController extends Controller
         
         //$type = $request->type;
         
-        if (strpos($request->recipients, ',') !== false) {
+        if (strpos($request->receiver, ',') !== false) {
            
-            $recipient = explode(',',$request->recipients);
+            $recipient = explode(',',$request->receiver);
             Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new ccontentMail($cc));
         }else{
-            Mail::to($request->recipients)->send(new ccontentMail($cc));
+            Mail::to($request->receiver)->send(new ccontentMail($cc));
         }   
         
 
