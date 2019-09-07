@@ -2,7 +2,7 @@
 @section('content')
     @if (count($subjectlist)>0)
     
-        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover;">
+        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover; backgroun-color: blue;">
             <div class="container page-container">
                 <div class="page-content">
                     <div class="page-title">
