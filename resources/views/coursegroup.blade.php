@@ -2,7 +2,7 @@
 @section('content')
     @if (count($subjectlist)>0)
     
-        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover; background-color: blue;">
+        <div class="wrap-slider" style="background-image:url('/images/content/{{$catimage->first()->image}}'); background-size: cover; background-color: darkblue;">
             <div class="container page-container">
                 <div class="page-content">
                     <div class="page-title">
@@ -142,11 +142,11 @@
                                     <div class="col-md-4">
                                             @if($type=="National")
                                             <div class="entry-price color-green col-md-6">
-                                                COURSE FEE: <span class="green">{{$sc->amount}}</span>
+                                                <span class="green">{{$sc->amount}}</span>
                                             </div>
                                             @else
                                             <div class="entry-price color-green col-md-6">
-                                                COURSE FEE: <span class="green">{{$sc->amounti}}</span>
+                                                <span class="green">{{$sc->amounti}}</span>
                                             </div>
                                             @endif
                                             <div class="wrap-btn col-md-6" style="float: right">
