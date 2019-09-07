@@ -13,8 +13,8 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="#">Courses</a></li>
                         <li>{{$course->subjectname}}</li>
-
-                    </ul>
+                    </ul><small>({{$ccat->category}})</small>
+                    
                 </div><!-- breadcrumb -->
             </div><!-- page-title -->
         </div>
