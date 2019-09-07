@@ -37,16 +37,17 @@
                                                 <span><a href="/coursegroup/{{$course->coursecatid}}/{{$ccat->first()->category}}/{{$course->coursecategory}}">{{$course->coursecategory}}</a></span>
                                             </div>
                                             <h3 class="entry-title"><a href="#">{{$course->subjectname}}</a></h3>
+                                            @if ($ccat->category=="National")
                                             <div class="entry-author">
                                                 <span>Dates: <a href="#">{{$course->author}}</a></span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1}}</a> <a href="#" class="label label-success">{{$course->date2}}</a> <a href="#" class="label label-warning">{{$course->date3}}</a> <a href="#" class="label label-danger">{{$course->date4}}</a></span>
                                             </div>
-                                            <!--
+                                            @else
                                             <div class="entry-author">
                                                 <span>Dates:</span>
                                                 <span class="calendar"> <a href="#" class="label label-primary">{{$course->date1i}}</a> <a href="#" class="label label-success">{{$course->date2i}}</a> <a href="#" class="label label-warning">{{$course->date3i}}</a> <a href="#" class="label label-danger">{{$course->date4i}}</a></span>
                                             </div>
-                                            -->
+                                            @endif
                                         </div><!-- wrap-entry -->
                                     </div>
                                     <div class="col-md-3">
@@ -57,15 +58,16 @@
                                             <div class="entry-count">
                                                 COURSE FEE
                                             </div>
+                                            @if ($ccat->category=="National")
                                             <div class="entry-price color-green">
                                                             
                                                 <span class="price"> {{$course->amount}}</span>
                                             </div>
-                                            <!--
+                                            @else
                                             <div class="entry-price color-green">                                                
                                             <span class="price"> {{$course->amounti}}</span>
                                             </div>
-                                            -->
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -170,10 +172,11 @@
             <div class="col-md-3 col-sm-4 wrap-overflow">
                 <div class="sidebar" style="font-size: 0.8 em !important;">
                     <div class="widget widget-button">
+                        @if ($ccat->category=="National")
                         <p class="button-free"> {{$course->amount}}</p>
-                        <!--
+                        @else
                         <p class="button-free"> {{$course->amounti}}</p>
-                        -->
+                        @endif
                         <ul class="infomation-free">
                             <li>Length: <span>{{count($syllabus)}}</span></li>
                             <li>Level: <span>{{$course->level}}</span></li>
@@ -181,6 +184,7 @@
                         </ul>
                         <hr>
                         <br>
+                        @if ($ccat->category=="National")
                         <form action="{{route('registercourse')}}" method="post"  style="background-color: lightgreen;">
                             
                             @csrf
@@ -210,7 +214,7 @@
                                 <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
-                        <!--
+                        @else
                         <hr><br>
                         <form action="{{route('registercourse')}}" method="post" style="background-color: lightgrey; padding: 5px;">
                                 
@@ -241,7 +245,7 @@
                                 <button class="btn btn-primary btn-xs" type="submit">REGISTER</button>
                             </div>
                         </form>
-                        -->
+                        @endif
                     </div>
                     <!--
                     <div class="widget widget-teacher">
