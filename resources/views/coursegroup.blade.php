@@ -24,7 +24,9 @@
             </div><!-- container -->
         </div><!-- wrap-slider -->
         @else
-            <h1>No Course(s) Found!</h1>
+            <div class="container page-container">
+                <p>The course information for this selected course will soon be published on this page. For further enquiries, please call: <b>2348023262908, 09060008932</b> or send us email to: <b>info@coinmac.org.</p>
+            </div>
     
         @endif
 
