@@ -50,7 +50,7 @@
                                 </div>
                                 
                                 <div class="form-group float-right">
-                                    <button type="submit" class="btn btn-primary">Send Course list</button>
+                                    <button type="submit" class="btn btn-primary">Send Course Contents</button>
                                 </div>
 
 

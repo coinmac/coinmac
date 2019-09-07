@@ -442,18 +442,19 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function sendcc(Request $request){
-        $cc = subjectlists::where('id','=',$request->id)->first();
+        $cc = subjectlists::where('id','=',$request->id)->get();
+        error_log($cc);
         //$type = $request->type;
-        /*if (strpos($request->recipients, ',') !== false) {
+        if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients);
  
             // Mail::to($recipient)->send(new courseListMail($clist));
             Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseContentMail($cc));
         }else{
-            Mail::to($request->recipients)->send(new courseContentMail($cc,$type));
+            Mail::to($request->recipients)->send(new courseContentMail($cc));
         }   
-        */
+        
 
         session()->flash('message','The Course Contents has been sent successfully!');
         
