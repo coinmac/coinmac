@@ -118,6 +118,7 @@
                         
                     </div>
                 </div>
+                <!--
                 <div class="wrap-course-syliabus">
                     <h3 class="course-title-text title-sylia">
                         <a href="#">COURSES SYLLABUS</a>
@@ -154,6 +155,7 @@
                     </div>
                     
                 </div>
+                -->
             </div><!-- col-md-9 -->
             <div class="col-md-3 col-sm-4 wrap-overflow">
                 <div class="sidebar" style="font-size: 0.8 em !important;">
