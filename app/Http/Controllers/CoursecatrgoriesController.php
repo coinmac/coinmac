@@ -442,7 +442,7 @@ class CoursecatrgoriesController extends Controller
     }
 
     public function sendcc(Request $request){
-        $cc = subjectlists::where('id','=',$request->id)->get();
+        $cc = subjectlists::where('id','=',$request->id)->first();
         $type = $request->type;
         if (strpos($request->recipients, ',') !== false) {
            
