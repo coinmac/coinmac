@@ -32,7 +32,7 @@
         @endif
 
         <!-- Iconbox -->
-        <section class="flat-row bg-theme" style="margin-top: 15px;">
+        <section class="flat-row bg-theme pd-top-100 ">
             <div class="container">
                 <div class="select-category">
                     <div class="row">
@@ -45,7 +45,8 @@
                     </div>
                 </div>
             </div>
-              
+            <div class="dividers h30">   
+            </div><!-- dividers h30 -->            
 
             <div class="container">
                 <div class="row">
@@ -123,43 +124,19 @@
                         -->                                  
                                         
 
-                            @foreach ($subjectlist as $sc)                            
-
-                                <div class="col-md-4" style="background-color: white !important; padding: 10px;">
-                                    @php
-                                    if($sc->image!="bookcover.jpg"){
-                                        $image = $sc->subjectid.'/'.$sc->image;
-                                    @endphp    
-                                        <div class="featured-post" style="@media screen and (min-width: 800px) { width: 50% !important; overflow: hidden;} ">
-                                            <a href="/sc/{{$sc->subjectid}}"><img src="/images/course/{{$image}}" alt="image"></a>
-                                        </div>
-                                    @php
-                                    }
-                                    @endphp
-                                    <div class="row">
-                                        
-                                        <h2 class="entry-title" style="color: blue; font-weight: bold;"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h2>
-                                        <div class="entry-author">
-                                            <span>Dates: <br>
-                                                <a href="#" class="label label-primary">{{$sc->date1}}</a>
-                                                <a href="#" class="label label-danger">{{$sc->date2}}</a><br>
-                                                <a href="#" class="label label-success">{{$sc->date3}}</a>
-                                                <a href="#" class="label label-warning">{{$sc->date4}}</a>
-                                            </span>
-                                        </div>
-
-                                        <div class="btn-group" role="group" aria-label="Button group">      
-                                                <a href="#" class="btn btn-group btn-sm btn-danger">{{$sc->amount}}</a>
-                                                <a class="btn btn-sm bg-primary btn-group" href="/sc/{{$sc->subjectid}}">View / Enroll</a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
+                        @foreach ($subjectlist as $sc)                            
+                        <a href="/sc/{{$sc->subjectid}}">
+                            <article class="entry" style="margin-bottom: 2px;">                                    
+                                <h3 class="entry-title">{{$sc->subjectname}}</h3> 
+                                <small style="color: red">{{$sc->coursecategory}}</small>                                                                     
+                            </article>
+                        </a>
+                        @endforeach
                             
                         </div>
                         <div class="row">
                             <div class="dividers h79">   
-                            </div>
+                            </div><!-- dividers flat30 -->
                         </div>
 
                         <div class="row">
