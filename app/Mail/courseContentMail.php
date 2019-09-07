@@ -17,12 +17,10 @@ class courseContentMail extends Mailable
      * @return void
      */
     public $cc;
-    public $type;
     
-    public function __construct($cc,$type)
+    public function __construct($cc)
     {
-    $this->cc = $cc;
-    $this->type = $type;
+    $this->cc = $cc;   
     }
 
     /**
@@ -32,6 +30,6 @@ class courseContentMail extends Mailable
      */
     public function build()
     {
-        return $this->from('info@coinmac.org','COINMAC Inc')->subject($this->cc->subjectname)->view('ccmail')->with(['cc' => $this->cc,'type'=>$this->type]);
+        return $this->from('info@coinmac.org','COINMAC Inc')->subject($this->cc->subjectname)->view('ccmail')->with(['cc' => $this->cc]);
     }
 }
