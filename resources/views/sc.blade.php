@@ -98,7 +98,7 @@
                         {!!$course->description!!}
                         @endif
                     </div>
-                    
+                    <!--
                     <div class="course-testimonials">
                         <div class="testimonial">
                             <div class="testimonial-content">
@@ -108,7 +108,7 @@
                             <div class="author-comment">
                                 <span>{{$course->student}}</span>
                             </div>
-                        </div><!-- testimonial -->
+                        </div>
                     </div>
                     <div class="course-text content2">
                         <h3 class="course-title-text">
@@ -123,9 +123,10 @@
                         <p>{!!$course->prerequisite!!}</p>
                         
                     </div>
+                    -->
                     
                 </div>
-                
+                <!--
                 <div class="wrap-course-syliabus">
                     <h3 class="course-title-text title-sylia">
                         <a href="#">COURSES SYLLABUS</a>
@@ -162,8 +163,9 @@
                     </div>
                     
                 </div>
+                -->
                 
-            </div><!-- col-md-9 -->
+            </div>
 
             <div class="col-md-3 col-sm-4 wrap-overflow">
                 <div class="sidebar" style="font-size: 0.8 em !important;">
@@ -258,7 +260,7 @@
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             </ul>
-                        </div><!-- flat-teammember -->
+                        </div>
                     </div>
                     <div class="widget widget-categories">
                         <h3 class="widget-title">SUBJECT LIST</h3>
