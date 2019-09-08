@@ -30,6 +30,6 @@ class ccontentMail extends Mailable
      */
     public function build()
     {
-        return $this->from('learn@coinmac.org','COINMAC Inc')->subject($this->cc[0]->subjectname)->view('ccmail')->with(['cc' => $this->cc]);
+        return $this->from('learn@coinmac.org')->subject($this->cc[0]->subjectname)->view('ccmail')->with(['cc' => $this->cc]);
     }
 }
