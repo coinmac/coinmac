@@ -432,7 +432,10 @@ class CoursecatrgoriesController extends Controller
         if (strpos($request->receiver, ',') !== false) {
            
             $recipient = explode(',',$request->receiver);
-            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new ccontentMail($cc));
+            foreach($recipient as $res){
+                $res = str_replace(" ","",$res);
+              Mail::to($res)->send(new ccontentMail($cc));  
+            }
         }else{
             Mail::to($request->receiver)->send(new ccontentMail($cc));
         }   
