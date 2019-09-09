@@ -31,7 +31,11 @@ class courseListMail extends Mailable
      */
     public function build()
     {
-        // return $this->from('info@coinmac.org','COINMAC Inc')->subject($this->clist[0]->coursecategory)->view('clmail')->with(['clist' => $this->clist]);
-        return $this->from('info@coinmac.org','COINMAC Inc')->subject("COINMAC")->view('ccmail')->with(['clist' => $this->clist]);
+        if(isset($this->clist->subjectname)){
+            return $this->from('info@coinmac.org','COINMAC Inc')->subject($this->clist->subjectname)->view('ccmail')->with(['clist' => $this->clist]);
+        }else{
+            return $this->from('info@coinmac.org','COINMAC Inc')->subject($this->clist[0]->coursecategory)->view('clmail')->with(['clist' => $this->clist]);
+        }        
+        
     }
 }
