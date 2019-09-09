@@ -434,7 +434,7 @@ class CoursecatrgoriesController extends Controller
             $recipient = explode(',',$request->receiver);
             foreach($recipient as $res){
                 $res = str_replace(" ","",$res);
-              // Mail::to($res)->send(new ccontentMail($cc));  
+                Mail::to($res)->send(new ccontentMail($cc));  
             }
         }else{
             Mail::to($request->receiver)->send(new ccontentMail($cc));
