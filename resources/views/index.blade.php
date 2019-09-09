@@ -36,7 +36,7 @@
                         data-paddingbottom="[0,0,0,0"
                         data-paddingleft="[0,0,0,0]"
     
-                        style="z-index: 16; white-space: nowrap;text-transform:left;"><span>COINMAC Inc</span><br>THE STAR SOLUTION FOR PRODUCTIVITY
+                        style="z-index: 16; white-space: nowrap;text-transform:left;"><span>STIMULATING PROFESSIONAL PERFORMANCE</span><br>COINMAC Inc
                     </div>
     
                     <!-- LAYER NR. 13 -->
