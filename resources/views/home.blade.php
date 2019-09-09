@@ -133,10 +133,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($subs as $s)                                          
+                                        
                                         <tr>
                                             <td>{{$s->created_at}}</td>
                                             <td>{{$s->email}}</td>
-                                        </tr>   
+                                        </tr>
+                                        @endforeach   
                                     </tbody>
                                     <tfoot>
                                         <tr>
