@@ -436,7 +436,7 @@ class CoursecatrgoriesController extends Controller
         
         session()->flash('message','Your subscription was successful. You will start receiving our periodic newsletters. Thank you!');
         
-        return redirect()->back().'#subc';;
+        return redirect()->back().'#subc';
     }
 
     public function sendcco(Request $request){

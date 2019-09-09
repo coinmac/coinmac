@@ -163,7 +163,7 @@
                         <div class="row" style="text-align: center !important; background-color: white !important; ">
                                 <hr>
                                 <h2>Share this page on ...</h2>
-                                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                <div class="a2a_kit a2a_kit_size_32 a2a_default_style col-md-6 col-md-offset-3">
                                 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                 <a class="a2a_button_facebook"></a>
                                 <a class="a2a_button_twitter"></a>
