@@ -28,7 +28,11 @@ class HomeController extends Controller
     {
         $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid')->get();
         $subs = subscriptions::all();
-        return view('home',['coursecategories'=>$coursecategories,'subs'=>$subs]);
+        $emails = "";
+        foreach($subs as $s){
+            $emails.=$s.",";
+        }
+        return view('home',['coursecategories'=>$coursecategories,'subs'=>$subs,'emails'=>$emails]);
     }
 
     

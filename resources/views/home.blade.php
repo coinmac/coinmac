@@ -101,7 +101,7 @@
 
                                     <div class="form-group">
                                             <label for="to ">Subscriber(s) E-mails</label>
-                                            <input type="text" class="form-control" name="to" id="to" placeholder="Subscriber(s) Email" value="@php foreach($subs as $s){echo $s->email.","; }@php">
+                                            <input type="text" class="form-control" name="to" id="to" placeholder="Subscriber(s) Email" value="{{$emails}}">
                                             
                                           </div>
           
