@@ -341,7 +341,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 info-left">
                             <div class="logo-footer">
-                                <a href="index.html"><img src="images/footer-logo.png" alt="image"></a>
+                                <a href="index.html"><img src="/images/footer-logo.png" alt="image"></a>
                             </div><!-- logo-footer -->
                             <ul class="flat-socials">
                                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
