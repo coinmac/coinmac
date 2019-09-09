@@ -277,11 +277,11 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="student">Testifier</label>
-                <input type="text" class="date form-control" name="student" id="student" placeholder="Testifier">                       
+                <input type="text" class="form-control" name="student" id="student" placeholder="Testifier">                       
             </div>
             <div class="form-group col-md-6">
                 <label for="level">Level</label>
-                <input type="text" class="date form-control" name="level" id="level" placeholder="Level">                       
+                <input type="text" class="form-control" name="level" id="level" placeholder="Level">                       
             </div>
             
             

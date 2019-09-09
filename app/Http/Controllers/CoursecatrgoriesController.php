@@ -157,7 +157,7 @@ class CoursecatrgoriesController extends Controller
 
             $i=0;
             foreach($files as $file){
-                $name=$i.time().'.'.request()->images->getClientOriginalExtension();
+                $name=$i.time().'.'.$file->getClientOriginalExtension();
                 $file->move($path,$name);
                 $i++;
             }
@@ -423,29 +423,7 @@ class CoursecatrgoriesController extends Controller
         
         return redirect()->back();
     }
-/*
-    public function sendcco(Request $request){
-        $cc = subjectlists::where('id','=',$request->id)->get();
-        
-        //$type = $request->type;
-        
-        if (strpos($request->receiver, ',') !== false) {
-           
-            $recipient = explode(',',$request->receiver);
-            foreach($recipient as $res){
-                $res = str_replace(" ","",$res);
-                Mail::to($res)->send(new ccontentMail($cc));  
-            }
-        }else{
-            Mail::to($request->receiver)->send(new ccontentMail($cc));
-        }   
-        
 
-        session()->flash('message','The Course Contents has been sent successfully!');
-        
-        return redirect()->back();
-    }
-*/
     public function sendcco(Request $request){
         $clist = subjectlists::where('id','=',$request->id)->first();
 
@@ -456,7 +434,7 @@ class CoursecatrgoriesController extends Controller
         }else{
             Mail::to($request->receiver)->send(new courseListMail($clist));
         }        
-        session()->flash('message','The Course List has been sent successfully!');
+        session()->flash('message','The Course Contents has been sent successfully!');
         
         return redirect()->back();
     }
