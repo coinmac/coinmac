@@ -193,9 +193,19 @@
         <script src="https://cdn.tiny.cloud/1/suid78wbd07chz8u503n1gejbv02axgyrzq9ztzlzd3ncgho/tinymce/5/tinymce.min.js"></script>
         <script>
                 tinymce.init({
-                    selector: "textarea",  // change this value according to your HTML
-                    plugins: "lists",
-                    toolbar: "numlist bullist"
+                    selector: 'textarea#basic-example',
+                    height: 500,
+                    menubar: false,
+                    plugins: [
+                      'advlist autolink lists link image charmap print preview anchor',
+                      'searchreplace visualblocks code fullscreen',
+                      'insertdatetime media table paste code help wordcount'
+                    ],
+                    toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+                    content_css: [
+                      '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+                      '//www.tiny.cloud/css/codepen.min.css'
+                    ]
                   });
         </script>
 
