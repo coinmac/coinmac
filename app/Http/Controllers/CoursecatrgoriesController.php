@@ -516,13 +516,12 @@ class CoursecatrgoriesController extends Controller
     public function newsletter(Request $request){
         if(Auth::user()->email=='coinmacsms@gmail.com'){
 
+            $clist = $request;
+
             if (strpos($request->to, ',') !== false) {
-           
-                $recipient = explode(',',$request->to); 
-                $clist = $request;
+               $recipient = explode(',',$request->to); 
                 Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist));
             }else{
-                $clist = $request;
                 Mail::to($request->to)->send(new courseListMail($clist));
             }
 

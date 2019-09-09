@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div style="text-align: center;">
-                <a href="index.html"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
+                <a href="https://coinmac.org"><img src="https://coinmac.org/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
             </div>
             <div class="card">               
 

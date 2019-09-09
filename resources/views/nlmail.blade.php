@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div style="background-image:url('https://coinmac.org/images/course/logo.jpg'); background-size: cover; background-color:darkblue; width: 100%; min-heigh: 100px; height: auto; padding: 20px; text-align: center;">
-    <h2 style="color: white; text-shadow: 2px 2px #000;">{{$clist->ntitle}}</h2>
+<div style="background-size: cover; background-color:darkblue; width: 100%; min-heigh: 100px; height: auto; padding: 20px; text-align: center;">
+    <a href="https://coinmac.org"><img src="https://coinmac.org/images/logo.jpg" style="height: 100px !important; height: auto; float: left; " alt="image"></a> <h2 style="color: white; text-shadow: 2px 2px #000;">{{$clist->ntitle}}</h2>
 </div>
 
 <p>
