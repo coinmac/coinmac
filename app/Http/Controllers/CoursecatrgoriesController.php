@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\notificationMail;
 use App\Mail\courseListMail;
 use App\Mail\ccontentMail;
+use App\subscriptions;
 
 class CoursecatrgoriesController extends Controller
 {
