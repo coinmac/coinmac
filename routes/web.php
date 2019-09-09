@@ -53,7 +53,7 @@ Route::post('savenotice','CoursecatrgoriesController@savenotice')->name('savenot
 
 Route::get('/notifications','CoursecatrgoriesController@notifications')->name('notifications');
 
-Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendlurl');
+// Route::get('/sendclist/{id}/{coursename}','CoursecatrgoriesController@sendlurl');
 Route::post('/sendlist','CoursecatrgoriesController@sendlist')->name('sendlist');
 
 Route::post('subscribe','CoursecatrgoriesController@subscribe')->name('subscribe');

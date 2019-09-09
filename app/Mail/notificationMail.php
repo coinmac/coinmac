@@ -32,7 +32,6 @@ class notificationMail extends Mailable
      */
     public function build()
     {
-        return $this->from('info@coinmac.org')
-                ->view('nmail',['request'=> $this->request]);
+        return $this->from('info@coinmac.org','COINMAC Inc')->view('nmail',['request'=> $this->request]);
     }
 }
