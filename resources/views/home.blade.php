@@ -95,12 +95,36 @@
                             @else
                                 <a href="/admin_area" class="btn btn-primary center">Manage Courses</a>
                                 <hr>
-                                <h2>Newsletter Subscriptions</h2>
-                                <textarea name="emails" id="emails" cols="30" rows="10">
-                                    @foreach ($subs as $s)
-                                        {{$s->email.","}}
-                                    @endforeach
-                                </textarea>
+                                <h2>Send Newsletter</h2>
+                                <form action="{{route('newsletter')}}" method="POST">
+                                    @csrf
+
+                                    <div class="form-group">
+                                            <label for="to ">Subscriber(s) E-mails</label>
+                                            <input type="text" class="form-control" name="to" id="to" placeholder="Subscriber(s) Email" value="@php foreach($subs as $s){echo $s->email.","; }@php">
+                                            
+                                          </div>
+          
+                                          <div class="form-group">
+                                            <label for="ntitle">Subject</label>
+                                            <input type="text"
+                                              class="form-control" name="ntitle" id="ntitle" placeholder="Subject">
+                                            
+                                          </div>
+          
+                                          <div class="form-group">
+                                              <label for="body">Body</label>
+                                              <textarea id="body" class="form-control" name="body" rows="3"></textarea>
+                                          </div>
+                                          <div class="form-group" style="text-align: right;">
+                                            <button type="submit" class="btn btn-primary">Send Newsletter</button>  
+                                          </div>
+                                </form>
+                                
+                                
+                               <hr>
+                               
+                               <h2>Subscriber(s) List</h2>
                                 <table class="table table-light">
                                     <thead class="thead-light">
                                         <tr>

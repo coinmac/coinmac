@@ -513,6 +513,22 @@ class CoursecatrgoriesController extends Controller
         return view('notifications',['notices'=>$notices]);
     }
 
+    public function newsletter(Request $request){
+        if(Auth::user()->email=='coinmacsms@gmail.com'){
+
+            if (strpos($request->to, ',') !== false) {
+           
+                $recipient = explode(',',$request->to); 
+                Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new notificationMail($request));
+            }else{
+                Mail::to($request->to)->send(new notificationMail($request));
+            }
+
+        }
+        session()->flash('message','You have successfully sent the Newsletter!');
+        return redirect()->back();
+    }
+
     public function approvereg($id){
         
         if(Auth::user()->email!='coinmacsms@gmail.com'){

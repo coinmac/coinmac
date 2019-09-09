@@ -58,6 +58,8 @@ Route::post('/sendlist','CoursecatrgoriesController@sendlist')->name('sendlist')
 
 Route::post('subscribe','CoursecatrgoriesController@subscribe')->name('subscribe');
 
+Route::post('newsletter','CoursecatrgoriesController@newsletter')->name('newsletter');
+
 
 Route::get('/sendcc/{id}/{subjectname}','CoursecatrgoriesController@sendcurl');
 // Route::post('/sendcc','CoursecatrgoriesController@sendcc')->name('sendcc');
