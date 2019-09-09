@@ -310,7 +310,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="subsc">
                         <div class="subscribe-contact wrap-box pdfull">
                             <div class="title-section">
                                 <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
