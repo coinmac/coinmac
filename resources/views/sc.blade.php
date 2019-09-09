@@ -1,6 +1,7 @@
 @extends('master')
 @section('content')
 <style>
+    
     .label{color: white !important;}
 </style>
 <div class="wrap-slider" style="background-image:url('/images/course/{{$course->subjectid}}/{{$course->image}}'); background-size: cover; background-color:darkblue;">
