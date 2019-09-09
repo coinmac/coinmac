@@ -30,7 +30,7 @@ class HomeController extends Controller
         $subs = subscriptions::all();
         $emails = "";
         foreach($subs as $s){
-            $emails.=$s.",";
+            $emails.=$s->email.",";
         }
         return view('home',['coursecategories'=>$coursecategories,'subs'=>$subs,'emails'=>$emails]);
     }

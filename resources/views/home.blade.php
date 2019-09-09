@@ -108,7 +108,7 @@
                                           <div class="form-group">
                                             <label for="ntitle">Subject</label>
                                             <input type="text"
-                                              class="form-control" name="ntitle" id="ntitle" placeholder="Subject">
+                                              class="form-control" name="ntitle" id="ntitle" placeholder="Newsletter Subject">
                                             
                                           </div>
           
