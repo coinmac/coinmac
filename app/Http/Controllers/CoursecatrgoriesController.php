@@ -447,7 +447,7 @@ class CoursecatrgoriesController extends Controller
     }
 */
     public function sendcco(Request $request){
-        $clist = subjectlists::where('id','=',$request->id)->get();
+        $clist = subjectlists::where('id','=',$request->id)->first();
 
         if (strpos($request->receiver, ',') !== false) {
            
