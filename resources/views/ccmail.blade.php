@@ -38,7 +38,7 @@
 <a href="https://coinmac.org/sc/{{$clist->subjectid}}" style="display: block; padding: 10px; text-decoration: none; background-color: #ffffff; border: 2px solid white">Register</a>
 </div>
 <p>
-    {{$clist->description}}
+    {!!$clist->description!!}
 </p>
 
 <hr>
