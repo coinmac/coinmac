@@ -156,7 +156,7 @@
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
                                         <li class="active"><a href="/" title="">HOME</a></li>
-                                        <li class="has-mega-menu"><a href="course-grid.html" title="" class="has-mega">COURSES</a>
+                                        <li class="has-mega-menu"><a href="#" title="" class="has-mega">COURSES</a>
                                             <ul class="submenu submenu-style2 mega-menu three-columns">
                                                 <li class="submenu-level">
                                                    <ul class="submenu2">

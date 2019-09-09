@@ -110,8 +110,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>{{$subs->created_at}}</td>
-                                            <td>{{$subs->email}}</td>
+                                            <td>{{$s->created_at}}</td>
+                                            <td>{{$s->email}}</td>
                                         </tr>   
                                     </tbody>
                                     <tfoot>
