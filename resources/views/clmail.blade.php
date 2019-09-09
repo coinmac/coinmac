@@ -33,7 +33,7 @@
                         <td>{{$c->amount}}</td>
                         <td><small>{{$c->date1}}<br>{{$c->date2}}<br>{{$c->date3}}<br>{{$c->date4}}</small></td>
                         
-                        <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" class="button-primary">View Course</a></td>
+                        <td><a href="https://coinmac.org/sc/{{$c->subjectid}}" style="text-decoration: none; color: #ffffff; padding: 10px; text-align: center; display: block; background-color: darkblue;">View Course</a></td>
                     </tr>
                     @endforeach
                     
