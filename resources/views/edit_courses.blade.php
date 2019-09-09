@@ -27,16 +27,20 @@
         <div class="col-md-9 portfolio style2" id="courses">
             <div class="portfolio-wrap clearfix">
                 @foreach ($subjectlist as $sc) 
-                    @php
-                    if ($sc->image!="bookcover.jpg"){
-                        $image = $sc->subjectid."/".$sc->image;
-                    }else{
-                        $image = $sc->image; }  
-                    @endphp
+                     
+                    
                         <div class="item {{$sc->coursecatid}}" style="@media screen and (min-width: 800px) { width: 25% !important;}">
                             <article class="entry ">
                                 <div class="featured-post" style="margin-bottom: 0px !important">
-                                    <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
+                                        @php
+                                        if ($sc->image!="bookcover.jpg"){
+                                            $image = $sc->subjectid."/".$sc->image;
+                                        }else{
+                                            $image = $sc->image; 
+                                            <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
+                                        } 
+                                        @endphp
+                                    
                                 </div>
                                 <div class="entry-post">
                                     <h3 class="entry-title" style="font-size: 0.8em !important; line-height: 15px;"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
