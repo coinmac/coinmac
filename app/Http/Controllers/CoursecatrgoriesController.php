@@ -519,9 +519,11 @@ class CoursecatrgoriesController extends Controller
             if (strpos($request->to, ',') !== false) {
            
                 $recipient = explode(',',$request->to); 
-                Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new notificationMail($request));
+                $clist = $request;
+                Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist));
             }else{
-                Mail::to($request->to)->send(new notificationMail($request));
+                $clist = $request;
+                Mail::to($request->to)->send(new courseListMail($clist));
             }
 
         }
