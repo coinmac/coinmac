@@ -102,7 +102,7 @@
                         @endif
                         <hr>
                         
-                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center;">
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center !important;">
                             <h2>Share this page on ...</h2>
                         <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                         <a class="a2a_button_facebook"></a>
