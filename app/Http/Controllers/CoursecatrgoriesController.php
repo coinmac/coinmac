@@ -423,7 +423,7 @@ class CoursecatrgoriesController extends Controller
         
         return redirect()->back();
     }
-
+/*
     public function sendcco(Request $request){
         $cc = subjectlists::where('id','=',$request->id)->get();
         
@@ -442,6 +442,21 @@ class CoursecatrgoriesController extends Controller
         
 
         session()->flash('message','The Course Contents has been sent successfully!');
+        
+        return redirect()->back();
+    }
+*/
+    public function sendcco(Request $request){
+        $clist = subjectlists::where('id','=',$request->id)->get();
+
+        if (strpos($request->receiver, ',') !== false) {
+           
+            $recipient = explode(',',$request->receiver); 
+            Mail::to('coinmacltd@gmail.com')->cc($recipient)->send(new courseListMail($clist));
+        }else{
+            Mail::to($request->receiver)->send(new courseListMail($clist));
+        }        
+        session()->flash('message','The Course List has been sent successfully!');
         
         return redirect()->back();
     }
