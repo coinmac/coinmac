@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\coursecatrgories;
+use App\subscriptions;
 
 class HomeController extends Controller
 {
@@ -26,7 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid')->get();
-        return view('home',['coursecategories'=>$coursecategories]);
+        $subs = subscriptions::all();
+        return view('home',['coursecategories'=>$coursecategories,'subs'=>$subs]);
     }
 
     

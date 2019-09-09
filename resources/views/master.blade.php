@@ -313,14 +313,35 @@
                     <div class="col-md-12">
                         <div class="subscribe-contact wrap-box pdfull">
                             <div class="title-section">
-                                <h1 class="title">SUBSCRIBE TO NEWSLETTER</h1>
+                                <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
                                 <div class="sub-title">
+                                        @if (session()->has('message'))
+                                        <div class="row">
+                                                <div class="alert alert-success col-md-offset-3 col-md-6" role="alert">
+                                                    {{session()->get('message')}}
+                                                </div>
+                                        </div>                        
+                                        @endif
+                                
+                                        @if ($errors->all())
+                                        <div class="row">
+                                            <div class="alert alert-danger  col-md-offset-3 col-md-6" role="alert">
+                                            @foreach ($errors->all() as $error)
+                                
+                                            <li>{{$error}}</li>
+                                                
+                                            @endforeach
+                                            </div>
+                                        </div>            
+                                        @endif
+
                                     Subscribe now and receive weekly newsletter with educational materials, new courses,<br>interesting posts, popular books and much more!
                                 </div>
                             </div>
-                            <form action="/subscribe" method="post" id="formsubscribe" class="formsearch search-course">
+                            <form action="{{route('subscribe')}}" method="post" id="formsubscribe" class="formsearch search-course">
+                                @csrf
                                 <p class="subscribe-email">
-                                    <input type="text" id="emailsubscribe" name="email" value="" required="required" placeholder="Your email here">
+                                    <input type="text" id="emailsubscribe" name="email" value="" required="required" maxlength="50" placeholder="Your email here">
                                 </p>
                                 <div class="subscribe-btn">
                                     <div class="wrap-btn">

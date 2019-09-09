@@ -21,7 +21,7 @@ class CoursecatrgoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media','searchcourses']);
+        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media','searchcourses','subscribe']);
     }
     /**
      * Display a listing of the resource.
@@ -420,6 +420,20 @@ class CoursecatrgoriesController extends Controller
         Mail::to($request->to)->send(new notificationMail($request));
 
         session()->flash('message','The Message was sent successfully!');
+        
+        return redirect()->back();
+    }
+
+    public function subscribe(Request $request){
+        $this->validate($request,[
+            'email' => 'required|max:50'
+        ]);
+
+        subscriptions::create([
+            'email'=>$request->email               
+        ]);
+        
+        session()->flash('message','Your subscription was successful. You will start receiving our periodic newsletters. Thank you!');
         
         return redirect()->back();
     }

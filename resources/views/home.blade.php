@@ -94,6 +94,33 @@
                                 </div>
                             @else
                                 <a href="/admin_area" class="btn btn-primary center">Manage Courses</a>
+                                <hr>
+                                <h2>Newsletter Subscriptions</h2>
+                                <textarea name="emails" id="emails" cols="30" rows="10">
+                                    @foreach ($subs as $s)
+                                        {{$s->email.","}}
+                                    @endforeach
+                                </textarea>
+                                <table class="table table-light">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>E-mail Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{$subs->created_at}}</td>
+                                            <td>{{$subs->email}}</td>
+                                        </tr>   
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>E-mail Address</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                             @endif
                         </div>
                     </div>
