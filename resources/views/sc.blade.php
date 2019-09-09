@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 <style>
-    
+
     .label{color: white !important;}
 </style>
 <div class="wrap-slider" style="background-image:url('/images/course/{{$course->subjectid}}/{{$course->image}}'); background-size: cover; background-color:darkblue;">
@@ -100,6 +100,18 @@
                         @else
                         {!!$course->description!!}
                         @endif
+                        <hr>
+                        
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_whatsapp"></a>
+                        <a class="a2a_button_sms"></a>
+                        <a class="a2a_button_email"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        
                     </div>
                     <!--
                     <div class="course-testimonials">
