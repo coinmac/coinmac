@@ -194,8 +194,8 @@
         <script>
                 tinymce.init({
                     selector: 'textarea',
-                    height: 500,
-                    menubar: false,
+                    height: 300,
+                    menubar: true,
                     plugins: [
                       'advlist autolink lists link image charmap print preview anchor',
                       'searchreplace visualblocks code fullscreen',
