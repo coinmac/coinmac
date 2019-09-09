@@ -19,7 +19,18 @@
     {{$clist->amounti}}
     @endif
 </h2>
+<hr>
+<p>Dear Sir/Ma,</p>
 
+<p>You are hereby invited to our training course as detailed below.  This is with a view to soliciting nominations to enable some members of staff of your organization to attend this training programme.<br><br>
+
+We have over 20 years’ experience of providing training to the government, banking, finance and energy sectors. You can be sure that, as such, our track record makes us the lowest risk training partner you could find. Our philosophy has always been to provide a practical training experience with skills that can be used to gain a tangible return on your investment.<br><br>
+
+We look forward to receiving your list of nominees.  Thank you.
+</p>
+
+Warm Regards<br><br><strong>Signed: <br> Management</strong>
+<hr>
 <div style="float: right; background-color: darkblue; color: white; font-weight: bold; width: 30%; padding: 10px; border: double #1B5392 5px; text-align: center; margin: 15px;">
 <h3>Dates:</h3>
 <hr>
