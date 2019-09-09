@@ -2,19 +2,19 @@
 
 @section('content')
 
-{!! $type = \App\coursecatrgories::where('courseid','=',$cc->coursecatid)->first()->category; !!}
-<div style="background-image:url('https://coinmac.org/images/course/{{$cc->subjectid}}/{{$cc->image}}'); background-size: cover; background-color:darkblue; width: 100%; min-heigh: 100px; height: auto; padding: 20px; text-align: center;">
-    <h2 style="color: white; text-shadow: 2px 2px #000;">{{$cc->subjectname}}</h2>
-    <h4>Category: {{$cc->coursecategory}} | {{$type}} </h4>
+{!! $type = \App\coursecatrgories::where('courseid','=',$clist->coursecatid)->first()->category; !!}
+<div style="background-image:url('https://coinmac.org/images/course/{{$clist->subjectid}}/{{$clist->image}}'); background-size: cover; background-color:darkblue; width: 100%; min-heigh: 100px; height: auto; padding: 20px; text-align: center;">
+    <h2 style="color: white; text-shadow: 2px 2px #000;">{{$clist->subjectname}}</h2>
+    <h4>Category: {{$clist->coursecategory}} | {{$type}} </h4>
     
 </div>
 
 <h2 style="text-align: center; color:green">
     COURS FEE: 
     @if ($type=="National")
-    {{$cc->amount}}
+    {{$clist->amount}}
     @else
-    {{$cc->amounti}}
+    {{$clist->amounti}}
     @endif
 </h2>
 
@@ -22,21 +22,21 @@
 <h3>Dates:</h3>
 <hr>
 @if ($type=="National")
-{{$cc->date1}}
-{{$cc->date2}}
-{{$cc->date3}}
-{{$cc->date4}}
+{{$clist->date1}}
+{{$clist->date2}}
+{{$clist->date3}}
+{{$clist->date4}}
 @else
-{{$cc->date1i}}
-{{$cc->date2i}}
-{{$cc->date3i}}
-{{$cc->date4i}}
+{{$clist->date1i}}
+{{$clist->date2i}}
+{{$clist->date3i}}
+{{$clist->date4i}}
 @endif
 <hr>
-<a href="https://coinmac.org/sc/{{$cc->subjectid}}" style="display: block; padding: 10px;">Register</a>
+<a href="https://coinmac.org/sc/{{$clist->subjectid}}" style="display: block; padding: 10px;">Register</a>
 </div>
 <p>
-    {{$cc->description}}
+    {{$clist->description}}
 </p>
 
 <hr>
