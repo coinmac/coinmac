@@ -37,7 +37,9 @@
                                             $image = $sc->subjectid."/".$sc->image;
                                         }else{
                                             $image = $sc->image; 
+                                        @endphp
                                             <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
+                                        @php
                                         } 
                                         @endphp
                                     
