@@ -391,7 +391,7 @@
                                     <ul>
                                         <li><a href="/contact_us">Contact Us</a></li>
                                         <li><a href="/social_media">Social Media</a></li>
-                                        <li><a href="livechat">Live Chat</a></li>
+                                        <li><a href="https://tawk.to/chat/5ab28fded7591465c708c7f8/default" target="_blank">Live Chat</a></li>
                                         <li><a href="/sitemap">Site Map</a></li>
                                         <li><a href="/contact_us">Map Location</a></li>
                                     </ul>
@@ -453,6 +453,19 @@
     <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5ab28fded7591465c708c7f8/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
    
 </body>
 </html>
