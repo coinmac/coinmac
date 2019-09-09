@@ -3,7 +3,7 @@
 <style>
     .label{color: white !important;}
 </style>
-<div class="wrap-slider" style="background-image:url('/public/images/course/{{$course->subjectid}}/{{$course->image}}'); background-size: cover; background-color:darkblue;">
+<div class="wrap-slider" style="background-image:url('/images/course/{{$course->subjectid}}/{{$course->image}}'); background-size: cover; background-color:darkblue;">
     <div class="container page-container">
         <div class="page-content">
             <div class="page-title">
@@ -80,7 +80,7 @@
                                         @endphp
                                         @while($file = readdir($handle))
                                         @if($file !== '.' && $file !== '..')
-                                            <li><a href="#"><img src="/{{public_path}}/images/course/{{$course->subjectid}}/{{$file}}" alt="image"></a></li>
+                                            <li><a href="#"><img src="/images/course/{{$course->subjectid}}/{{$file}}" alt="image"></a></li>
                                         @endif
                                         @endwhile
                                     </ul>
