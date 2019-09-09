@@ -193,7 +193,7 @@
         <script src="https://cdn.tiny.cloud/1/suid78wbd07chz8u503n1gejbv02axgyrzq9ztzlzd3ncgho/tinymce/5/tinymce.min.js"></script>
         <script>
                 tinymce.init({
-                    selector: 'textarea#basic-example',
+                    selector: 'textarea',
                     height: 500,
                     menubar: false,
                     plugins: [
