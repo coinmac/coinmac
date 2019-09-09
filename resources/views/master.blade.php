@@ -285,6 +285,26 @@
             </header><!-- /header -->
         </div><!-- /header3 -->
 
+        @if (session()->has('message'))
+        <div class="row" style="background-color: #ffffff;">
+                <div class="alert alert-success col-md-offset-3 col-md-6" role="alert">
+                    {{session()->get('message')}}
+                </div>
+        </div>                        
+        @endif
+
+        @if ($errors->all())
+        <div class="row"  style="background-color: #ffffff;">
+            <div class="alert alert-danger  col-md-offset-3 col-md-6" role="alert">
+            @foreach ($errors->all() as $error)
+
+            <li>{{$error}}</li>
+                
+            @endforeach
+            </div>
+        </div>            
+        @endif
+
         @yield('content')
 
         <!-- flat-contact -->
@@ -315,26 +335,6 @@
                             <div class="title-section">
                                 <h1 class="title">SUBSCRIBE TO OUR NEWSLETTER</h1>
                                 <div class="sub-title">
-                                        @if (session()->has('message'))
-                                        <div class="row">
-                                                <div class="alert alert-success col-md-offset-3 col-md-6" role="alert">
-                                                    {{session()->get('message')}}
-                                                </div>
-                                        </div>                        
-                                        @endif
-                                
-                                        @if ($errors->all())
-                                        <div class="row">
-                                            <div class="alert alert-danger  col-md-offset-3 col-md-6" role="alert">
-                                            @foreach ($errors->all() as $error)
-                                
-                                            <li>{{$error}}</li>
-                                                
-                                            @endforeach
-                                            </div>
-                                        </div>            
-                                        @endif
-
                                     Subscribe now and receive weekly newsletter with educational materials, new courses,<br>interesting posts, popular books and much more!
                                 </div>
                             </div>
