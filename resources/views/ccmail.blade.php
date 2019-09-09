@@ -20,7 +20,7 @@
     @endif
 </h2>
 
-<div style="float: right; background-color: darkblue; color: white; font-weight: bold; width: 30%; padding: 10px; border: double darkblue 2px; text-align: center">
+<div style="float: right; background-color: darkblue; color: white; font-weight: bold; width: 30%; padding: 10px; border: double #1B5392 5px; text-align: center; marging: 15px;">
 <h3>Dates:</h3>
 <hr>
 @if ($type=="National")
