@@ -51,6 +51,10 @@
                                         <option value="International2_Banner.jpg">International Banner2</option>
                                         <option value="Sharepoint_banner.jpg">Sharepoint Banner</option>
                                         <option value="Project_Banner.jpg">Project Management Banner</option>
+                                        <option value="slide1.JPG">Latest Picture 1</option>
+                                        <option value="slide2.jpg">Latest Picture 2</option>
+                                        <option value="slide3.JPG">Latest Picture 3</option>
+                                        <option value="slide4.JPG">Latest Picture 4</option>
                                     </select>
                                 </div>
 
