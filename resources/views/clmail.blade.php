@@ -2,10 +2,7 @@
 
 @section('content')
             <div class="header">
-                    <div style="text-align: center;">
-                        <a href="https://coinmac.org"><img src="https://coinmac.org/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
-                    </div>
-                    
+                        <img src="https://coinmac.org/images/mail/{{Cookie::get('banner')}}" style="height: auto !important; width: 100% !important;" alt="COINMAC">                    
                     <h3 style="text-align: center;">{{$clist[0]->coursecategory}}</h3>
             </div>
             

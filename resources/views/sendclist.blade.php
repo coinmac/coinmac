@@ -34,7 +34,25 @@
                                     <select id="coursecategory" class="form-control" name="coursecategory">
                                         <option value="{{$coursename}}" selected readonly>{{$coursename}}</option>                                        
                                     </select>
-                                </div>                                
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="banner">Select Banner</label>
+                                    <select name="banner" class="form-control">
+                                        <option value="project_appraisal.jpg">Project Appraisal Banner</option>
+                                        <option value="report_writing.jpg">Report Writing Banner</option>
+                                        <option value="IPSAS_Banner.jpg">IPSAS Banner</option>
+                                        <option value="FIRS_Banner.jpg">FIRS Banner</option>
+                                        <option value="Tax_Banner.jpg">Tax Banner</option>
+                                        <option value="Computer_Banner.jpg">Computer Banner</option>
+                                        <option value="Computer3_Banner.jpg">Computer Banner 2</option>
+                                        <option value="GIS_Banner.jpg">GIS Banner</option>
+                                        <option value="International_Banner.jpg">International Banner</option>
+                                        <option value="International2_Banner.jpg">International Banner2</option>
+                                        <option value="Sharepoint_banner.jpg">Sharepoint Banner</option>
+                                        <option value="Project_Banner.jpg">Project Management Banner</option>
+                                    </select>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="recipients">Enter Recipient(s)</label>

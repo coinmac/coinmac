@@ -456,13 +456,13 @@ class CoursecatrgoriesController extends Controller
 
     public function sendlist(Request $request){
         $clist = subjectlists::where('coursecatid','=',$request->id)->get();
-
+        $banner = $request->banner;
         if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients); 
-            Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist));
+            Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist,$banner));
         }else{
-            Mail::to($request->recipients)->send(new courseListMail($clist));
+            Mail::to($request->recipients)->send(new courseListMail($clist,$banner));
         }        
         session()->flash('message','The Course List has been sent successfully!');
         
