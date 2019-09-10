@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                    <label for="subcategory">Subcategory</label>
+                    <label for="subcategory">Unique ID (No Space)</label>
                     <input type="text"
                         class="form-control" name="subcategory" id="subcategory" aria-describedby="subcat" placeholder="Subcategory">
                     <small id="subcat" class="form-text text-muted">sub category of post</small>

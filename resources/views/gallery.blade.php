@@ -34,7 +34,7 @@
                                             <span>by <a href="#">{{$cn->author}}</a></span>
                                         </div>
                                         <div class="entry-content">
-                                            <p>{{substr($cn->content,0,50)}}...</p>
+                                            <p>{!!substr($cn->content,0,50)!!}...</p>
                                         </div>
                                     </div>
                                 </div>

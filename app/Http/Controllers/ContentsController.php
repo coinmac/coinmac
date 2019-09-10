@@ -54,7 +54,7 @@ class ContentsController extends Controller
         request()->featured_img->move(public_path('images/content'), $imageName);
 
         if($files=$request->file('images')){
-            $path = public_path().'/images/contents/'.$imageName;
+            $path = public_path().'/images/contents/'.$request->subcategory;
             File::isDirectory($path) or File::makeDirectory($path, 0777, true, true);
 
             $i=0;
@@ -120,7 +120,7 @@ class ContentsController extends Controller
         request()->featured_img->move(public_path('images/content'), $imageName);
 
         if($files=$request->file('images')){
-            $path = public_path().'/images/contents/'.$request->featured_old;
+            $path = public_path().'/images/contents/'.$request->subcategory;
             File::isDirectory($path) or File::makeDirectory($path, 0777, true, true);
 
             $i=0;
