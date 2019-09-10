@@ -59,7 +59,7 @@ class ContentsController extends Controller
 
             $i=0;
             foreach($files as $file){
-                $name=$i.time().'.'.request()->images->getClientOriginalExtension();
+                $name=$i.time().'.'.$file->getClientOriginalExtension();
                 $file->move($path,$name);
                 $i++;
             }
@@ -114,8 +114,7 @@ class ContentsController extends Controller
     {
         $this->validate($request,[
             'title' => 'required|min:3',
-            'content' => 'required|min:10',
-            'featured_img' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'content' => 'required|min:10'            
         ]);
         $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
         request()->featured_img->move(public_path('images/content'), $imageName);
