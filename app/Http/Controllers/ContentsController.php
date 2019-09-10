@@ -126,7 +126,7 @@ class ContentsController extends Controller
 
             $i=0;
             foreach($files as $file){
-                $name=$i.time().'.'.request()->image->getClientOriginalExtension();
+                $name=$i.time().'.'.$file->getClientOriginalExtension();
                 $file->move($path,$name);
                 $i++;
             }

@@ -89,10 +89,8 @@
             margin: 0 1em;    /* any design */
         }
 
-        .tp-mask-wrap,.sub-title{
-            background-color: darkblue;
-            padding: 10px;
-            opacity: 0.7;
+        .tp-caption,.sub-title{
+           text-shadow: 1px 1px #000;
         }
     </style>
 </head>                                
