@@ -426,7 +426,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="title-section">
-                <h1 class="title">FOUNDATIONAL COURSE CATEGORIES</h1>
+                <h1 class="title">FEATURED COURSE CATEGORIES</h1>
                 <div class="sub-title">
                     These are courses that boosts employees productivity and routinely necessary for all employers.
                 </div>
