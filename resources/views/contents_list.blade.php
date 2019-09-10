@@ -4,6 +4,7 @@
 <section class="flat-row bg-theme wrap-price-post">
 <div class="container">
     <div class="row">
+        <a href="/admin_area" class="btn btn-primary">Publish New</a>
         <div class="col-md-12">
                 <div class="title-section title-height46">
                     <h1 class="title">EDIT CONTENTS / POSTS</h1>
