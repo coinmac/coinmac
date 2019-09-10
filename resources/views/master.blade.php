@@ -219,27 +219,24 @@
                                                         
                                                     </ul> 
                                                 </li>
-                                                <li class="submenu-level">
-                                                   <ul class="submenu2">
-                                                        <li class="sub-title">
-                                                            <a href="#">DIPLOMA</a>
-                                                            <span class="btn-mega"></span>
-                                                        </li>
-                                                        <li class="mega-menu-sub">
-                                                            <ul>
-                                                                @foreach ($coursecategories as $cc) 
-
-                                                                    @if ($cc->category=="Diploma")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
-                                                                    @endif
-                                                                    
-                                                                @endforeach
-                                                            </ul>
-                                                        </li>
-                                                    </ul> 
-                                                </li>
+                                                
                                             </ul>
                                         </li>
+
+                                        <li><a href="#" title="">DIPLOMA</a>
+                                            <ul class="submenu">
+
+                                                    @foreach ($coursecategories as $cc) 
+
+                                                    @if ($cc->category=="Diploma")
+                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                    @endif
+                                                    
+                                                @endforeach
+                                               
+                                            </ul>
+                                        </li>
+
                                         <li><a href="our-teacher.html" title="">PROFILE</a>
                                             <ul class="submenu">
                                                 <li><a href="/about">About COINMAC</a></li>
@@ -247,6 +244,8 @@
                                                 <li><a href="/consultancy">Consultancy</a></li>
                                             </ul>
                                         </li>
+
+
                                         <li><a href="blog-list01.html" title="">RESOURCES</a>
                                             <ul class="submenu">
                                                 <li><a href="https://drive.google.com/file/d/1lK2c116HiKVpicyloDCNCXO8t51oE_qt/view?usp=sharing">COINMAC Profile</a></li>
@@ -315,7 +314,7 @@
                         <div class="title-section left color-sub">
                                 <h1 class="title">COINMAC PROFESSIONAL TRAINING</h1>
                                 <div class="sub-title">
-                                    Enroll in any of our professional courses to build your portfolio, increase productivity and become employable <br> in Nigeria <span class="color-gray"> and beyond.</span>
+                                    Enroll in any of our professional courses to build your portfolio, increase productivity and become employable in Nigeria <span class="color-gray"> and beyond.</span>
                                 </div>
                             </div>
                     </div><!-- col.md-8 -->
