@@ -17,6 +17,7 @@ use App\Mail\notificationMail;
 use App\Mail\courseListMail;
 use App\Mail\ccontentMail;
 use App\subscriptions;
+use Illuminate\Cookie\CookieJar;
 
 class CoursecatrgoriesController extends Controller
 {
@@ -454,15 +455,16 @@ class CoursecatrgoriesController extends Controller
         return redirect()->back();
     }
 
-    public function sendlist(Request $request){
+    public function sendlist(CookieJar $cookieJar, Request $request){
         $clist = subjectlists::where('coursecatid','=',$request->id)->get();
-        $banner = $request->banner;
+        
+        $cookieJar->queue(cookie('banner', $request->banner, 45000));
         if (strpos($request->recipients, ',') !== false) {
            
             $recipient = explode(',',$request->recipients); 
-            Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist,$banner));
+            Mail::to('coinmacltd@gmail.com')->bcc($recipient)->send(new courseListMail($clist));
         }else{
-            Mail::to($request->recipients)->send(new courseListMail($clist,$banner));
+            Mail::to($request->recipients)->send(new courseListMail($clist));
         }        
         session()->flash('message','The Course List has been sent successfully!');
         
