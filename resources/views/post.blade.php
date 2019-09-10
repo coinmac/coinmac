@@ -46,7 +46,7 @@
                                         @endphp
                                         @while($file = readdir($handle))
                                         @if($file !== '.' && $file !== '..')
-                                            <img src="/images/contents/{{$course->subcategory}}/{{$file}}" alt="image" style="height: 300px; width: auto; float: left; marging: 1px; border: 2px solid darkblue;">
+                                            <img src="/images/contents/{{$cn->subcategory}}/{{$file}}" alt="image" style="height: 300px; width: auto; float: left; marging: 1px; border: 2px solid darkblue;">
                                         @endif
                                         @endwhile
                                 </div>
