@@ -473,11 +473,11 @@
                         <p>At COINMAC Inc, these courses runs all through the year and we encourage everyone to attend and acquire the knowledge and increase the value of their intellectual portfolio..</p>
                     </div>
                     <div class="course-about-us">
-                        <p>Total Courses Available:<strong> 100</strong></p>
+                        <p>Total Courses Available:<strong> {{count($subjectlist)}}</strong></p>
                     </div>
                     <div class="button-style">
                         <div class="wrap-btn">
-                            <a class="flat-btn" href="/popular">SEE COURSE LIST</a>
+                            <a class="flat-btn" href="#popular">SEE COURSE LIST</a>
                         </div>
                     </div>
                 </div><!-- About-us -->
@@ -488,7 +488,7 @@
 
 <!-- portfolio-isotope -->
 <section class="flat-row bg-theme wrap-price-post">
-<div class="container">
+<div class="container" id="popular">
     <div class="row">
         <div class="col-md-12">
                 <div class="title-section title-height46">
@@ -609,6 +609,9 @@
                     <p class="wrap-input-phone">
                         <input type="password" name="password_confirmation" value="" required="required" placeholder="Confirm Password *:">
                     </p>
+                    <p class="wrap-input-name">
+                        <input type="text" id="phonenumber" name="phonenumber" value="" required="required" placeholder="Phone Number:">
+                    </p>
                     <div class="wrap-btn">
                         <button class="flat-btn" type="submit">SIGN UP</button>
                     </div>
@@ -619,7 +622,7 @@
             <div class="wrap-register-right wrap-box pdtopleft">
                 <div class="wrap-register-title">
                     <div class="title-top">
-                       GET ACCESS 100s OF ONLINE COURSES AND RESOURCES FOR FREE
+                       GET ACCESS TO 100s OF ONLINE COURSES AND RESOURCES FOR FREE
                     </div>
                     <div class="title-register">
                        REGISTER NOW

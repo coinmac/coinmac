@@ -88,6 +88,12 @@
             content: '\2713';
             margin: 0 1em;    /* any design */
         }
+
+        .tp-mask-wrap,.sub-title{
+            background-color: darkblue;
+            padding: 10px;
+            opacity: 0.7;
+        }
     </style>
 </head>                                
 <body>
