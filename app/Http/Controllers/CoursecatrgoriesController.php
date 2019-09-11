@@ -23,7 +23,7 @@ class CoursecatrgoriesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media','searchcourses','subscribe']);
+        $this->middleware('auth')->except(['index','show','course','coursegroup','lesson','about','management','resources','events','gallery','news','consultancy','brochure_nat','brochure_inter','brochure_cert','brochure_diploma','social_media','searchcourses','subscribe','contactmail']);
     }
     /**
      * Display a listing of the resource.
