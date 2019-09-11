@@ -160,6 +160,13 @@
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
                                         <li class="active"><a href="/" title="">HOME</a></li>
+                                        <li><a href="#" title="">PROFILE</a>
+                                            <ul class="submenu">
+                                                <li><a href="/about">About COINMAC</a></li>
+                                                <li><a href="/management">Management/Executives</a></li>
+                                                <li><a href="/consultancy">Consultancy</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="has-mega-menu"><a href="#" title="" class="has-mega">COURSES</a>
                                             <ul class="submenu submenu-style2 mega-menu three-columns">
                                                 <li class="submenu-level">
@@ -241,13 +248,7 @@
                                             </ul>
                                         </li>
 
-                                        <li><a href="#" title="">PROFILE</a>
-                                            <ul class="submenu">
-                                                <li><a href="/about">About COINMAC</a></li>
-                                                <li><a href="/management">Management/Executives</a></li>
-                                                <li><a href="/consultancy">Consultancy</a></li>
-                                            </ul>
-                                        </li>
+                                        
 
 
                                         <li><a href="#" title="">RESOURCES</a>
