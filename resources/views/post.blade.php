@@ -124,8 +124,7 @@
                                     @endphp
                                     <div class="slidecontainer">
                                         @php    
-                                        $handle = opendir(public_path().'/images/contents/'.$cn->subcategory);
-                                        $i = 1;
+                                        $handle = opendir(public_path().'/images/contents/'.$cn->subcategory);                                        
                                         @endphp
                                         @while($file = readdir($handle))
                                         @if($file !== '.' && $file !== '..')
@@ -152,12 +151,16 @@
                                     
                                       <!-- Thumbnail images -->
                                       <div class="row">
-                                            @while($file = readdir($handle))
-                                            @if($file !== '.' && $file !== '..')
+                                            @php    
+                                            $handle2 = opendir(public_path().'/images/contents/'.$cn->subcategory);
+                                            $i = 1;
+                                            @endphp
+                                            @while($file2 = readdir($handle2))
+                                            @if($file2 !== '.' && $file2 !== '..')
                                         
                                             <div class="column">
                                                 <div class="numbertext">{{$cn->title}}</div>
-                                                <img class="demo cursor" src="/images/contents/{{$cn->subcategory}}/{{$file}}" onclick="currentSlide({{$i}})" alt="{{$cn->title}}" style="width: 100%">
+                                                <img class="demo cursor" src="/images/contents/{{$cn->subcategory}}/{{$file2}}" onclick="currentSlide({{$i}})" alt="{{$cn->title}}" style="width: 100%">
                                             </div>
                                             @php 
                                             $i++;
