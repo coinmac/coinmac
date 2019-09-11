@@ -101,7 +101,7 @@
                         <article class="entry">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
-                                        <div class="title-section">
+                                        <div class="title-section" style="text-shadow: none !important;">
                                             <h1 class="title">{{$cn->title}}</h1> 
                                             <div class="sub-title">
                                                 {{$cn->subtitle}}<br>
@@ -129,8 +129,7 @@
                                         @while($file = readdir($handle))
                                         @if($file !== '.' && $file !== '..')
                                     
-                                        <div class="mySlides">
-                                            
+                                        <div class="mySlides">                                            
                                             <img src="/images/contents/{{$cn->subcategory}}/{{$file}}" alt="{{$cn->title}}" style="width: 100%">
                                         </div>
                                             
@@ -158,8 +157,7 @@
                                             @while($file2 = readdir($handle2))
                                             @if($file2 !== '.' && $file2 !== '..')
                                         
-                                            <div class="column">
-                                                <div class="numbertext">{{$cn->title}}</div>
+                                            <div class="column">                                                
                                                 <img class="demo cursor" src="/images/contents/{{$cn->subcategory}}/{{$file2}}" onclick="currentSlide({{$i}})" alt="{{$cn->title}}" style="width: 100%">
                                             </div>
                                             @php 
