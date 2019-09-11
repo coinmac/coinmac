@@ -112,7 +112,7 @@ class ContentsController extends Controller
      * @param  \App\Contents  $contents
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
         $this->validate($request,[
             'title' => 'required|min:3',
