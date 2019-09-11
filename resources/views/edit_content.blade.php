@@ -6,6 +6,7 @@
             @csrf
             @method('put')
             <input type="hidden" name="featured_old" value="{{$cn->featured_img}}">
+            <input type="hidden" name="id" value="{{$cn->id">
             <div class="form-group">
             <label for="title">Enter Title</label>
             <input type="text"

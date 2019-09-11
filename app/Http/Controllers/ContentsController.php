@@ -54,7 +54,7 @@ class ContentsController extends Controller
 
             request()->featured_img->move(public_path('images/content'), $imageName);
         }
-        
+
         if($files=$request->file('images')){
             $path = public_path().'/images/contents/'.$request->subcategory;
             File::isDirectory($path) or File::makeDirectory($path, 0777, true, true);
@@ -120,9 +120,11 @@ class ContentsController extends Controller
             'featured_img' => 'image|mimes:jpeg,png,jpg|max:2048',            
         ]);
 
-        if($request->file('featured_img')){
+        if($request->file('featured_img')!=""){
             $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
             request()->featured_img->move(public_path('images/content'), $imageName);
+        }else{
+            $imageName = $request->featured_old;
         }
 
         if($files=$request->file('images')){
@@ -150,7 +152,7 @@ class ContentsController extends Controller
             $contents->ranking=$request->ranking;
                
         session()->flash('message','The content:'.$request->title.' has been '.$request->status.' successfully!');
-        return redirect(route('publish_contents'));
+        return redirect()->back();
     }
 
     /**
