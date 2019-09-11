@@ -2,8 +2,7 @@
 @section('content')
 
 <!-- latest-events -->
-<section class="flat-row" style="margin-top: 50px;">
-
+<section class="flat-row">
 <div class="container">
     <div class="blog-list2 lates-new wrap-box pdbottom">
         <div class="row">
@@ -29,18 +28,58 @@
                                 <div class="col-md-12">
                                     <h2>In Pictures</h2>
                                     <hr>
-                                        @php
-                                        if($cn->subcategory!=""){
+                                    <!-- Container for the image gallery -->
+                                    @php
+                                    if($cn->subcategory!=""){
+                                    @endphp
+                                    <div class="slidecontainer">
+                                        @php    
                                         $handle = opendir(public_path().'/images/contents/'.$cn->subcategory);
+                                        $i = 1;
                                         @endphp
                                         @while($file = readdir($handle))
                                         @if($file !== '.' && $file !== '..')
-                                            <img src="/images/contents/{{$cn->subcategory}}/{{$file}}" alt="image" style="height: 250px; width: auto; float: left; marging: 1px; border: 2px solid darkblue;">
+                                    
+                                        <div class="mySlides">
+                                            <div class="numbertext">{{$cn->title}}</div>
+                                            <img src="/images/contents/{{$cn->subcategory}}/{{$file}}" alt="{{$cn->title}}" style="width: 100%">
+                                        </div>
+                                            
                                         @endif
                                         @endwhile
-                                        @php
-                                        }
-                                        @endphp
+                                        
+                                      <!-- Full-width images with number text -->
+                                      
+                                    
+                                      <!-- Next and previous buttons -->
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    
+                                      <!-- Image text -->
+                                      <div class="caption-container">
+                                        <p id="caption"></p>
+                                      </div>
+                                    
+                                      <!-- Thumbnail images -->
+                                      <div class="row">
+                                            @while($file = readdir($handle))
+                                            @if($file !== '.' && $file !== '..')
+                                        
+                                            <div class="column">
+                                                <div class="numbertext">{{$cn->title}}</div>
+                                                <img class="demo cursor" src="/images/contents/{{$cn->subcategory}}/{{$file}}" onclick="currentSlide({{$i}})" alt="{{$cn->title}}" style="width: 100%">
+                                            </div>
+                                            @php 
+                                            $i++;
+                                            @endphp  
+                                            @endif
+                                            @endwhile
+                                        
+                                      </div>
+                                    </div>
+                                    @php
+                                    }
+                                    @endphp
                                 </div>
                                 
                             </div>
