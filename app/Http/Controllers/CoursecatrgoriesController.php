@@ -537,7 +537,7 @@ class CoursecatrgoriesController extends Controller
 
                 Mail::to('coinmacsms@gmail.com')->send(new courseListMail($clist));
         
-        session()->flash('message','You have successfully sent the Message to Admin. You will recieve a reply soon!');
+        session()->flash('message','Your message was sent successfully. One of our online support staff will contact you shortly. Thank you!');
         return redirect()->back();
     }
 
