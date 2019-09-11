@@ -138,7 +138,7 @@ class ContentsController extends Controller
                 $i++;
             }
         }
-            $contents = Contents::where('id','=',$request->id);
+            $contents = Contents::findOrFail($id);
         
             $contents->title=$request->title;
             $contents->subtitle=$request->subtitle;
