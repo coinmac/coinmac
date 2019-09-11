@@ -21,12 +21,11 @@
                                           142, Fajuyi Road, Opp Alafia Hospital, Adamasingba, U.I. P. O. Box 22474, Ibadan,<br />
                                     Oyo State, Nigeria.</p>
                                     <p class="text1"><span class="h4b">NIGERIA (BAUCHI):</span> <br />
-                                        Bauchi Hotels Ltd, (Zaranda Hotel), Jos Road, Bauchi,<br />
+                                        Bauchi Hotels Ltd, (Zaranda Hotel), Jos Road, Bauchi,
                                   Bauchi State, Nigeria.</p>
                                         <p class="text1"><span class="h4b">LONDON:</span> <br />
-                                          Suite 2, Caxton Street Studios 16, Caxton Street, Canning Town, London, E167/L</p>
-                                        <p class="text1"><span class="h4b">USA:</span> 7707, Romero Drive, <br />
-                                  Arlington, Tennessee, 38002, USA</p>
+                                            The Elevation Point 3, Herringham Road, Off Westmoor Road, thames Wharf Barrier, Charlton, London, SE7 8NJ</p>
+                                        <p class="text1"><span class="h4b">USA:</span> 7707, Romero Drive,  Arlington, Tennessee, 38002, USA</p>
                                         <p class="text1"><span class="h4b">(global affiliations with institutions in)</span> Ghana, Canada,    U.S.A,     United Kingdom,   United Arab Emirate<br />
                                           <span class="headerText2">Tel:</span>     +234  8038437312, +234 8023262908.<br />
                                           <span class="headerText2">Email:</span> training(at)coinmac.org,coinmac(at)coinsultant.com,  coinmacltd(at)gmail.com<br />
@@ -76,7 +75,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcoinmacinc&tabs=timeline&width=0&height=0&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=213102155499064" width="0" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCoinmac-International-Inc-111254940259836&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=429238987655355" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
