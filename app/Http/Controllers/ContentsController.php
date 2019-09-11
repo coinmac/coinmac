@@ -47,12 +47,14 @@ class ContentsController extends Controller
         $this->validate($request,[
             'title' => 'required|min:3',
             'content' => 'required|min:10',
-            'featured_img' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'featured_img' => 'image|mimes:jpeg,png,jpg|max:2048',
         ]);
-        $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
+        if($request->file('featured_img')){
+            $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
 
-        request()->featured_img->move(public_path('images/content'), $imageName);
-
+            request()->featured_img->move(public_path('images/content'), $imageName);
+        }
+        
         if($files=$request->file('images')){
             $path = public_path().'/images/contents/'.$request->subcategory;
             File::isDirectory($path) or File::makeDirectory($path, 0777, true, true);
@@ -114,10 +116,14 @@ class ContentsController extends Controller
     {
         $this->validate($request,[
             'title' => 'required|min:3',
-            'content' => 'required|min:10'            
+            'content' => 'required|min:10',
+            'featured_img' => 'image|mimes:jpeg,png,jpg|max:2048',            
         ]);
-        $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
-        request()->featured_img->move(public_path('images/content'), $imageName);
+
+        if($request->file('featured_img')){
+            $imageName = time().'.'.request()->featured_img->getClientOriginalExtension();
+            request()->featured_img->move(public_path('images/content'), $imageName);
+        }
 
         if($files=$request->file('images')){
             $path = public_path().'/images/contents/'.$request->subcategory;
