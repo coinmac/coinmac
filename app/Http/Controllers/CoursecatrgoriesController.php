@@ -535,7 +535,7 @@ class CoursecatrgoriesController extends Controller
     public function contactmail(Request $request){
             $clist = $request;
 
-                Mail::to('coinmacltd@gmail.com')->send(new courseListMail($clist));
+                Mail::to('coinmacsms@gmail.com')->send(new courseListMail($clist));
         
         session()->flash('message','You have successfully sent the Message to Admin. You will recieve a reply soon!');
         return redirect()->back();
