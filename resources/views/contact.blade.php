@@ -73,11 +73,11 @@
             </div>
 
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <h3>Ibadan Office (MAP)</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15826.394849598502!2d3.88885!3d7.39878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb348d186e5145701!2sCoinmac+Int&#39;l+Ltd!5e0!3m2!1sen!2sng!4v1521728849786" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15826.394849598502!2d3.88885!3d7.39878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb348d186e5145701!2sCoinmac+Int&#39;l+Ltd!5e0!3m2!1sen!2sng!4v1521728849786" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <h3>Follow us on Facebook</h3>
                         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCoinmac-International-Inc-111254940259836&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=429238987655355" width="600" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
