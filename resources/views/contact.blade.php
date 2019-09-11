@@ -36,7 +36,8 @@
                         
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <form id="formcontact" class="form-contact" method="post" action="/contactform">
+                    <form id="formcontact" class="form-contact" method="post" action="{{route('contactmail')}}">
+                        @csrf
                          <div class="form-contact-title">
                             <h6 class="contact-title">FEEDBACK FORM</h6>
                             <p>Send us instant feedback with the form below</p>
@@ -62,8 +63,11 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9727886661913!2d7.4948327142766935!3d9.066243290902094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bb379c330dd%3A0xee9ea1a31aabf062!2sCOINMAC+INTERNATIONAL+INC!5e0!3m2!1sen!2sng!4v1556996770946!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15826.394849598502!2d3.88885!3d7.39878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb348d186e5145701!2sCoinmac+Int&#39;l+Ltd!5e0!3m2!1sen!2sng!4v1521728849786" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
             </div>
         </div>

@@ -262,13 +262,8 @@
                                                 <li><a href="/brochure_cert">{{date("Y")}} Certificate Courses Brochure</a></li>
                                             </ul>
                                         </li>
-                                        
-                                        <li><a href="#" title="">CONTACT</a>
-                                        <ul class="submenu">
-                                            <li><a href="/contact_us" title="">Contact</a></li>
-                                            <li><a href="/social_media" title="">Social Media</a></li>
-                                        </ul>
-                                    </li>
+                                        <li class="active"><a href="/contact_us" title="">CONTACT</a></li>
+
                                     </ul>
                                 </nav>
                                 
