@@ -91,7 +91,7 @@
 </style>
 
 <!-- latest-events -->
-<section class="flat-row">
+<section class="flat-row" style="padding-top: 0px !important;">
 
 <div class="container">
     <div class="blog-list2 lates-new wrap-box pdbottom">
