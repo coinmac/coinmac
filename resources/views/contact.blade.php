@@ -12,7 +12,7 @@
                 <div class="col-md-8 col-sm-12">
                     
                         <div class="form-contact-title">
-                                <h6 class="h1">CONTACT INFORMATION</h6>
+                                <h6 class="h1">CONTACT INFORMATION</h6><hr>
                                 <p>
                                         <p class="text1"><span class="h4b">NIGERIA (ABUJA):</span><span class="headerText2"> <br />
                                         </span>2nd Floor, Balyelsa House, Plot 1038, Shehu Shagari Way,<br />
@@ -20,10 +20,13 @@
                                         <p class="text1"><span class="h4b">NIGERIA (IBADAN):</span> <br />
                                           142, Fajuyi Road, Opp Alafia Hospital, Adamasingba, U.I. P. O. Box 22474, Ibadan,<br />
                                     Oyo State, Nigeria.</p>
+                                    <p class="text1"><span class="h4b">NIGERIA (BAUCHI):</span> <br />
+                                        Bauchi Hotels Ltd, (Zaranda Hotel), Jos Road, Bauchi,<br />
+                                  Bauchi State, Nigeria.</p>
                                         <p class="text1"><span class="h4b">LONDON:</span> <br />
                                           Suite 2, Caxton Street Studios 16, Caxton Street, Canning Town, London, E167/L</p>
-                                        <p class="text1"><span class="h4b">USA:</span> 417, Hindon Circle, Unit 203 Baltimore,<br />
-                                  Maryland, 21244, USA</p>
+                                        <p class="text1"><span class="h4b">USA:</span> 7707, Romero Drive, <br />
+                                  Arlington, Tennessee, 38002, USA</p>
                                         <p class="text1"><span class="h4b">(global affiliations with institutions in)</span> Ghana, Canada,    U.S.A,     United Kingdom,   United Arab Emirate<br />
                                           <span class="headerText2">Tel:</span>     +234  8038437312, +234 8023262908.<br />
                                           <span class="headerText2">Email:</span> training(at)coinmac.org,coinmac(at)coinsultant.com,  coinmacltd(at)gmail.com<br />
@@ -69,6 +72,20 @@
                     <div class="col-md-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15826.394849598502!2d3.88885!3d7.39878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb348d186e5145701!2sCoinmac+Int&#39;l+Ltd!5e0!3m2!1sen!2sng!4v1521728849786" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/coinmacinc" data-width="auto" data-height="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="false"></div>
+                </div>
             </div>
         </div>
     </section>
