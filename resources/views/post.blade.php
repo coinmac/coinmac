@@ -122,7 +122,7 @@
                                     @php
                                     if($cn->subcategory!=""){
                                     @endphp
-                                    <div class="slidecontainer">
+                                    <div class="slidecontainer col-md-10 col-md-offset-1">
                                         @php    
                                         $handle = opendir(public_path().'/images/contents/'.$cn->subcategory);                                        
                                         @endphp
@@ -130,7 +130,7 @@
                                         @if($file !== '.' && $file !== '..')
                                     
                                         <div class="mySlides">
-                                            <div class="numbertext">{{$cn->title}}</div>
+                                            
                                             <img src="/images/contents/{{$cn->subcategory}}/{{$file}}" alt="{{$cn->title}}" style="width: 100%">
                                         </div>
                                             
