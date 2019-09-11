@@ -53,7 +53,7 @@
                         <option value="Testimonial">Testimonial</option>
                         <option value="Announcement">Announcement</option>
                         <option value="Gallery">Gallery</option>
-                        <option value="{{$cn->category}}">{{$cn->category}}</option>
+                        <option value="{{$cn->category}}" selected>{{$cn->category}}</option>
                     </select>
                     </div>
                 </div>

@@ -138,7 +138,7 @@ class ContentsController extends Controller
                 $i++;
             }
         }
-       
+            // $contents = Contents::where('id','=',$request->id);
         
             $contents->title=$request->title;
             $contents->subtitle=$request->subtitle;
@@ -150,6 +150,8 @@ class ContentsController extends Controller
             $contents->status=$request->status;
             $contents->featured_img=$imageName;
             $contents->ranking=$request->ranking;
+
+            $contents->save();
                
         session()->flash('message','The content:'.$request->title.' has been '.$request->status.' successfully!');
         return redirect()->back();
