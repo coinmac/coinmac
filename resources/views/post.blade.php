@@ -116,7 +116,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <h2>In Pictures</h2>
+                                    <h2 style="text-align: center;">In Pictures</h2>
                                     <hr>
                                     <!-- Container for the image gallery -->
                                     @php
