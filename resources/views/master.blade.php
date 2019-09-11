@@ -241,7 +241,7 @@
                                             </ul>
                                         </li>
 
-                                        <li><a href="our-teacher.html" title="">PROFILE</a>
+                                        <li><a href="#" title="">PROFILE</a>
                                             <ul class="submenu">
                                                 <li><a href="/about">About COINMAC</a></li>
                                                 <li><a href="/management">Management/Executives</a></li>
@@ -250,7 +250,7 @@
                                         </li>
 
 
-                                        <li><a href="blog-list01.html" title="">RESOURCES</a>
+                                        <li><a href="#" title="">RESOURCES</a>
                                             <ul class="submenu">
                                                 <li><a href="https://drive.google.com/file/d/1lK2c116HiKVpicyloDCNCXO8t51oE_qt/view?usp=sharing">COINMAC Profile</a></li>
                                                 <li><a href="/events">Programmes/Events</a></li>
@@ -262,7 +262,7 @@
                                             </ul>
                                         </li>
                                         
-                                        <li><a href="contact.html" title="">CONTACT</a>
+                                        <li><a href="#" title="">CONTACT</a>
                                         <ul class="submenu">
                                             <li><a href="/contact_us" title="">Contact</a></li>
                                             <li><a href="/social_media" title="">Social Media</a></li>
