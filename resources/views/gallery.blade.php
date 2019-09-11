@@ -29,7 +29,7 @@
                                         <div class="entry-meta">
                                             <span>{{$cn->created_at}}</span>
                                         </div>
-                                        <h3 class="entry-title"><a href="/post/{{$cn->id}}">{{$cn->title}}</a></h3>
+                                        <h3 class="entry-title"><a href="/gpost/{{$cn->id}}">{{$cn->title}}</a></h3>
                                         <div class="entry-author">
                                             <span>by <a href="#">{{$cn->author}}</a></span>
                                         </div>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="col-md-7 col-sm-7 right">
                                     <div class="feature-post">
-                                        <a href="/post/{{$cn->id}}"><img src="images/content/{{$cn->featured_img}}" alt="{{$cn->title}}"></a>
+                                        <a href="/gpost/{{$cn->id}}"><img src="images/content/{{$cn->featured_img}}" alt="{{$cn->title}}"></a>
                                     </div>
                                 </div>
                             </div>

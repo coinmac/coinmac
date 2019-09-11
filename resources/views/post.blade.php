@@ -41,7 +41,7 @@
                                 <div class="col-md-12">
                                     <h2>In Pictures</h2>
                                     <hr>
-                                    @php
+                                        @php
                                         $handle = opendir(public_path().'/images/contents/'.$cn->subcategory);
                                         @endphp
                                         @while($file = readdir($handle))
