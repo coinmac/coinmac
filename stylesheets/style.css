@@ -404,7 +404,7 @@ h4 { font-size: 14px; line-height: 18px; }
 ---------------------------------------------------------------*/
 .top {
 	background-color: #22272b;
-	padding: 5px 0px 5px 0px;
+	padding: 18px 0px 16px 0px;
 }
 
 .top .wrap-flat {
@@ -571,7 +571,7 @@ h4 { font-size: 14px; line-height: 18px; }
 
 .logo {
 	float: left;
-    margin: 10px 0px 10px 1px;
+    margin: 30px 0px 29px 1px;
 }
 
 .wrap-nav {
@@ -608,7 +608,7 @@ h4 { font-size: 14px; line-height: 18px; }
 }
 
 .wrap-header-style2 .wrap-menu #mainnav > ul > li > a {
-    padding: 10px 33px 10px;
+    padding: 18px 33px 16px;
     color:#fff; 
 }
 
@@ -1021,13 +1021,13 @@ h4 { font-size: 14px; line-height: 18px; }
     font-weight: 500;
     color: #22272b;
     display: inline-block;
-    padding: 20px 33px 19px 33px;
+    padding: 68px 33px 67px 33px;
 }
 
 #mainnav > ul > li > a::after {
 	position: absolute;
 	right: 15px;
-	top: 20px;
+	top: 67px;
 	content: "\f107";
 	font-family: 'FontAwesome';
 	color: #22272b;
