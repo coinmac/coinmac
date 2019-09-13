@@ -156,7 +156,7 @@
                             <div class="wrap-nav">
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
-                                            <li class="has-mega-menu"><a href="#" title="" class="has-mega" style="color: red; font-weight: bold;">COURSES</a>
+                                            <li class="has-mega-menu" style="margin-right: 40px;"><a href="#" title="" class="has-mega" style="color: red; font-weight: bold;">COURSES</a>
                                                 <ul class="submenu submenu-style2 mega-menu three-columns">
                                                     <li class="submenu-level">
                                                         <ul class="submenu2">
