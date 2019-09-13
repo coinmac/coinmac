@@ -147,15 +147,7 @@
                             <div class="logo">
                                 <a href="/"><img src="/images/logo.jpg" style="height: 80px !important;" alt="image"></a>
                             </div><!-- /logo -->
-                            <div class="flat-search">
-                                <ul>
-                                    <li class="show-search"><a href="#"><i class="lnr lnr-magnifier"></i></a></li>
-                                    <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                                </ul>
-                                <div class="btn-menu">
-                                    <span></span>
-                                </div><!-- //mobile menu button -->
-                            </div><!-- /wrap-search -->
+                            
                             <div class="wrap-nav">
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
