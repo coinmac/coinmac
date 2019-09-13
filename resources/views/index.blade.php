@@ -344,7 +344,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            ,a href="#"><img src="images/diploma.jpg" alt="DIPLOMA BANNER"></a>
+            <a href="#"><img src="images/diploma.jpg" alt="DIPLOMA BANNER"></a>
         </div>
         <div class="col-md-12">
 
