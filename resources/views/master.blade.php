@@ -145,7 +145,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="logo">
-                                <a href="/"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
+                                <a href="/"><img src="/images/logo.jpg" style="height: 80px !important;" alt="image"></a>
                             </div><!-- /logo -->
                             <div class="flat-search">
                                 <ul>
@@ -234,23 +234,7 @@
                                             </ul>
                                         </li>
 
-                                        <li><a href="#" title="">DIPLOMA</a>
-                                            <ul class="submenu">
-
-                                                    @foreach ($coursecategories as $cc) 
-
-                                                    @if ($cc->category=="Diploma")
-                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
-                                                    @endif
-                                                    
-                                                @endforeach
-                                               
-                                            </ul>
-                                        </li>
-
                                         
-
-
                                         <li><a href="#" title="">RESOURCES</a>
                                             <ul class="submenu">
                                                 <li><a href="https://drive.google.com/file/d/1lK2c116HiKVpicyloDCNCXO8t51oE_qt/view?usp=sharing">COINMAC Profile</a></li>
