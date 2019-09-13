@@ -156,6 +156,72 @@
                             <div class="wrap-nav">
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
+                                            <li class="has-mega-menu"><a href="#" title="" class="has-mega" style="color: red; font-weight: bold;">COURSES</a>
+                                                <ul class="submenu submenu-style2 mega-menu three-columns">
+                                                    <li class="submenu-level">
+                                                        <ul class="submenu2">
+                                                            <li class="sub-title">
+                                                                <a href="#">NATIONAL</a>
+                                                                <span  class="btn-mega"></span>
+                                                            </li>
+                                                            <li  class="mega-menu-sub">
+                                                                
+                                                                <ul  class="c2">
+                                                                    @foreach ($coursecategories as $cc) 
+
+                                                                        @if ($cc->category=="National")
+                                                                            <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                                        @endif
+                                                                        
+                                                                    @endforeach                                                                
+                                                                </ul>
+                                                            </li>
+                                                            
+                                                        </ul> 
+                                                    </li>
+                                                    <li class="submenu-level">
+                                                        <ul class="submenu2">
+                                                            <li class="sub-title">
+                                                                <a href="#">INTERNATIONAL</a>
+                                                                <span class="btn-mega"></span>
+                                                            </li>
+                                                            <li class="mega-menu-sub">
+                                                                <ul class="c2">
+                                                                    @foreach ($coursecategories as $cc) 
+
+                                                                        @if ($cc->category=="International")
+                                                                            <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                                        @endif
+                                                                        
+                                                                    @endforeach 
+                                                                </ul>
+                                                            </li>
+                                                            
+                                                        </ul> 
+                                                    </li>
+                                                    <li class="submenu-level">
+                                                        <ul class="submenu2">
+                                                            <li class="sub-title">
+                                                                <a href="#">CERTIFICATION</a>
+                                                                <span class="btn-mega"></span>
+                                                            </li>
+                                                            <li class="mega-menu-sub">
+                                                                <ul>
+                                                                    @foreach ($coursecategories as $cc) 
+
+                                                                        @if ($cc->category=="Certificate")
+                                                                            <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
+                                                                        @endif
+                                                                        
+                                                                    @endforeach
+                                                                </ul>
+                                                            </li>
+                                                            
+                                                        </ul> 
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
                                         <li class="active"><a href="/" title="">HOME</a></li>
                                         <li><a href="#" title="">PROFILE</a>
                                             <ul class="submenu">
@@ -164,72 +230,7 @@
                                                 <li><a href="/consultancy">Consultancy</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-mega-menu"><a href="#" title="" class="has-mega">COURSES</a>
-                                            <ul class="submenu submenu-style2 mega-menu three-columns">
-                                                <li class="submenu-level">
-                                                   <ul class="submenu2">
-                                                        <li class="sub-title">
-                                                            <a href="#">NATIONAL</a>
-                                                            <span  class="btn-mega"></span>
-                                                        </li>
-                                                        <li  class="mega-menu-sub">
-                                                            
-                                                            <ul  class="c2">
-                                                                @foreach ($coursecategories as $cc) 
-
-                                                                    @if ($cc->category=="National")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
-                                                                    @endif
-                                                                    
-                                                                @endforeach                                                                
-                                                            </ul>
-                                                        </li>
-                                                        
-                                                    </ul> 
-                                                </li>
-                                                <li class="submenu-level">
-                                                   <ul class="submenu2">
-                                                        <li class="sub-title">
-                                                            <a href="#">INTERNATIONAL</a>
-                                                            <span class="btn-mega"></span>
-                                                        </li>
-                                                        <li class="mega-menu-sub">
-                                                            <ul class="c2">
-                                                                @foreach ($coursecategories as $cc) 
-
-                                                                    @if ($cc->category=="International")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
-                                                                    @endif
-                                                                    
-                                                                @endforeach 
-                                                            </ul>
-                                                        </li>
-                                                        
-                                                    </ul> 
-                                                </li>
-                                                <li class="submenu-level">
-                                                   <ul class="submenu2">
-                                                        <li class="sub-title">
-                                                            <a href="#">CERTIFICATION</a>
-                                                            <span class="btn-mega"></span>
-                                                        </li>
-                                                        <li class="mega-menu-sub">
-                                                            <ul>
-                                                                @foreach ($coursecategories as $cc) 
-
-                                                                    @if ($cc->category=="Certificate")
-                                                                        <li><a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a></li>
-                                                                    @endif
-                                                                    
-                                                                @endforeach
-                                                            </ul>
-                                                        </li>
-                                                        
-                                                    </ul> 
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
+                                        
 
                                         
                                         <li><a href="#" title="">RESOURCES</a>
