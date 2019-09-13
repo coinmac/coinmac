@@ -115,7 +115,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="logo">
-                                <a href="index.html"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
+                                <a href="#"><img src="/images/logo.jpg" style="height: 100px !important;" alt="image"></a>
                             </div><!-- /logo -->
                             <div class="flat-search">
                                 <ul>
@@ -137,7 +137,7 @@
                                             <li><a href="/messages">Messages</a></li>
                                             <li><a href="/logout">Logout</a></li>
                                         @else
-                                            <li><a href="our-teacher.html" title="">TASKS</a>
+                                            <li><a href="#" title="">TASKS</a>
                                                 <ul class="submenu">
                                                     <li><a href="/syllabus">Add / Edit Course Contents</a></li>
                                                     <li><a href="/edit_courses">Add / Send / Edit Courses</a></li>                                                
@@ -216,7 +216,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 info-left">
                             <div class="logo-footer">
-                                <a href="index.html"><img src="/images/footer-logo.png" alt="image"></a>
+                                <a href="#"><img src="/images/footer-logo.png" alt="image"></a>
                             </div><!-- logo-footer -->
                             <ul class="flat-socials">
                                 <li><a href=""><i class="fa fa-facebook"></i></a></li>

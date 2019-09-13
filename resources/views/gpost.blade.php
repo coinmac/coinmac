@@ -111,6 +111,17 @@
                                     <div class="entry-post">
                                         <div class="entry-content">                                                
                                             <p><img src="/images/content/{{$cn->featured_img}}" alt="" style="width: 40%; float:left; margin:10px;"> {!!$cn->content!!}...</p>
+                                        <hr>
+                                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center !important;">
+                                          <h2>Share this page on ...</h2>
+                                          <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                                          <a class="a2a_button_facebook"></a>
+                                          <a class="a2a_button_twitter"></a>
+                                          <a class="a2a_button_whatsapp"></a>
+                                          <a class="a2a_button_sms"></a>
+                                          <a class="a2a_button_email"></a>
+                                        </div>
+                                        <script async src="https://static.addtoany.com/menu/page.js"></script>
                                         </div>
                                     </div>
                                 </div>
