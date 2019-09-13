@@ -344,6 +344,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            ,a href="#"><img src="images/diploma.jpg" alt="DIPLOMA BANNER"></a>
+        </div>
+        <div class="col-md-12">
+
             <div class="title-section">
                 <h1 class="title">OFFERING THE BEST <br> IN PROFESSIONAL TRAINING</h1>
                 <div class="sub-title">
