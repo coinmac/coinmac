@@ -249,8 +249,7 @@
                                         <li class="active"><a href="/contact_us" title="">CONTACT</a></li>
 
                                     </ul>
-                                </nav>
-                                
+                                </nav>                              
                                
                             </div><!-- /wrap-nav -->
                         </div><!-- /col-md-12 -->
