@@ -251,16 +251,7 @@
                                     </ul>
                                 </nav>
                                 
-                                <div class="top-search">                        
-                                    <form action="{{route('searchcourses')}}"  id="searchform-all" method="post">
-                                        @csrf
-                                        <div>
-                                            <input type="hidden" name="coursecategory" value="All">
-                                            <input type="text" id="s" name="keyword" class="sss" placeholder="Search courses...">
-                                            <input type="submit" value="search" id="searchsubmit">
-                                        </div>
-                                    </form>
-                                </div><!-- /top-search -->
+                               
                             </div><!-- /wrap-nav -->
                         </div><!-- /col-md-12 -->
                     </div><!-- /row -->
