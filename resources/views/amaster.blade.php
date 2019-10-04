@@ -143,6 +143,7 @@
                                                     <li><a href="/edit_courses">Add / Send / Edit Courses</a></li>                                                
                                                     <li><a href="/edit_ccategories">Add / Send / Edit Course Categories</a></li>
                                                     <li><a href="/contents">Publish / Edit Site Contents</a></li>
+                                                    <li><a href="/diplomaregs">Diploma Registrations</a></li>
                                                     <li><a href="/logout">Logout</a></li>
                                                 </ul>
                                             </li>
