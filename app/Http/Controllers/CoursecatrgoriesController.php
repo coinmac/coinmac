@@ -505,6 +505,17 @@ class CoursecatrgoriesController extends Controller
         return view('mypayments',['payments'=>$payments]);
     }
 
+    public function diplomaregs(){
+        if(Auth::user()->email=='coinmacsms@gmail.com'){          
+            $payments = courseregs::where('amount','=','Diploma')->orderBy('created_at', 'desc')->get();
+            return view('diplomaregs',['payments'=>$payments]);
+        }else{
+            return redirect()->back();
+        }
+        
+        
+    }
+
     public function notifications(){
         if(Auth::user()->email!='coinmacsms@gmail.com'){
             $notices = notifications::where('to','=',Auth::user()->email)->orWhere('sender','=',Auth::user()->email)->orderBy('created_at', 'desc')->get();
