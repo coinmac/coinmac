@@ -13,7 +13,7 @@ class ContentsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','post','gpost','contact_us']);
+        $this->middleware('auth')->except(['index','post','gpost','contact_us','signup']);
     }
     /**
      * Display a listing of the resource.
