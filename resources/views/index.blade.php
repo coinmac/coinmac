@@ -380,7 +380,7 @@
                                 @if($cc->image!='catcover.jpg')
                                     <img src="/images/content/{{$cc->image}}" width="100%" height="auto"><br>
                                 @endif
-                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}" style="color: white !important;">{{ucwords(strtolower($cc->coursename))}}</a>
+                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}" style="color: white !important; position: absolute relative">{{ucwords(strtolower($cc->coursename))}}</a>
                         </div>   
                     @endif                 
                 @endforeach
