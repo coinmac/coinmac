@@ -32,7 +32,7 @@ class CoursecatrgoriesController extends Controller
      */
     public function index()
     {
-        $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid')->get();
+        $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid','image')->get();
         $subjectlist = subjectlists::select('id','subjectname', 'subjectid', 'amount', 'duration', 'category', 'image', 'author', 'coursecatid')->offset(0)->limit(10)->get(); 
         $thismonth = date("M, Y");
         $upcoming = subjectlists::select('id','subjectname', 'subjectid', 'duration', 'coursecategory', 'date1', 'date2', 'date3', 'date4')->whereRaw('date1 = ? or date2 like ? or date3 like ? or date4 like ?', ["%{$thismonth}%","%{$thismonth}%","%{$thismonth}%","%{$thismonth}%"])->offset(0)->limit(10)->get(); 
