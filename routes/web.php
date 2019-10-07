@@ -110,6 +110,6 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Auth::routes(['verify' => true]);
 
-Route::match(['get', 'post'], 'register', function(){
+Route::match(['get'], 'register', function(){
     return redirect('https://register.coinmac.org');
 });
