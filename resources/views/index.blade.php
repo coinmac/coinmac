@@ -375,9 +375,11 @@
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-3 col-sm-6" style="padding: 10px; font-weight: bold; background-color: #3387AF; text-align: center; height: 60px; border: 5px white solid;">                                    
+                    @if($cc->coursename!='All')
+                        <div class="col-md-3 col-sm-6" style="padding: 5px; font-weight: bold; background-color: #3387AF; text-align: center; height: 70px; border: 5px white solid;">                                    
                             <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}" style="color: white !important;">{{ucwords(strtolower($cc->coursename))}}</a>
-                        </div>                    
+                        </div>   
+                    @endif                 
                 @endforeach
                 
             </div>
