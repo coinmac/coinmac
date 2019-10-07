@@ -347,82 +347,10 @@
             <a href="https://register.coinmac.org" target="_blank"><img src="images/diploma.jpg" alt="DIPLOMA BANNER"></a>
             <hr>
         </div>
-        <div class="col-md-12">
-
-            <div class="title-section">
-                <h1 class="title">OFFERING THE BEST <br> IN PROFESSIONAL TRAINING</h1>
-                <div class="sub-title">
-                    Sign-up today to join over 1 thousand learners already on COINMAC
-                </div>
-            </div>
-        </div><!-- col-md-12 -->
+     
     </div><!-- row -->
 </div><!-- container -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="iconbox style-title">
-                <div class="box-header">
-                    <div class="box-icon">
-                        <img src="images/iconbox/1.png" alt="image">
-                    </div>
-                    <div class="box-title">
-                        <a href="#" title="">Best Learning Experience</a>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <p>We blend both professionalism and comfort to give you a perfect learning experience.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="iconbox icon-green style-title">
-                <div class="box-header">
-                    <div class="box-icon">
-                        <img src="images/iconbox/2.png" alt="image">
-                    </div>
-                    <div class="box-title">
-                        <a href="#" title="">The star solution for productivity</a>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <p>We deliver training to stimulate professional performance and increase productivity.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="iconbox icon-blue style-title">
-                <div class="box-header">
-                    <div class="box-icon">
-                        <img src="images/iconbox/3.png" alt="image">
-                    </div>
-                    <div class="box-title">
-                        <a href="#" title="">Learn Courses Online</a>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <p>The idea is to keep you productive in your carrier <br> while soaring higher academically</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="iconbox icon-cyan style-title">
-                <div class="box-header">
-                    <div class="box-icon">
-                        <img src="images/iconbox/4.png" alt="image">
-                    </div>
-                    <div class="box-title">
-                        <a href="#" title="">Book Library & Store</a>
-                    </div>
-                </div>
-                <div class="box-content">
-                    <p>Explore thousands of academic resources<br> from our reserviour of ebooks.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!-- container -->
 </section>
 
 <!-- Popular-iconbox2 -->

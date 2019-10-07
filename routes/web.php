@@ -91,8 +91,11 @@ Route::get('/contact_us','ContentsController@contact_us')->name('contact_us');
 Route::get('/social_media','CoursecatrgoriesController@social_media')->name('social_media');
 Route::get('/diplomaregs','CoursecatrgoriesController@diplomaregs')->name('diplomaregs');
 
-
 Route::post('searchcourses','CoursecatrgoriesController@searchcourses')->name('searchcourses');
+
+Route::get('/register', function(){
+    return redirect('https://register.coinmac.org');
+});
 
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');    

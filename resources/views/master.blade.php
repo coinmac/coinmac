@@ -127,7 +127,7 @@
                                 @guest
                                     <ul class="flat-login-register">
                                         <li><a href="/login">Login</a></li>
-                                        <li><a href="/register">Register</a></li>
+                                        <li><a href="/signup">Register</a></li>
                                     </ul>
                                 @endguest
                                 
