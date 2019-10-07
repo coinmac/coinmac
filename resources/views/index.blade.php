@@ -377,11 +377,9 @@
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="bg-style {{$bgcolors[array_rand($bgcolors)]}}" style="padding: 10px; color: white; font-weight: bold;">                                    
-                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a>                                 
-                                
-                            </div>
+                        <div class="col-md-3 col-sm-6 bg-style {{$bgcolors[array_rand($bgcolors)]}}" style="padding: 10px; color: white; font-weight: bold; background-color: {{$bgcolors[array_rand($bgcolors)]}};">                                    
+                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a> 
+                            
                         </div>                    
                 @endforeach
                 
@@ -412,7 +410,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="wrap-event-times">
-                <ol class="wrap-times wrap-times-style2 content mCustomScrollbar">
+                <ol class="wrap-times wrap-times-style2 content mCustomScrollbar" style="width: 100% !important;">
                     @foreach ($upcoming as $upc)
                         <li style="border-bottom: 1px groove #fff; margin-bottom: 5px;">
                             <article class="times-body">
