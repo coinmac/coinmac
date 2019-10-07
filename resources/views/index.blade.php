@@ -376,7 +376,7 @@
                 @endphp
                 @foreach ($coursecategories as $cc) 
                     @if($cc->coursename!='All')
-                        <div class="col-md-3 col-sm-6" style="padding: 5px; font-weight: bold; background-color: #3387AF; text-align: center; height: 70px; border: 5px white solid;">   
+                        <div class="col-md-3 col-sm-6" style="padding: 5px; font-weight: bold; background-color: #3387AF; text-align: center; min-height: 70px; height: auto; border: 5px white solid;">   
                                 @if($cc->image!='catcover.jpg')
                                     <img src="/images/content/{{$cc->image}}" width="100%" height="auto"><br>
                                 @endif
