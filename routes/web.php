@@ -93,10 +93,6 @@ Route::get('/diplomaregs','CoursecatrgoriesController@diplomaregs')->name('diplo
 
 Route::post('searchcourses','CoursecatrgoriesController@searchcourses')->name('searchcourses');
 
-Route::get('/register', function(){
-    return redirect('https://register.coinmac.org');
-});
-
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');    
 });
@@ -112,3 +108,7 @@ Route::get('/migration', function() {
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Auth::routes(['verify' => true]);
+
+Route::match(['get', 'post'], 'register', function(){
+    return redirect('https://register.coinmac.org');
+});
