@@ -208,4 +208,11 @@ class ContentsController extends Controller
         return view('contact',['coursecategories'=>$coursecategories]);
     }
 
+    public function signup()
+    {
+        $coursecategories = coursecatrgories::select('id','coursename','category','remarks','courseid')->get();
+
+        return view('register',['coursecategories'=>$coursecategories]);
+    }
+
 }
