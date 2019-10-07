@@ -370,16 +370,13 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="row">
                 @php
                 $bgcolors = array("bg-green","bg-red","bg-orange","bg-purple","bg-violet","bg-blue");
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-
-                    @if ($cc->remarks=="Popular")
-                        
                         <div class="col-md-4 col-sm-6">
                             <div class="iconbox bg-style {{$bgcolors[array_rand($bgcolors)]}}">
                                 <div class="box-header">
@@ -391,188 +388,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endif
-                    
+                        </div>                    
                 @endforeach
                 
             </div>
         </div><!-- no-paddingright -->
-        <div class="col-md-6">
-                <div class="about-us wrap-box pdleft">
-                    <h2 class="title-about-us">About Foundational Professional Courses</h2>
-                    <div class="text-about-us">
-                        <p>These are course that are sought after regularly by employers. They are like foundational courses that an average employer requires his/team members to have. </p>
-                        <p>At COINMAC Inc, these courses runs all through the year and we encourage everyone to attend and acquire the knowledge and increase the value of their intellectual portfolio..</p>
-                    </div>
-                    <div class="course-about-us">
-                        <p>Total Courses Available:<strong> {{count($subjectlist)}}</strong></p>
-                    </div>
-                    <div class="button-style">
-                        <div class="wrap-btn">
-                            <a class="flat-btn" href="#popular">SEE COURSE LIST</a>
-                        </div>
-                    </div>
-                </div><!-- About-us -->
-        </div><!-- col-md-6 -->
+       
     </div><!-- row -->
 </div><!-- Container -->
 </section>
 
-<!-- portfolio-isotope -->
-<section class="flat-row bg-theme wrap-price-post">
-<div class="container" id="popular">
-    <div class="row">
-        <div class="col-md-12">
-                <div class="title-section title-height46">
-                    <h1 class="title">POPULAR COURSES</h1>
-                    <div class="sub-title">
-                        Enroll and obtain professional knowledge and certificates in these popular courses.
-                    </div>
-                </div>
-        </div><!-- col.md-12 -->
-    </div>
-</div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="portfolio-filter style1">
-                        <li class="active"><a data-filter=".Administrative" href="/coursegroup/1000">Administrative</a></li>
-                        @foreach ($coursecategories as $cc) 
-
-                        @if ($cc->remarks=="Popular")
-
-                        <li><a data-filter=".{{$cc->coursename}}" href="#">{{$cc->coursename}}</a></li>                            
-                           
-                        @endif
-                        
-                    @endforeach
-
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="portfolio style2">
-            <div class="portfolio-wrap clearfix">
-                @foreach ($subjectlist as $sc) 
-
-                    @if ($sc->category=="Featured")
-                        <div class="item {{$sc->coursecategory}} ">
-                            <article class="entry ">
-                                
-                                    @php
-                                    if ($sc->image!="bookcover.jpg"){
-                                        $image = $sc->subjectid."/".$sc->image;
-                                    @endphp
-
-                                    <div class="featured-post">
-                                        <a href="/sc/{{$sc->subjectid}}"><img src="images/course/{{$image}}" alt="image"></a>
-                                    </div>
-                                    @php
-                                    }  
-                                    @endphp
-                                    
-                                <div class="entry-post">
-                                    <h3 class="entry-title"><a href="/sc/{{$sc->subjectid}}">{{$sc->subjectname}}</a></h3>
-                                    <div class="entry-author">
-                                        <span><a href="#"> {{$sc->category}}</a></span>
-                                    </div>
-                                    <div class="entry-number">
-                                        <div class="entry-count">
-                                            Duration:<span class="count"> {{$sc->duration}}</span>
-                                        </div>
-                                        <div class="entry-price">
-                                            @php
-                                                if(substr($sc->amount,0,1)!="N"){
-                                                    $amount = "$".$sc->amount;
-                                                }else{
-                                                    $amount = $sc->amount;
-                                                }
-                                            @endphp
-                                            PRICE:<span class="price"> {{$amount}}</span>
-                                        </div>
-                                    </div>
-                                </div><!-- entry-post -->
-                            </article>
-                        </div><!-- item -->
-                    @endif
-                    
-                @endforeach
-                
-            </div><!-- portfolio-wrap -->
-        </div><!-- portfolio --> 
-        <div class="row">
-            <div class="dividers h30">
-                
-            </div>
-        </div>
-    </div><!-- container -->
-
-    <div class="button-style center mg-left2">
-        <div class="wrap-btn">
-            <a class="flat-btn pdwith57" href="#">VIEW ALL</a>
-        </div>
-    </div>
-</section>
-
-<!-- form-register -->
-<section class="flat-row pd-80 flat-register">
-<div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <form action="{{ route('register') }}" method="POST" id="form-register" class="form-register">
-                @csrf
-                <div class="form-register-title">
-                   <h3 class="register-title">CREATE YOUR FREE<br><i class="wrap-box ispace7"></i>ACCOUNT NOW!</h3>
-                </div>
-                <div class="info-register">
-                    <p class="wrap-input-name">
-                        <input type="text" id="name" name="name" value="" required="required" placeholder="Your Name *:">
-                    </p>
-                    <p class="wrap-input-email">
-                        <input type="text" id="email" name="email" value="" required="required" placeholder="Email *:">
-                    </p>
-                    <p class="wrap-input-phone">
-                        <input type="password" id="password" name="password" value="" required="required" placeholder="Password *:">
-                    </p>
-                    <p class="wrap-input-phone">
-                        <input type="password" name="password_confirmation" value="" required="required" placeholder="Confirm Password *:">
-                    </p>
-                    <p class="wrap-input-name">
-                        <input type="text" id="phonenumber" name="phonenumber" value="" required="required" placeholder="Phone Number:">
-                    </p>
-                    <div class="wrap-btn">
-                        <button class="flat-btn" type="submit">SIGN UP</button>
-                    </div>
-                </div> 
-            </form>
-        </div><!-- col-md-5 -->
-        <div class="col-md-7 no-paddingright">
-            <div class="wrap-register-right wrap-box pdtopleft">
-                <div class="wrap-register-title">
-                    <div class="title-top">
-                       GET ACCESS TO 100s OF ONLINE COURSES AND RESOURCES FOR FREE
-                    </div>
-                    <div class="title-register">
-                       REGISTER NOW
-                    </div>
-                    <div class="sub-title-register">
-                       Create your free account now and get immediate access to 100s<br>of online courses and resources from coinmac.
-                    </div>
-                </div><!-- wrap-register-title -->
-
-                <div id="countdown" class="countdown">
-                </div><!-- CountDown -->
-           </div><!-- wrap-register-right -->
-            
-       </div><!-- col-md-7 -->
-    </div>
-</div>
-</section>
 
 <!-- Popular-event -->
 <section class="flat-row bg-theme pd-top-94">
@@ -580,7 +405,7 @@
     <div class="row">
         <div class="col-md-12">
                 <div class="title-section">
-                    <h1 class="title">COURSES FOR THIS MONTH</h1>
+                    <h1 class="title">UPCOMING COURSES</h1>
                     <div class="sub-title">
                         These are courses for the month of {{date("F, Y")}}.
                     </div>
