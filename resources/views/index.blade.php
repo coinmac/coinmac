@@ -359,9 +359,9 @@
     <div class="row">
         <div class="col-md-12">
             <div class="title-section">
-                <h1 class="title">FEATURED COURSE CATEGORIES</h1>
+                <h1 class="title">COURSE CATEGORIES</h1>
                 <div class="sub-title">
-                    These are courses that boosts employees productivity and routinely necessary for all employers.
+                    These are our course categories.
                 </div>
             </div>
         </div><!-- col-md-12 -->
@@ -377,16 +377,10 @@
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-4 col-sm-6">
-                            <div class="iconbox bg-style {{$bgcolors[array_rand($bgcolors)]}}">
-                                <div class="box-header">
-                                    <div class="box-icon">
-                                        <small>{{ucwords(strtolower($cc->category))}}</small>
-                                    </div>
-                                    <div class="box-title">
-                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a>
-                                    </div>
-                                </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bg-style {{$bgcolors[array_rand($bgcolors)]}}" style="padding: 10px; color: white; font-weight: bold;">                                    
+                                            <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a>                                 
+                                
                             </div>
                         </div>                    
                 @endforeach
@@ -416,7 +410,7 @@
 
 <div class="container popular-event">
     <div class="row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-12">
             <div class="wrap-event-times">
                 <ol class="wrap-times wrap-times-style2 content mCustomScrollbar">
                     @foreach ($upcoming as $upc)
@@ -463,36 +457,7 @@
                 </ol>
             </div><!-- wrap-event-times -->
         </div><!-- col-md-6 -->
-        <div class="col-md-6 col-sm-6">
-            <h1 class="title">Testimonials</h1>
-            <div class="flat-testimonials owl-carousel wrap-box pdtop" data-item="1" data-nav="true" data-auto="true">
-                @foreach ($featuredcontent as $c)
-
-                    @if ($c->category=="Testimonial")
-                        <div class="testimonial">
-                            <div class="testimonial-content">
-                                <p><i class="fa fa-quote-left"></i>{{substr($c->content,0,100)}}<i class="wrap-box ispace"></i><i class="fa fa-quote-right"></i></p>
-                            </div>
-                            <div class="wrap-testimonial">
-                                <div class="testimonial-author">
-                                    <div class="author-img">
-                                        <img src="images/content/{{$c->featured_img}}" alt="image" style="height: 100px !important;">
-                                    </div>
-                                    <div class="athor-info">
-                                        <span class="author-name">{{$c->author}}</span><br>
-                                        <span class="author-position">{{$c->subtitle}}</span>
-                                    </div>
-                                </div>
-                            </div><!-- wrap-testimonial -->
-                        </div><!-- testimonial -->
-                    @endif
-                    
-                @endforeach
-                
-
-            </div><!-- flat-testimonials -->
-
-        </div><!-- col-md-6 -->
+        
     </div><!-- row -->
 </div><!-- container -->
 </section>
