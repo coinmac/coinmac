@@ -375,7 +375,7 @@
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-3 col-sm-6" style="padding: 10px; font-weight: bold; background-color: #68A9C7; text-align: center; height: 60px; border: 5px white solid;">                                    
+                        <div class="col-md-3 col-sm-6" style="padding: 10px; font-weight: bold; background-color: #3387AF; text-align: center; height: 60px; border: 5px white solid;">                                    
                             <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}" style="color: white !important;">{{ucwords(strtolower($cc->coursename))}}</a>
                         </div>                    
                 @endforeach
