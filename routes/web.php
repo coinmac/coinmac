@@ -20,7 +20,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('contents', 'ContentsController');
 Route::get('/edit_content/{id}', 'ContentsController@edit_content')->name('edit_content');
 Route::get('/delete_content/{id}', 'ContentsController@delete_content')->name('delete_content');
-Route::get('/signup', 'ContentsController@signup')->name('signup');
 
 Route::resource('coursecategories', 'CoursecatrgoriesController');
 
@@ -109,7 +108,3 @@ Route::get('/migration', function() {
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Auth::routes(['verify' => true]);
-
-Route::match(['get'], 'register', function(){
-    return redirect('https://register.coinmac.org');
-});

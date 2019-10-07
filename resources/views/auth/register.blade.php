@@ -5,6 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4 col-md-offset-4">
             <div class="card">
+                <a href="https://register.coinmac.org">Click Here to Register for Diploma Courses</a>
                 <div class="card-header h1">{{ __('Register') }}</div>
 
                 <div class="card-body">

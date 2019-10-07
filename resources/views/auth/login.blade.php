@@ -61,7 +61,7 @@
 
                     </form>
 
-                    <p class="h4">Don't have an account? <a href="/signup" class="label label-success">Register</a></p>
+                    <p class="h4">Don't have an account? <a href="/register" class="label label-success">Register</a></p>
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
                         data-paddingbottom="[0,0,0,0"
                         data-paddingleft="[0,0,0,0]"
     
-                        style="z-index: 16; white-space: nowrap;text-transform:left;"><span>STIMULATING PROFESSIONAL PERFORMANCE</span><br>COINMAC Inc
+                        style="z-index: 16; white-space: nowrap;text-transform:left;">
                     </div>
     
                     <!-- LAYER NR. 13 -->
@@ -61,7 +61,7 @@
                         data-paddingbottom="[0,0,0,0]"
                         data-paddingleft="[0,0,0,0]"
     
-                        style="z-index: 17; white-space: nowrap;text-transform:left;">Our courses cuts accross all the fundamental and relavant professional fields</div>
+                        style="z-index: 17; white-space: nowrap;text-transform:left;"></div>
     
                     <a href="/register" target="_self" class="tp-caption flat-button-slider bg-orange"         
     
@@ -75,7 +75,7 @@
                     data-lineheight="['46','46','38','38']"
                     data-paddingright="['23','23','23','23']"
                     data-paddingleft="['26','26','26','26']"
-                    data-height="['auto']">START A COURSE
+                    data-height="['auto']">
                     </a><!-- END LAYER LINK -->
                 </li>
 
@@ -108,7 +108,7 @@
                     data-paddingbottom="[0,0,0,0"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 16; white-space: nowrap;text-transform:left;"><span>RICH PROFESSIONAL CARRIER COURSES FROM NIGERIA'S BEST</span><br>HUMAN RESOURCE TRAINERS
+                    style="z-index: 16; white-space: nowrap;text-transform:left;">
                 </div>
 
                 <!-- LAYER NR. 13 -->
@@ -133,7 +133,7 @@
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 17; white-space: nowrap;text-transform:left;">Our courses cuts accross all the fundamental and relavant professional fields</div>
+                    style="z-index: 17; white-space: nowrap;text-transform:left;"></div>
 
                 <a href="/register" target="_self" class="tp-caption flat-button-slider bg-orange"         
 
@@ -147,7 +147,7 @@
                 data-lineheight="['46','46','38','38']"
                 data-paddingright="['23','23','23','23']"
                 data-paddingleft="['26','26','26','26']"
-                data-height="['auto']">START A COURSE
+                data-height="['auto']">
                 </a><!-- END LAYER LINK -->
             </li>
 
@@ -181,7 +181,7 @@
                     data-paddingbottom="[0,0,0,0"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 16; white-space: nowrap;text-transform:left;"><span>APPROVED AND CERTIFIED BY RELEVANT</span><br>AUTHORITIES
+                    style="z-index: 16; white-space: nowrap;text-transform:left;">
                 </div>
 
                 <!-- LAYER NR. 13 -->
@@ -206,7 +206,7 @@
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 17; white-space: nowrap;text-transform:left;">Globally recognized for providing cutting edge training</div>
+                    style="z-index: 17; white-space: nowrap;text-transform:left;"></div>
 
                 <a href="/register" target="_self" class="tp-caption flat-button-slider bg-orange"         
 
@@ -220,7 +220,7 @@
                 data-lineheight="['46','46','38','38']"
                 data-paddingright="['23','23','23','23']"
                 data-paddingleft="['26','26','26','26']"
-                data-height="['auto']">START A COURSE
+                data-height="['auto']">
                 </a><!-- END LAYER LINK -->
             </li>
 
@@ -254,7 +254,7 @@
                     data-paddingbottom="[0,0,0,0"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 16; white-space: nowrap;text-transform:left;"><span>RENOWNED IN NIGERIA AND</span><br> BEYOND
+                    style="z-index: 16; white-space: nowrap;text-transform:left;">
                 </div>
 
                 <!-- LAYER NR. 13 -->
@@ -279,7 +279,7 @@
                     data-paddingbottom="[0,0,0,0]"
                     data-paddingleft="[0,0,0,0]"
 
-                    style="z-index: 17; white-space: nowrap;text-transform:left;">With good reputation</div>
+                    style="z-index: 17; white-space: nowrap;text-transform:left;"></div>
 
                 <a href="/register" target="_self" class="tp-caption flat-button-slider bg-orange"         
 
@@ -293,7 +293,7 @@
                 data-lineheight="['46','46','38','38']"
                 data-paddingright="['23','23','23','23']"
                 data-paddingleft="['26','26','26','26']"
-                data-height="['auto']">START A COURSE
+                data-height="['auto']">
                 </a><!-- END LAYER LINK -->
             </li>
 
