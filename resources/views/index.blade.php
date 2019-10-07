@@ -360,9 +360,7 @@
         <div class="col-md-12">
             <div class="title-section">
                 <h1 class="title">COURSE CATEGORIES</h1>
-                <div class="sub-title">
-                    These are our course categories.
-                </div>
+               
             </div>
         </div><!-- col-md-12 -->
     </div><!-- row -->
@@ -377,7 +375,7 @@
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-3 col-sm-6" style="padding: 10px; font-weight: bold; background-color: darkblue; text-align: center; height: 60px; margin: 5px;">                                    
+                        <div class="col-md-3 col-sm-6" style="padding: 10px; font-weight: bold; background-color: lightblue; text-align: center; height: 60px; border: 5px white solid;">                                    
                             <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}" style="color: white !important;">{{ucwords(strtolower($cc->coursename))}}</a>
                         </div>                    
                 @endforeach
