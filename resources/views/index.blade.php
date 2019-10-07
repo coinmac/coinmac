@@ -373,11 +373,11 @@
         <div class="col-md-12">
             <div class="row">
                 @php
-                $bgcolors = array("bg-green","bg-red","bg-orange","bg-purple","bg-violet","bg-blue");
+                $bgcolors = array("green","red","orange","purple","violet","blue");
                 
                 @endphp
                 @foreach ($coursecategories as $cc) 
-                        <div class="col-md-3 col-sm-6 bg-style {{$bgcolors[array_rand($bgcolors)]}}" style="padding: 10px; color: white; font-weight: bold; background-color: {{$bgcolors[array_rand($bgcolors)]}};">                                    
+                        <div class="col-md-3 col-sm-6" style="padding: 10px; color: white; font-weight: bold; background-color: {{$bgcolors[array_rand($bgcolors)]}};">                                    
                                             <a href="/coursegroup/{{$cc->courseid}}/{{$cc->category}}/{{$cc->coursename}}">{{ucwords(strtolower($cc->coursename))}}</a> 
                             
                         </div>                    
@@ -412,9 +412,9 @@
             <div class="wrap-event-times">
                 <ol class="wrap-times wrap-times-style2 content mCustomScrollbar" style="width: 100% !important;">
                     @foreach ($upcoming as $upc)
-                        <li style="border-bottom: 1px groove #fff; margin-bottom: 5px;">
-                            <article class="times-body">
-                                <div class="row">
+                        <li style="border-bottom: 1px groove #fff; margin-bottom: 5px;"  style="width: 100% !important;">
+                            <article class="times-body"  style="width: 100% !important;">
+                                <div class="row" style="width: 100% !important;">
                                     <div class="col-md-3">
                                         @if (strpos($upc->date1, date("M, Y")) !== false)
                                             <div class="col-md-6 time-list">                                    
